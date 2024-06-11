@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play TokyoDay.</tw-noscript></noscript></tw-story>
-<tw-storydata name="TokyoDay" startnode="1" creator="Twine" creator-version="2.7.0" format="Harlowe" format-version="3.3.6" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Haneda Airport" tags="" position="3100,3400" size="100,100">
+<tw-storydata name="TokyoDay" startnode="1" creator="Twine" creator-version="2.7.0" format="Harlowe" format-version="3.3.6" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="3100,3400" size="100,100">
 [[Keikyu airport line]]
 
 [[Tokyo Monorail]]</tw-passagedata><tw-passagedata pid="2" name="Keikyu airport line" tags="" position="4200,2400" size="100,100">
@@ -33,12 +33,379 @@ Tenkubashi Station (2min)
 
 (5 min)
 
-[[Hamatsucho]]</tw-passagedata><tw-passagedata pid="4" name="Narita Airport" tags="" position="4500,1400" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Hamatsucho" tags="" position="2775,2900" size="200,100">Platform 2</tw-passagedata><tw-passagedata pid="6" name="Tamachi" tags="" position="2625,3000" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="Shinagawa" tags="" position="2500,3100" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="Harajuku" tags="" position="1800,2500" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="Ebisu" tags="" position="1800,2900" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="Shibuya" tags="" position="1800,2700" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="Meguro" tags="" position="1900,3100" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="Gotanda" tags="" position="2100,3100" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="Osaki" tags="" position="2300,3100" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="Shin-Okubo" tags="" position="1800,1850" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="Takadanobaba" tags="" position="1800,1650" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Shinjuku" tags="" position="1750,2050" size="200,100"></tw-passagedata><tw-passagedata pid="17" name="Yoyogi" tags="" position="1800,2300" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Otsuka" tags="" position="2400,1100" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Sugamo" tags="" position="2525,1100" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Komagome" tags="" position="2650,1100" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Mejiro" tags="" position="1900,1400" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Tabata" tags="" position="2775,1150" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Nishi-Nippori" tags="" position="2900,1250" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Nippori" tags="" position="3000,1400" size="200,100">
-[[Skyliner]]</tw-passagedata><tw-passagedata pid="25" name="Ikebukuro" tags="" position="2100,1150" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="Uguisudani" tags="" position="3000,1525" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="Ueno" tags="" position="3000,1700" size="100,100"></tw-passagedata><tw-passagedata pid="28" name="Shimbashi" tags="" position="2900,2750" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Yurakucho" tags="" position="3000,2600" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="Kanda" tags="" position="3000,2200" size="100,100"></tw-passagedata><tw-passagedata pid="31" name="Tokyo" tags="" position="3000,2400" size="100,100"></tw-passagedata><tw-passagedata pid="32" name="Akihabara" tags="" position="3000,2000" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="Okachimachi" tags="" position="3000,1850" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="Skyliner" tags="" position="3800,1400" size="100,100">
+[[Hamatsucho]]</tw-passagedata><tw-passagedata pid="4" name="Narita Airport" tags="" position="4500,1400" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Hamatsucho" tags="Yamanote" position="2775,2900" size="200,100">Platform 2
+$clock
+
+&lt;!-- link to the next station each direction, that adds time for the connection
+If you are already on the train it only shows you alight or stay on train--&gt;
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shimbashi&quot;)[(set:$clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Tamachi&quot;)[(set:$clock to it + 3, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Hamatsucho&quot;, &quot;Hamatsucho&quot;)[(set:$status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shimbashi&quot;)[(set:$clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Tamachi&quot;)[(set:$clock to it + 3, $status to 2)]
+	]
+]
+
+[[Inside train]] </tw-passagedata><tw-passagedata pid="6" name="Tamachi" tags="Yamanote" position="2625,3000" size="100,100">$clock 
+Tamachi
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Hamamatsucho&quot;)[(set: $clock to it + 3, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Shinagawa&quot;)[(set: $clock to it + 4, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Tamachi&quot;, &quot;Tamachi&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Hamamatsucho&quot;)[(set: $clock to it + 3, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shinagawa&quot;)[(set: $clock to it + 4, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="7" name="Shinagawa" tags="Yamanote" position="2500,3100" size="100,100">$clock 
+Shinagawa
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Tamachi&quot;)[(set: $clock to it + 4, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Osaki&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Shinagawa&quot;, &quot;Shinagawa&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Tamachi&quot;)[(set: $clock to it + 4, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Osaki&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="8" name="Harajuku" tags="Yamanote" position="1800,2500" size="100,100">$clock 
+Harajuku
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Yoyogi&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Harajuku&quot;, &quot;Harajuku&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Yoyogi&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="9" name="Ebisu" tags="Yamanote" position="1800,2900" size="100,100">$clock Ebisu
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Meguro&quot;)[(set: $clock to it + 3, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Ebisu&quot;, &quot;Ebisu&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Meguro&quot;)[(set: $clock to it + 3, $status to 1)]
+    ](else:)[
+	(link-reveal-goto: &quot;continue&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 2)]
+    ]
+]</tw-passagedata><tw-passagedata pid="10" name="Shibuya" tags="Yamanote" position="1800,2700" size="100,100">$clock 
+Shibuya
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Ebisu&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Shibuya&quot;, &quot;Shibuya&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Ebisu&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="11" name="Meguro" tags="Yamanote" position="1900,3100" size="100,100">$clock 
+Meguro
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Gotanda&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Ebisu&quot;)[(set: $clock to it + 3, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Meguro&quot;, &quot;Meguro&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Gotanda&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Ebisu&quot;)[(set: $clock to it + 3, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="12" name="Gotanda" tags="Yamanote" position="2100,3100" size="100,100">$clock 
+Gotanda
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Osaki&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Meguro&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Gotanda&quot;, &quot;Gotanda&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Osaki&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Meguro&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="13" name="Osaki" tags="Yamanote" position="2300,3100" size="100,100">$clock 
+Osaki
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shinagawa&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Gotanda&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Osaki&quot;, &quot;Osaki&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shinagawa&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Gotanda&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="14" name="Shin-Okubo" tags="Yamanote" position="1800,1850" size="100,100">$clock 
+Shin-Okubo
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shinjuku&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Takadanobaba&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Shin-Okubo&quot;, &quot;Shin-Okubo&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shinjuku&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Takadanobaba&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="15" name="Takadanobaba" tags="Yamanote" position="1800,1650" size="100,100">$clock 
+Takadanobaba
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Takadanobaba&quot;, &quot;Takadanobaba&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="16" name="Shinjuku" tags="Yamanote" position="1750,2050" size="200,100">$clock
+Shinjuku
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Yoyogi&quot;)[(set: $clock to it + 3, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Shinjuku&quot;, &quot;Shinjuku&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Yoyogi&quot;)[(set: $clock to it + 3, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="17" name="Yoyogi" tags="Yamanote" position="1800,2300" size="100,100">$clock 
+Yoyogi
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Shinjuku&quot;)[(set: $clock to it + 3, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Yoyogi&quot;, &quot;Yoyogi&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shinjuku&quot;)[(set: $clock to it + 3, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="18" name="Otsuka" tags="Yamanote" position="2400,1100" size="100,100">$clock 
+Otsuka
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Ikebukuro&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Sugamo&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Otsuka&quot;, &quot;Otsuka&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Ikebukuro&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Sugamo&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="19" name="Sugamo" tags="Yamanote" position="2525,1100" size="100,100">$clock 
+Sugamo
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Otsuka&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Komagome&quot;)[(set: $clock to it + 3, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Sugamo&quot;, &quot;Sugamo&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Otsuka&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Komagome&quot;)[(set: $clock to it + 3, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="20" name="Komagome" tags="Yamanote" position="2650,1100" size="100,100">$clock 
+Komagome
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Sugamo&quot;)[(set: $clock to it + 3, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Tabata&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Komagome&quot;, &quot;Komagome&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Sugamo&quot;)[(set: $clock to it + 3, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Tabata&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="21" name="Mejiro" tags="Yamanote" position="1900,1400" size="100,100">$clock 
+Mejiro
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Takadanobaba&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Ikebukuro&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Mejiro&quot;, &quot;Mejiro&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Takadanobaba&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Ikebukuro&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="22" name="Tabata" tags="Yamanote" position="2775,1150" size="100,100">$clock 
+Tabata
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Komagome&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Nishi-Nippori&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Tabata&quot;, &quot;Tabata&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Komagome&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Nishi-Nippori&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="23" name="Nishi-Nippori" tags="Yamanote" position="2900,1250" size="100,100">$clock 
+Nishi-Nippori
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Tabata&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Nippori&quot;)[(set: $clock to it + 1, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Nishi-Nippori&quot;, &quot;Nishi-Nippori&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Tabata&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Nippori&quot;)[(set: $clock to it + 1, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="24" name="Nippori" tags="Yamanote" position="3000,1400" size="200,100">$clock 
+Nippori
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Nishi-Nippori&quot;)[(set: $clock to it + 1, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Uguisudani&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Nippori&quot;, &quot;Nippori&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Nishi-Nippori&quot;)[(set: $clock to it + 1, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Uguisudani&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]
+
+
+[[Skyliner]]</tw-passagedata><tw-passagedata pid="25" name="Ikebukuro" tags="Yamanote" position="2100,1150" size="100,100">$clock 
+Ikebukuro
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Otsuka&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Ikebukuro&quot;, &quot;Ikebukuro&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Otsuka&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="26" name="Uguisudani" tags="Yamanote" position="3000,1525" size="100,100">$clock 
+Uguisudani
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Nippori&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Ueno&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Uguisudani&quot;, &quot;Uguisudani&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Nippori&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Ueno&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="27" name="Ueno" tags="Yamanote" position="3000,1700" size="100,100">$clock 
+Ueno
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Uguisudani&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Ueno&quot;, &quot;Ueno&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Uguisudani&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 1, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="28" name="Shimbashi" tags="Yamanote" position="2900,2750" size="100,100">
+$clock 
+Shimbashi
+
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Yurakucho&quot;)[(set: $clock to it + 1, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Hamatsucho&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Shimbashi&quot;, &quot;Shimbashi&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Yurakucho&quot;)[(set: $clock to it + 1, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Hamatsucho&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]
+</tw-passagedata><tw-passagedata pid="29" name="Yurakucho" tags="Yamanote" position="3000,2600" size="100,100">$clock 
+Yurakucho
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Shimbashi&quot;)[(set: $clock to it + 1, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Yurakucho&quot;, &quot;Yurakucho&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Shimbashi&quot;)[(set: $clock to it + 1, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="30" name="Kanda" tags="Yamanote" position="3000,2200" size="100,100">$clock 
+Kanda
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Kanda&quot;, &quot;Kanda&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="31" name="Tokyo" tags="Yamanote" position="3000,2400" size="100,100">$clock 
+Tokyo
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Yurakucho&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Tokyo&quot;, &quot;Tokyo&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Yurakucho&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="32" name="Akihabara" tags="Yamanote" position="3000,2000" size="100,100">$clock 
+Akihabara
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 1, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Akihabara&quot;, &quot;Akihabara&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 1, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="33" name="Okachimachi" tags="Yamanote" position="3000,1850" size="100,100">$clock 
+Okachimachi
+(if: $status is 0)[
+	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Ueno&quot;)[(set: $clock to it + 2, $status to 1)]
+	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 1, $status to 2)]
+](else:)[
+	(link-reveal-goto: &quot;alight at Okachimachi&quot;, &quot;Okachimachi&quot;)[(set: $status to 0)]
+	(if: $status is 1)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Ueno&quot;)[(set: $clock to it + 1, $status to 1)]
+	](else:)[
+		(link-reveal-goto: &quot;continue&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 2, $status to 2)]
+	]
+]</tw-passagedata><tw-passagedata pid="34" name="Skyliner" tags="" position="3800,1400" size="100,100">
 Aoto Station (10min)
 Shin-Kamagaya Station (12min)
 (20min)
-[[Narita Airport]] </tw-passagedata></tw-storydata>
+[[Narita Airport]] </tw-passagedata><tw-passagedata pid="35" name="Tokyo Tower" tags="" position="2650,2800" size="100,100">Tokyo Tower</tw-passagedata><tw-passagedata pid="36" name="Inside train" tags="" position="2700,2500" size="100,100">
+(set: $stations to (a: &quot;Shimbashi&quot;, &quot;Yurakucho&quot;, &quot;Tokyo&quot;, &quot;Kanda&quot;, &quot;Akihabara&quot;, &quot;Okachimachi&quot;, &quot;Ueno&quot;, &quot;Uguisuda&quot;, &quot;Nippori&quot;, &quot;Nishi-Nippori&quot;, &quot;Tabata&quot;, &quot;Komagome&quot;, &quot;Sugamo&quot;, &quot;Otsuka&quot;, &quot;Ikebukuro&quot;, &quot;Mejiro&quot;, &quot;Takadanobaba&quot;, &quot;Shin-Okubo&quot;, &quot;Shinjuku&quot;, &quot;Yoyogi&quot;, &quot;Harajuku&quot;, &quot;Shibuya&quot;, &quot;Ebisu&quot;, &quot;Meguro&quot;, &quot;Gotanda&quot;, &quot;Osaki&quot;, &quot;Shinagawa&quot;, &quot;Tamachi&quot;, &quot;Hamatsucho&quot;))
+
+(for: each _station, ...$stations)[
+   (link: _station)[(goto: _station)]
+]
+
+&lt;!-- 
+Gives a list of all the stations, in order of the inside loop.
+So player can jump to them.
+--&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
