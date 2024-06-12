@@ -9,10 +9,15 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play TokyoDay.</tw-noscript></noscript></tw-story>
-<tw-storydata name="TokyoDay" startnode="1" creator="Twine" creator-version="2.7.0" format="Harlowe" format-version="3.3.6" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="3100,3400" size="100,100">
-[[Keikyu airport line]]
+<tw-storydata name="TokyoDay" startnode="1" creator="Twine" creator-version="2.7.0" format="Harlowe" format-version="3.3.6" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="3100,3400" size="100,100">It is raining.
 
-[[Tokyo Monorail]]</tw-passagedata><tw-passagedata pid="2" name="Keikyu airport line" tags="" position="4200,2400" size="100,100">
+Raleigh says she is going straight to Narita, where maybe she can find a lounge or one of those capsules to sleep the day in before tonights flight to Hawaii.
+[[Keikyu airport Line]]
+
+
+Madison asks if Raleigh can take her roller bag too, 
+
+[[Tokyo Monorail]]</tw-passagedata><tw-passagedata pid="2" name="Keikyu airport Line" tags="" position="4200,2400" size="100,200">
 1hr 30 min direct to [[Narita Airport]]
 
 (Airport rapid)Blue
@@ -22,7 +27,7 @@
 -Mita (2min) -Daimon (3min) -Shimbashi (2min) -Nihombashi (4min) -Higashi-Nihombashi (3min) -Asakusa (4min) -Oshiage Skytree (3min)
 (Keisei Narita Skyaccess)Orange
 -Aoto (6min) -Keisei Takasago (7min) -Higashi-Matsudo (8min) -Shin-Kamagaya (4min) -Chiba New Town (7min) -Imbanihon-Idai (6min) -Narita Yukawa (7min) -Narita Terminal 2 (7min) -Narita International (1min)
-</tw-passagedata><tw-passagedata pid="3" name="Tokyo Monorail" tags="" position="3000,3200" size="100,100">Tokyo Monorail
+</tw-passagedata><tw-passagedata pid="3" name="Tokyo Monorail" tags="" position="2975,3125" size="100,200">Tokyo Monorail
 
 Tenkubashi Station (2min)
 8:39 AMSeibijō Station (2min)
@@ -181,7 +186,7 @@ Shinjuku
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="17" name="Yoyogi" tags="Yamanote" position="1800,2300" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="17" name="Yoyogi" tags="Yamanote" position="1800,2300" size="200,100">$clock 
 Yoyogi
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -280,7 +285,7 @@ Nippori
 ]
 
 
-[[Skyliner]]</tw-passagedata><tw-passagedata pid="25" name="Ikebukuro" tags="Yamanote" position="2100,1150" size="100,100">$clock 
+[[Skyliner Line]]</tw-passagedata><tw-passagedata pid="25" name="Ikebukuro" tags="Yamanote" position="2100,1150" size="100,100">$clock 
 Ikebukuro
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -355,7 +360,7 @@ Kanda
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="31" name="Tokyo" tags="Yamanote" position="3000,2400" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="31" name="Tokyo" tags="Yamanote" position="3000,2400" size="200,100">$clock 
 Tokyo
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -367,7 +372,7 @@ Tokyo
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Yurakucho&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="32" name="Akihabara" tags="Yamanote" position="3000,2000" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="32" name="Akihabara" tags="Yamanote" position="3000,2000" size="200,100">$clock 
 Akihabara
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 1, $status to 1)]
@@ -391,7 +396,7 @@ Okachimachi
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="34" name="Skyliner" tags="" position="3800,1400" size="100,100">
+]</tw-passagedata><tw-passagedata pid="34" name="Skyliner Line" tags="" position="3800,1400" size="100,200">
 Aoto Station (10min)
 Shin-Kamagaya Station (12min)
 (20min)
@@ -405,7 +410,331 @@ Shin-Kamagaya Station (12min)
 &lt;!-- 
 Gives a list of all the stations, in order of the inside loop.
 So player can jump to them.
---&gt;</tw-passagedata></tw-storydata>
+--&gt;</tw-passagedata><tw-passagedata pid="37" name=":: NOTES ::" tags="" position="3500,1900" size="200,200">
+https://matcha-jp.com/en/15228
+
+9.5hr Sydney to Haneda
+(21:30 -&gt; 05:00)
+
+7hr Narita to Honolulu
+20:30 -&gt; 08:30</tw-passagedata><tw-passagedata pid="38" name="Chuo Line" tags="" position="2100,2000" size="100,200">
+Chuo Line stations
+
+Rapid trains  - kaisoku
+Shinjuku, Yotsuya (4), Ochanomizu (6), Kanda (2) and Tokyo (2)
+(Shinjuku to Tokyo is 14 min)
+
+Local trains - futsu
+Shinjuku
+Yoyogi (1)
+Sendagaya (2), Shinanomach (2), 
+Yotsuya (2)
+Ichigaya (2), Iidabashi (2), Suidobashi (2)
+Ochanomizu (2)
+Akihabara (2)
+
+(Shinjuku to Akihabara is 18min)
+
+https://www.japan-guide.com/e/e2372.html</tw-passagedata><tw-passagedata pid="39" name=":: NOTES :: Austin" tags="" position="3600,3100" size="100,100">
+Austin is the player character.
+
+Edge of 30.
+On his 27th birthday he flew an areoplane for the first time.
+Having only gotten his P&#39;s at 22 he did imagine how good it would feel flying.
+
+He is about two months away from completing his commercial 
+
+Feels disconnected from everyone, a bit jelous about how connected everyone else is.
+Madison and Raleigh became friends only a few months ago, and are already really close.
+
+They discovered they both know the bride Alexi
+
+Sitting at 144 hours flight time.
+21 in Multi-engine (14|0, 7|0)
+123 single engine (38|9,76|0)
+
+9 instrument dual
+
+Took 48 hours to get PPL. Had three weeks (20hrs) in circuits. But Navigation is solid, CPL Navigation exam got 91% (highest mark). 
+
+
+https://www.enneagraminstitute.com/how-the-enneagram-system-works/
+
+He is a 2 0 that control their shame by getting people to like them,
+but he was burnt and now acts like a 5  feating the world and widthrawing from it in fear.
+
+Type 2 with a wing of 5 would bring a unique blend of empathy, insight, independence, and problem-solving skills to their relationships and interactions with others. They would offer both emotional support and intellectual stimulation, creating a dynamic and multifaceted approach to helping and connecting with those around them.
+
+
+https://www.youtube.com/watch?v=PbBH7ftgXTg
+
+What are you writing about?
+</tw-passagedata><tw-passagedata pid="40" name="Flight to Japan" tags="" position="2900,3500" size="100,100">
+You look at the three seats.
+
+Window, Middle or Isle seat?
+
+If you choose the middle seat, you can talk to both Madison and Raleigh.
+If you choose the isle, you can talk to Raliegh.
+
+Madison was in your Home room and school house at high school, a year below you. Though it has been 12 years since you finished high school, you are both a little stand offish.
+
+Raleigh met the bride Alexi at Uni.
+Madison and Raleigh became friends a year or so ago, when Madison was drunk at a concert and looking for a friend.
+
+If you choose the window the two girls will sleep quickly, leaving you in thought.
+
+
+9.5 hours.
+
+Departure at 10pm.
+Arrives in Tokyo at 6:30.
+
+
+&quot;It is too early!&quot; Raleigh protests as the breakfast service arrives.
+
+&quot;Oh, I figured we have at least 12 hours to explore a little bit of Tokyo. Check-in for our flight our isn&#39;t until 8:30pm, and we should be landed at 7am,&quot; You say.
+
+&quot;I&#39;ll do which ever is most interesting,&quot; Madison says. If you chose the isle or window she has slept most of the flght. If you chose the middle, Raleigh and 
+
+You&#39;ve slept maybe 4 or 5 hours at the most. A bit lost in your thoughts.
+
+[[Haneda Airport]] </tw-passagedata><tw-passagedata pid="41" name=":: ChatGPT guidance ::" tags="" position="2200,2400" size="100,100">What would a Type 2, who is in stress acting like an 8 think if they believed they were a 5 acting in growth?
+ChatGPT
+A Type 2 under stress often exhibits behaviors associated with Type 8, becoming more assertive, controlling, and possibly aggressive as a way to protect themselves and cope with feelings of vulnerability and rejection. However, if this Type 2 mistakenly believes they are a Type 5 in growth, they might misinterpret their behaviors and motivations. Here’s how this misunderstanding might manifest and what they might think:
+
+Behaviors and Misinterpretations
+1. Assertiveness and Control (Type 8 under Stress)
+Behavior: The Type 2 becomes more assertive, confrontational, and seeks to control situations and relationships to protect themselves from further hurt.
+Misinterpretation as Type 5 in Growth: They might see their increased assertiveness and desire for control as a form of seeking autonomy and independence, which they mistakenly attribute to Type 5&#39;s growth.
+2. Withdrawal and Independence (Type 8 under Stress)
+Behavior: The Type 2 might withdraw emotionally and become more self-reliant, distancing themselves from others to avoid vulnerability.
+Misinterpretation as Type 5 in Growth: They might believe this withdrawal and self-reliance are signs of Type 5’s characteristic independence and need for personal space and intellectual exploration.
+3. Focus on Self-Sufficiency (Type 8 under Stress)
+Behavior: The Type 2 starts prioritizing their own needs and desires, perhaps aggressively pursuing their goals without seeking help from others.
+Misinterpretation as Type 5 in Growth: They might interpret this focus on self-sufficiency as a move towards the Type 5’s emphasis on competence and knowledge.
+Emotional and Psychological Impact
+1. Confusion about Motivations
+Type 2 Core Motivation: The need to be loved and appreciated by helping others.
+Type 8 Stress Response: Acting out of a need to protect oneself and assert control.
+Type 5 Growth Misinterpretation: They might confuse their stress-induced assertiveness as a healthy move towards Type 5’s detachment and intellectualism, leading to confusion about their true motivations and feelings.
+2. Misalignment in Self-Perception
+Identity Conflict: Believing they are a Type 5 in growth, they might focus on developing intellectual skills and independence, which might not address their underlying emotional needs as a Type 2.
+Emotional Disconnect: This misalignment could lead to frustration and further emotional disconnect, as their actions do not genuinely align with their core needs and desires.
+Potential Misunderstandings
+1. Intellectual Pursuits vs. Emotional Connection
+Type 2 under Stress: Might pursue control and assertiveness in relationships.
+Belief as Type 5: They might incorrectly focus on intellectual pursuits, thinking they are growing, while neglecting their need for emotional connection and support.
+2. Independence vs. Relational Health
+Type 2 under Stress: Prioritizes self-reliance to protect against vulnerability.
+Belief as Type 5: They might interpret this as a healthy independence, missing the opportunity to address and heal their relational wounds and needs for connection.
+Growth Strategies for Realignment
+1. Self-Awareness and Reflection
+Reflection: Encourage regular self-reflection to understand true motivations and needs. Journaling or therapy can help uncover underlying Type 2 needs.
+Awareness: Developing awareness of stress responses and distinguishing them from genuine growth behaviors.
+2. Emotional Healing and Connection
+Healing Trauma: Address past traumas and trust issues through therapy or support groups, focusing on building healthy, trusting relationships.
+Authentic Connections: Practice opening up to trusted individuals, seeking genuine connections rather than controlling or withdrawing.
+3. Balanced Growth
+Healthy Boundaries: Learn to set and maintain healthy boundaries that respect both their needs and those of others, balancing the Type 2’s desire to help with the Type 8’s assertiveness.
+Self-Care: Incorporate self-care practices that address emotional, physical, and intellectual needs, ensuring holistic growth.
+Conclusion
+A Type 2 under stress, acting like an 8, who mistakenly believes they are a Type 5 in growth, might experience significant confusion and misalignment in their behaviors and emotional responses. By fostering self-awareness, addressing past traumas, and focusing on balanced growth, they can better understand their true needs and motivations, leading to healthier relationships and personal development.
+
+What type of person (Enneagram type) would be best to help the 2 who thinks they are a 5 see how to get better?
+ChatGPT
+To help a Type 2 who mistakenly believes they are a Type 5 to see how to improve and get better, a person with a compassionate, insightful, and balanced approach would be most effective. Here’s how different Enneagram types could potentially help, along with the type that might be particularly well-suited for this task:
+
+Ideal Types for Helping a Misidentified Type 2
+Type 9 (The Peacemaker)
+Strengths: Type 9s are empathetic, patient, and non-judgmental. They can help the Type 2 feel safe and understood, fostering an environment where the Type 2 can explore their true feelings without pressure.
+Approach: A Type 9 can gently guide the Type 2 towards self-awareness by encouraging reflection and providing a calm, supportive presence. They are good at creating harmony and can help the Type 2 balance their need for connection with their independent pursuits.
+Type 6 (The Loyalist)
+Strengths: Type 6s are supportive, reliable, and excellent at providing guidance and reassurance. They can help the Type 2 feel secure and trust the process of self-discovery.
+Approach: A Type 6 can offer practical advice and consistent support, helping the Type 2 navigate their emotions and relationships with more clarity and confidence.
+Type 1 (The Reformer)
+Strengths: Type 1s are principled, ethical, and good at providing structure. They can help the Type 2 see the importance of integrity and self-awareness in personal growth.
+Approach: A Type 1 can encourage the Type 2 to align their actions with their true values and motivations, fostering a sense of purpose and direction.
+Most Effective Type: Type 9 (The Peacemaker)
+A Type 9 would likely be the most effective at helping a Type 2 who thinks they are a Type 5. Here&#39;s why:
+
+Type 9 Characteristics and Approach
+Empathy and Understanding:
+
+Non-Judgmental Support: Type 9s are naturally empathetic and non-judgmental, which helps the Type 2 feel safe and understood.
+Creating a Safe Space: They excel at creating a calm and accepting environment, allowing the Type 2 to explore their feelings without fear of rejection or criticism.
+Balanced Perspective:
+
+Encouraging Self-Reflection: Type 9s can gently encourage the Type 2 to reflect on their true motivations and needs, helping them distinguish between stress-induced behaviors and genuine growth.
+Balancing Connections and Independence: They can help the Type 2 balance their desire for connection with their need for independence, guiding them towards a healthier integration of these aspects.
+Patience and Persistence:
+
+Consistent Presence: Type 9s are patient and persistent, providing a steady presence that reassures the Type 2 over time.
+Gentle Guidance: They guide subtly and gently, which is less likely to trigger the Type 2’s defenses and more likely to foster genuine self-discovery.
+Practical Steps a Type 9 Might Take
+Active Listening and Validation:
+
+Listening: Provide a listening ear without immediately trying to fix the problem. Validate the Type 2’s feelings and experiences.
+Encouragement: Encourage the Type 2 to talk about their experiences, fears, and aspirations, helping them articulate their true emotions.
+Reflective Questions:
+
+Gentle Probing: Ask reflective questions that help the Type 2 explore their motivations and behaviors. For example, “What do you feel you’re seeking through your independence?”
+Insight Development: Help the Type 2 see patterns in their behavior and understand the underlying needs driving them.
+Creating Balance:
+
+Encouraging Connection: Gently encourage the Type 2 to maintain and nurture their important relationships, emphasizing that asking for help and showing vulnerability are strengths.
+Promoting Self-Care: Encourage the Type 2 to practice self-care and recognize their own needs, balancing their desire to help others with taking care of themselves.
+Conclusion
+A Type 9 (The Peacemaker) would be particularly well-suited to help a Type 2 who thinks they are a Type 5 see how to get better. Their empathetic, patient, and balanced approach can provide the safe and supportive environment necessary for the Type 2 to explore their true motivations and needs, fostering genuine growth and self-awareness.
+
+
+===
+
+Why would a type 2 be a good commercial airline pilot?
+ChatGPT
+A Type 2 (The Helper) could be a good commercial airline pilot for several reasons, despite the role not being an obvious fit for their typical personality traits. Here are some key reasons why a Type 2 might excel in this profession:
+
+1. Desire to Help and Serve Others
+Passenger Care: Type 2s have a strong desire to help and serve others, which can translate into excellent customer service. They would be attentive to passengers&#39; needs, ensuring their comfort and safety during the flight.
+Crew Support: They would also be supportive and helpful to their flight crew, fostering a cooperative and positive working environment.
+2. Strong Interpersonal Skills
+Communication: Type 2s typically have excellent communication skills. They can effectively communicate with passengers, crew members, and air traffic control, ensuring clear and efficient exchanges of information.
+Conflict Resolution: Their empathetic nature helps them manage conflicts and soothe anxious passengers, creating a calmer and more pleasant flight experience.
+3. Responsibility and Dedication
+Commitment to Safety: Type 2s are dedicated and responsible, traits that are crucial for the safety-focused role of a pilot. They would take the responsibility of ensuring the safety of their passengers very seriously.
+Attention to Detail: They tend to be diligent and attentive to detail, which is essential for the meticulous nature of flying an aircraft.
+4. Team-Oriented Approach
+Collaboration: Type 2s thrive in team environments and are naturally collaborative. This makes them effective at working with co-pilots, flight attendants, and ground staff to ensure smooth operations.
+Supportive Leadership: In a leadership role, such as a captain, they can be nurturing and supportive, leading by example and fostering a positive team dynamic.
+5. Empathy and Emotional Intelligence
+Understanding Passenger Needs: Their high emotional intelligence allows them to understand and anticipate passengers&#39; needs and concerns, which is especially valuable in managing the emotional aspects of travel.
+Stress Management: They can remain calm and composed in stressful situations, using their empathy to manage their own stress and that of others around them.
+6. Motivation and Work Ethic
+Driven by Purpose: Type 2s are often driven by a sense of purpose and the desire to make a positive impact. The role of a pilot, with its inherent responsibility and the opportunity to help people reach their destinations safely, can be highly fulfilling for them.
+Passion for Service: Their passion for service aligns well with the hospitality aspect of commercial aviation, where passenger satisfaction is a key component.
+Potential Challenges and Mitigation
+1. Over-Involvement
+Challenge: Type 2s might struggle with boundaries, potentially becoming over-involved in passengers&#39; or crew members&#39; issues.
+Mitigation: Setting clear professional boundaries and focusing on their primary responsibilities can help them manage this tendency.
+2. Self-Neglect
+Challenge: They might neglect their own needs in favor of others&#39;, leading to burnout.
+Mitigation: Regular self-care practices and maintaining a healthy work-life balance are crucial for their well-being.
+3. Handling Authority
+Challenge: Type 2s might occasionally struggle with the authoritative aspect of being a pilot, especially when making tough decisions.
+Mitigation: Developing assertiveness and confidence in their decision-making abilities can help them handle the authoritative responsibilities of the role.
+Conclusion
+While being a commercial airline pilot might not seem like an obvious choice for a Type 2, their strong interpersonal skills, dedication to helping others, and team-oriented approach can make them excellent in this role. By leveraging their natural strengths and addressing potential challenges, Type 2s can thrive as commercial airline pilots, providing exceptional service and ensuring the safety and comfort of their passengers.
+
+
+===
+Why would a type 2 who is mostly acting a stress position 8, be a good commercial airline pilot?
+
+ChatGPT
+A Type 2 (The Helper) who is mostly acting in a stress position 8 (The Challenger) could also be a good commercial airline pilot, albeit for somewhat different reasons. When a Type 2 adopts the behaviors of a Type 8 under stress, they become more assertive, decisive, and authoritative—traits that are highly valuable in the role of a commercial airline pilot. Here’s why a Type 2 in a stress position 8 could excel in this profession:
+
+1. Decisiveness and Authority
+Clear Decision-Making: Acting like a Type 8, a Type 2 would exhibit strong decision-making abilities and the confidence to take charge, especially in high-pressure situations. This is crucial for a pilot, who must make quick and accurate decisions for the safety of the flight.
+Leadership Skills: The authoritative and commanding presence of a Type 8 can help a stressed Type 2 effectively lead the cockpit crew and maintain control over the flight operations.
+2. Assertiveness and Confidence
+Commanding Respect: The assertiveness that comes with a Type 8 behavior can help a Type 2 command respect from passengers and crew. This is important for maintaining order and ensuring that safety protocols are followed.
+Handling Emergencies: In emergency situations, the confidence and assertiveness of a Type 8 can be invaluable. A stressed Type 2 would be more likely to take decisive action and remain calm under pressure, ensuring the safety and well-being of everyone on board.
+3. Protectiveness and Responsibility
+Passenger Safety: Even under stress, a Type 2’s underlying motivation to help and protect others remains. Combined with Type 8&#39;s protective instincts, this can translate into a strong commitment to passenger safety and well-being.
+Crew Support: Their protective nature would also extend to the flight crew, ensuring a supportive and secure working environment where everyone feels valued and safe.
+4. Goal-Oriented Focus
+Achieving Objectives: The goal-oriented and driven nature of a Type 8 can help a stressed Type 2 focus on achieving the objectives of each flight, such as on-time departures and arrivals, maintaining safety standards, and ensuring passenger satisfaction.
+Efficiency: This focus can also enhance operational efficiency, leading to smoother and more effective flight operations.
+5. Resilience and Adaptability
+Handling Stress: The resilience associated with Type 8 behaviors can help a stressed Type 2 handle the demands and stress of being a pilot more effectively. They can adapt to changing conditions and unforeseen challenges with greater ease.
+Stress Management: While the shift to Type 8 behaviors is a stress response, it can also provide the strength and resilience needed to manage the high-stress environment of aviation.
+Potential Challenges and Mitigation
+1. Over-Control and Aggression
+Challenge: The stressed Type 2 might become overly controlling or aggressive, which can create tension with the crew and passengers.
+Mitigation: Developing self-awareness and stress management techniques can help mitigate this tendency, allowing them to channel their assertiveness in positive ways.
+2. Neglecting Emotional Needs
+Challenge: Under stress, they might neglect their own emotional needs and the emotional needs of others, focusing too much on control and efficiency.
+Mitigation: Regular self-reflection and practices like mindfulness or therapy can help them stay connected to their empathetic Type 2 nature, ensuring they balance assertiveness with compassion.
+3. Maintaining Balance
+Challenge: Balancing the assertiveness of Type 8 with the nurturing tendencies of Type 2 can be difficult, leading to internal conflict.
+Mitigation: Seeking support from mentors or peers and practicing balanced leadership can help them integrate these aspects of their personality more effectively.
+Conclusion
+A Type 2 who is mostly acting in a stress position 8 could be a good commercial airline pilot because the traits they exhibit under stress—decisiveness, assertiveness, confidence, and protectiveness—are highly valuable in aviation. By recognizing and managing potential challenges, they can leverage these strengths to excel in their role, ensuring the safety and satisfaction of their passengers and crew.
+
+https://www.enneagraminstitute.com/type-descriptions/
+
+https://www.enneagraminstitute.com/type-9/
+Madison is a Type 9 - who will likely help Austin discover himself...
+
+https://www.enneagraminstitute.com/type-8/
+Austin is acting like a Type 8.
+He thinks it is because he is a Type 5 acting in a type of Growth, but he is really a Type 2 in Stress
+&quot;&quot; Level 3: Attain skillful mastery of whatever interests them. Excited by knowledge: often become expert in some field. Innovative and inventive, producing extremely valuable, original works. Highly independent, idiosyncratic, and whimsical. &quot;&quot;
+https://www.enneagraminstitute.com/type-5/
+&quot;&quot;Level 5: Become overly intimate and intrusive: they need to be needed, so they hover, meddle, and control in the name of love. Want others to depend on them: give, but expect a return: send double messages. Enveloping and possessive: the codependent, self-sacrificial person who cannot do enough for others—wearing themselves out for everyone, creating needs for themselves to fulfill.&quot;&quot;
+https://www.enneagraminstitute.com/type-2/
+
+https://www.enneagraminstitute.com/misidentifying-2-and-8/
+https://www.enneagraminstitute.com/misidentifying-2-and-5/
+&quot;&quot;  Surprisingly, it is more likely for some Fives to be mistaken for Twos, but only in very narrow circumstances. Because Fives do not form emotional bonds easily, they can be highly dependent on the few they do form, and can become needy with their significant others. At such times, they do not want their loved ones far from them, somewhat like average Twos. &quot;&quot;
+&quot;&quot;  Twos are emotionally expressive and highly people-oriented. Fives are emotionally detached and can be the true loners of the Enneagram. Both feel rejected easily, but Twos cope by winning people over and Fives cope by detaching from the hurt and isolating themselves further.  &quot;&quot;
+
+Type 8 &quot;Level 4: Self-sufficiency, financial independence, and having enough resources are important concerns: become enterprising, pragmatic, “rugged individualists,” wheeler-dealers. Risk-taking, hardworking, denying own emotional needs.&quot;
+
+
+---
+Type One is principled, purposeful, self-controlled, and perfectionistic.
+
+Type Two is generous, demonstrative, people-pleasing, and possessive.
+
+Type Three is adaptable, excelling, driven, and image-conscious.
+
+Type Four is expressive, dramatic, self-absorbed, and temperamental.
+
+Type Five is perceptive, innovative, secretive, and isolated.
+
+Type Six is engaging, responsible, anxious, and suspicious.
+
+Type Seven is spontaneous, versatile, acquisitive, and scattered.
+
+Type Eight is self-confident, decisive, willful, and confrontational.
+
+Type Nine is receptive, reassuring, complacent, and resigned.
+
+----
+
+Would the Type 9 perceive that the Type 8 is actually a 2 in stress?
+ChatGPT
+It&#39;s possible for a Type 9 to perceive that a Type 8 is actually exhibiting behaviors of a Type 2 in stress, especially if they are attuned to the nuances of the Enneagram system and familiar with the dynamics between different types. Here&#39;s how a Type 9 might come to this perception:
+
+Observation of Behavior: A Type 9, known for their ability to observe and empathize with others, may notice certain behaviors in the Type 8 that resemble those of a Type 2 in stress. This could include traits such as over-involvement in others&#39; affairs, controlling tendencies, or a focus on asserting dominance or authority.
+
+Empathy and Understanding: Drawing from their own empathy and understanding of human nature, a Type 9 may recognize that the Type 8&#39;s behavior is driven by underlying fears or insecurities, similar to those experienced by a Type 2 in stress. They may sense that the Type 8 is seeking validation or affirmation through their actions, rather than acting from a place of genuine confidence or self-assuredness.
+
+Awareness of Enneagram Dynamics: If the Type 9 is knowledgeable about the Enneagram system and how different types interact with each other, they may be able to identify patterns in the Type 8&#39;s behavior that align with the stress and growth dynamics of the Enneagram model. They may understand that the Type 8&#39;s assertiveness and need for control are responses to stressors, rather than inherent traits of their personality.
+
+Comparison to Healthy Type 2 Behavior: By contrasting the Type 8&#39;s current behavior with the healthy expression of Type 2 traits, a Type 9 may recognize discrepancies or inconsistencies that suggest the Type 8 is operating from a state of stress rather than growth. They may notice that the Type 8&#39;s actions lack the genuine warmth, empathy, and selflessness typically associated with a healthy Type 2.
+
+Intuitive Insight: Finally, a Type 9&#39;s intuitive insight and ability to perceive underlying motivations and emotions in others may lead them to intuitively sense that the Type 8 is experiencing stress and insecurity, even if the Type 8 themselves may not be fully aware of it.
+
+Overall, a Type 9 may perceive that a Type 8 is actually exhibiting behaviors of a Type 2 in stress based on their observations, empathy, understanding of Enneagram dynamics, comparison to healthy Type 2 behavior, and intuitive insight into the Type 8&#39;s underlying motivations and emotions.
+
+Lets say the three have only known each other for 9hours. Maybe they have seen each other at a party before, but the Type 8 (who is really a type 2 in systematic continuous stress) booked the layover thinking it would be a good chance to get status of having visited a new city and doing something exciting. The Type 2, is tired having not slept much, and the Type 9 has just met the Type 8 for the first time. What things would the Type 9 perceive or be able to observe (as an astute in tune person to the Enneagram system) and point out to help the Type 8 open up and see he is stressed?
+ChatGPT
+In this scenario, the Type 9, being perceptive and attuned to the nuances of human behavior and the Enneagram system, may notice certain signs and behaviors in the Type 8 (actually a Type 2 in continuous stress) that suggest underlying stress or insecurity. Here are some observations and insights the Type 9 might be able to point out to help the Type 8 recognize their stress:
+
+Overcompensation for Approval: The Type 9 may observe that the Type 8 is putting excessive effort into planning and organizing the layover activities, perhaps in an attempt to gain validation or approval from the group. They may notice signs of perfectionism or control in the Type 8&#39;s behavior, indicating a desire to be seen as competent or capable.
+
+Discomfort with Vulnerability: Despite their assertive exterior, the Type 9 may sense that the Type 8 is uncomfortable with vulnerability or emotional intimacy. They may detect subtle signs of defensiveness or deflection when personal topics are broached, suggesting that the Type 8 is avoiding deeper emotional connections.
+
+Avoidance of Rest: The Type 9 may observe that the Type 8 is reluctant to acknowledge their own fatigue or need for rest, instead prioritizing excitement and activity during the layover. They may notice subtle cues such as fatigue or irritability in the Type 8&#39;s demeanor, indicating that they may be pushing themselves beyond their limits.
+
+Focus on External Validation: The Type 9 may notice that the Type 8 seeks validation or affirmation from others, perhaps through boasting about their accomplishments or seeking admiration for their adventurous spirit. They may observe a pattern of seeking external validation to bolster their self-esteem, rather than deriving fulfillment from within.
+
+Tendency to Control Situations: The Type 9 may recognize that the Type 8 exhibits a strong need for control or dominance within the group dynamics. They may notice that the Type 8 is quick to assert their opinions or preferences, perhaps at the expense of considering others&#39; viewpoints or desires.
+
+Resistance to Relaxation: Despite the laid-back nature of the Type 9, they may observe that the Type 8 struggles to relax or unwind during the layover. They may notice signs of restlessness or agitation in the Type 8&#39;s behavior, indicating that they may have difficulty letting go of their need for constant activity or stimulation.
+
+By pointing out these observations and insights to the Type 8, the Type 9 can help them recognize and acknowledge their stress levels and the underlying motivations driving their behavior. This awareness can be a crucial first step towards addressing their stress and finding healthier ways to cope and connect with others.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
