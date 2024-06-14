@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play TokyoDay.</tw-noscript></noscript></tw-story>
-<tw-storydata name="TokyoDay" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="3100,3400" size="100,100">It is raining.
+<tw-storydata name="TokyoDay" startnode="113" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="8700,2375" size="100,100">It is raining.
 
 Raleigh says she is going straight to Narita, where maybe she can find a lounge or one of those capsules to sleep the day in before tonights flight to Hawaii.
 [[Keikyu airport Line]]
@@ -17,7 +17,7 @@ Raleigh says she is going straight to Narita, where maybe she can find a lounge 
 
 Madison asks if Raleigh can take her roller bag too, 
 
-[[Tokyo Monorail]]</tw-passagedata><tw-passagedata pid="2" name="Keikyu airport Line" tags="" position="4200,2400" size="100,200">
+[[Tokyo Monorail]]</tw-passagedata><tw-passagedata pid="2" name="Keikyu airport Line" tags="" position="9800,1375" size="100,200">
 1hr 30 min direct to [[Narita Airport]]
 
 (Airport rapid)Blue
@@ -27,7 +27,7 @@ Madison asks if Raleigh can take her roller bag too,
 -Mita (2min) -Daimon (3min) -Shimbashi (2min) -Nihombashi (4min) -Higashi-Nihombashi (3min) -Asakusa (4min) -Oshiage Skytree (3min)
 (Keisei Narita Skyaccess)Orange
 -Aoto (6min) -Keisei Takasago (7min) -Higashi-Matsudo (8min) -Shin-Kamagaya (4min) -Chiba New Town (7min) -Imbanihon-Idai (6min) -Narita Yukawa (7min) -Narita Terminal 2 (7min) -Narita International (1min)
-</tw-passagedata><tw-passagedata pid="3" name="Tokyo Monorail" tags="" position="2975,3125" size="100,200">Tokyo Monorail
+</tw-passagedata><tw-passagedata pid="3" name="Tokyo Monorail" tags="" position="8575,2100" size="100,200">Tokyo Monorail
 
 Tenkubashi Station (2min)
 8:39 AMSeibijō Station (2min)
@@ -38,7 +38,7 @@ Tenkubashi Station (2min)
 
 (5 min)
 
-[[Hamatsucho]]</tw-passagedata><tw-passagedata pid="4" name="Narita Airport" tags="" position="4500,1400" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Hamatsucho" tags="Yamanote" position="2775,2900" size="200,100">Platform 2
+[[Hamatsucho]]</tw-passagedata><tw-passagedata pid="4" name="Narita Airport" tags="" position="10100,375" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Hamatsucho" tags="Yamanote" position="8375,1875" size="200,100">Platform 2
 $clock
 
 &lt;!-- link to the next station each direction, that adds time for the connection
@@ -55,7 +55,7 @@ If you are already on the train it only shows you alight or stay on train--&gt;
 	]
 ]
 
-[[Inside train]] </tw-passagedata><tw-passagedata pid="6" name="Tamachi" tags="Yamanote" position="2625,3000" size="100,100">$clock 
+[[Inside train]] </tw-passagedata><tw-passagedata pid="6" name="Tamachi" tags="Yamanote" position="8225,1975" size="100,100">$clock 
 Tamachi
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Hamamatsucho&quot;)[(set: $clock to it + 3, $status to 1)]
@@ -67,7 +67,7 @@ Tamachi
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Shinagawa&quot;)[(set: $clock to it + 4, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="7" name="Shinagawa" tags="Yamanote" position="2500,3100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="7" name="Shinagawa" tags="Yamanote" position="8100,2075" size="100,100">$clock 
 Shinagawa
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Tamachi&quot;)[(set: $clock to it + 4, $status to 1)]
@@ -79,7 +79,7 @@ Shinagawa
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Osaki&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="8" name="Harajuku" tags="Yamanote" position="1800,2500" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="8" name="Harajuku" tags="Yamanote" position="7400,1475" size="100,100">$clock 
 Harajuku
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -91,7 +91,7 @@ Harajuku
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Yoyogi&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="9" name="Ebisu" tags="Yamanote" position="1800,2900" size="100,100">$clock Ebisu
+]</tw-passagedata><tw-passagedata pid="9" name="Ebisu" tags="Yamanote" position="7400,1875" size="100,100">$clock Ebisu
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Meguro&quot;)[(set: $clock to it + 3, $status to 1)]
 	(link-reveal-goto: &quot;sotomawari&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 2)]
@@ -102,7 +102,7 @@ Harajuku
     ](else:)[
 	(link-reveal-goto: &quot;continue&quot;, &quot;Shibuya&quot;)[(set: $clock to it + 2, $status to 2)]
     ]
-]</tw-passagedata><tw-passagedata pid="10" name="Shibuya" tags="Yamanote" position="1800,2700" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="10" name="Shibuya" tags="Yamanote" position="7400,1675" size="100,100">$clock 
 Shibuya
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Ebisu&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -114,7 +114,7 @@ Shibuya
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="11" name="Meguro" tags="Yamanote" position="1900,3100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="11" name="Meguro" tags="Yamanote" position="7500,2075" size="100,100">$clock 
 Meguro
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Gotanda&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -126,7 +126,7 @@ Meguro
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Ebisu&quot;)[(set: $clock to it + 3, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="12" name="Gotanda" tags="Yamanote" position="2100,3100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="12" name="Gotanda" tags="Yamanote" position="7700,2075" size="100,100">$clock 
 Gotanda
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Osaki&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -138,7 +138,7 @@ Gotanda
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Meguro&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="13" name="Osaki" tags="Yamanote" position="2300,3100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="13" name="Osaki" tags="Yamanote" position="7900,2075" size="100,100">$clock 
 Osaki
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shinagawa&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -150,7 +150,7 @@ Osaki
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Gotanda&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="14" name="Shin-Okubo" tags="Yamanote" position="1800,1850" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="14" name="Shin-Okubo" tags="Yamanote" position="7400,825" size="100,100">$clock 
 Shin-Okubo
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shinjuku&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -162,7 +162,7 @@ Shin-Okubo
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Takadanobaba&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="15" name="Takadanobaba" tags="Yamanote" position="1800,1650" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="15" name="Takadanobaba" tags="Yamanote" position="7400,625" size="100,100">$clock 
 Takadanobaba
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -174,7 +174,7 @@ Takadanobaba
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="16" name="Shinjuku" tags="Yamanote" position="1750,2050" size="200,100">$clock
+]</tw-passagedata><tw-passagedata pid="16" name="Shinjuku" tags="Yamanote" position="7350,1025" size="200,100">$clock
 Shinjuku
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Yoyogi&quot;)[(set: $clock to it + 3, $status to 1)]
@@ -186,7 +186,7 @@ Shinjuku
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Shin-Okubo&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="17" name="Yoyogi" tags="Yamanote" position="1800,2300" size="200,100">$clock 
+]</tw-passagedata><tw-passagedata pid="17" name="Yoyogi" tags="Yamanote" position="7400,1275" size="200,100">$clock 
 Yoyogi
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Harajuku&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -198,7 +198,7 @@ Yoyogi
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Shinjuku&quot;)[(set: $clock to it + 3, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="18" name="Otsuka" tags="Yamanote" position="2400,1100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="18" name="Otsuka" tags="Yamanote" position="8000,75" size="100,100">$clock 
 Otsuka
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Ikebukuro&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -210,7 +210,7 @@ Otsuka
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Sugamo&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="19" name="Sugamo" tags="Yamanote" position="2525,1100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="19" name="Sugamo" tags="Yamanote" position="8125,75" size="100,100">$clock 
 Sugamo
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Otsuka&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -222,7 +222,7 @@ Sugamo
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Komagome&quot;)[(set: $clock to it + 3, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="20" name="Komagome" tags="Yamanote" position="2650,1100" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="20" name="Komagome" tags="Yamanote" position="8250,75" size="100,100">$clock 
 Komagome
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Sugamo&quot;)[(set: $clock to it + 3, $status to 1)]
@@ -234,7 +234,7 @@ Komagome
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Tabata&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="21" name="Mejiro" tags="Yamanote" position="1900,1400" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="21" name="Mejiro" tags="Yamanote" position="7500,375" size="100,100">$clock 
 Mejiro
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Takadanobaba&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -246,7 +246,7 @@ Mejiro
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Ikebukuro&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="22" name="Tabata" tags="Yamanote" position="2775,1150" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="22" name="Tabata" tags="Yamanote" position="8375,125" size="100,100">$clock 
 Tabata
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Komagome&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -258,7 +258,7 @@ Tabata
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Nishi-Nippori&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="23" name="Nishi-Nippori" tags="Yamanote" position="2900,1250" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="23" name="Nishi-Nippori" tags="Yamanote" position="8500,225" size="100,100">$clock 
 Nishi-Nippori
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Tabata&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -270,7 +270,7 @@ Nishi-Nippori
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Nippori&quot;)[(set: $clock to it + 1, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="24" name="Nippori" tags="Yamanote" position="3000,1400" size="200,100">$clock 
+]</tw-passagedata><tw-passagedata pid="24" name="Nippori" tags="Yamanote" position="8600,375" size="200,100">$clock 
 Nippori
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Nishi-Nippori&quot;)[(set: $clock to it + 1, $status to 1)]
@@ -285,7 +285,7 @@ Nippori
 ]
 
 
-[[Skyliner Line]]</tw-passagedata><tw-passagedata pid="25" name="Ikebukuro" tags="Yamanote" position="2100,1150" size="100,100">$clock 
+[[Skyliner Line]]</tw-passagedata><tw-passagedata pid="25" name="Ikebukuro" tags="Yamanote" position="7700,125" size="100,100">$clock 
 Ikebukuro
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Mejiro&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -297,7 +297,7 @@ Ikebukuro
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Otsuka&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="26" name="Uguisudani" tags="Yamanote" position="3000,1525" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="26" name="Uguisudani" tags="Yamanote" position="8600,500" size="100,100">$clock 
 Uguisudani
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Nippori&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -309,7 +309,7 @@ Uguisudani
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Ueno&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="27" name="Ueno" tags="Yamanote" position="3000,1700" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="27" name="Ueno" tags="Yamanote" position="8600,675" size="100,100">$clock 
 Ueno
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Uguisudani&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -321,7 +321,7 @@ Ueno
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 1, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="28" name="Shimbashi" tags="Yamanote" position="2900,2750" size="100,100">
+]</tw-passagedata><tw-passagedata pid="28" name="Shimbashi" tags="Yamanote" position="8500,1725" size="100,100">
 $clock 
 Shimbashi
 
@@ -336,7 +336,7 @@ Shimbashi
 		(link-reveal-goto: &quot;continue&quot;, &quot;Hamatsucho&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
 ]
-</tw-passagedata><tw-passagedata pid="29" name="Yurakucho" tags="Yamanote" position="3000,2600" size="100,100">$clock 
+</tw-passagedata><tw-passagedata pid="29" name="Yurakucho" tags="Yamanote" position="8600,1575" size="100,100">$clock 
 Yurakucho
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -348,7 +348,7 @@ Yurakucho
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Shimbashi&quot;)[(set: $clock to it + 1, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="30" name="Kanda" tags="Yamanote" position="3000,2200" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="30" name="Kanda" tags="Yamanote" position="8600,1175" size="100,100">$clock 
 Kanda
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -360,7 +360,7 @@ Kanda
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Tokyo&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="31" name="Tokyo" tags="Yamanote" position="3000,2400" size="200,100">$clock 
+]</tw-passagedata><tw-passagedata pid="31" name="Tokyo" tags="Yamanote" position="8600,1375" size="200,100">$clock 
 Tokyo
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -372,7 +372,7 @@ Tokyo
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Yurakucho&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="32" name="Akihabara" tags="Yamanote" position="3000,2000" size="200,100">$clock 
+]</tw-passagedata><tw-passagedata pid="32" name="Akihabara" tags="Yamanote" position="8600,975" size="200,100">$clock 
 Akihabara
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Okachimachi&quot;)[(set: $clock to it + 1, $status to 1)]
@@ -384,7 +384,7 @@ Akihabara
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Kanda&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="33" name="Okachimachi" tags="Yamanote" position="3000,1850" size="100,100">$clock 
+]</tw-passagedata><tw-passagedata pid="33" name="Okachimachi" tags="Yamanote" position="8600,825" size="100,100">$clock 
 Okachimachi
 (if: $status is 0)[
 	(link-reveal-goto: &quot;uchimawari&quot;, &quot;Ueno&quot;)[(set: $clock to it + 2, $status to 1)]
@@ -396,11 +396,11 @@ Okachimachi
 	](else:)[
 		(link-reveal-goto: &quot;continue&quot;, &quot;Akihabara&quot;)[(set: $clock to it + 2, $status to 2)]
 	]
-]</tw-passagedata><tw-passagedata pid="34" name="Skyliner Line" tags="" position="3800,1400" size="100,200">
+]</tw-passagedata><tw-passagedata pid="34" name="Skyliner Line" tags="" position="9400,375" size="100,200">
 Aoto Station (10min)
 Shin-Kamagaya Station (12min)
 (20min)
-[[Narita Airport]] </tw-passagedata><tw-passagedata pid="35" name="Tokyo Tower" tags="" position="2650,2800" size="100,100">Tokyo Tower</tw-passagedata><tw-passagedata pid="36" name="Inside train" tags="" position="2700,2500" size="100,100">
+[[Narita Airport]] </tw-passagedata><tw-passagedata pid="35" name="Tokyo Tower" tags="" position="8250,1775" size="100,100">Tokyo Tower</tw-passagedata><tw-passagedata pid="36" name="Inside train" tags="" position="8300,1475" size="100,100">
 (set: $stations to (a: &quot;Shimbashi&quot;, &quot;Yurakucho&quot;, &quot;Tokyo&quot;, &quot;Kanda&quot;, &quot;Akihabara&quot;, &quot;Okachimachi&quot;, &quot;Ueno&quot;, &quot;Uguisuda&quot;, &quot;Nippori&quot;, &quot;Nishi-Nippori&quot;, &quot;Tabata&quot;, &quot;Komagome&quot;, &quot;Sugamo&quot;, &quot;Otsuka&quot;, &quot;Ikebukuro&quot;, &quot;Mejiro&quot;, &quot;Takadanobaba&quot;, &quot;Shin-Okubo&quot;, &quot;Shinjuku&quot;, &quot;Yoyogi&quot;, &quot;Harajuku&quot;, &quot;Shibuya&quot;, &quot;Ebisu&quot;, &quot;Meguro&quot;, &quot;Gotanda&quot;, &quot;Osaki&quot;, &quot;Shinagawa&quot;, &quot;Tamachi&quot;, &quot;Hamatsucho&quot;))
 
 (for: each _station, ...$stations)[
@@ -410,14 +410,14 @@ Shin-Kamagaya Station (12min)
 &lt;!-- 
 Gives a list of all the stations, in order of the inside loop.
 So player can jump to them.
---&gt;</tw-passagedata><tw-passagedata pid="37" name=":: NOTES ::" tags="" position="3500,1900" size="200,200">
+--&gt;</tw-passagedata><tw-passagedata pid="37" name=":: NOTES ::" tags="" position="9100,875" size="200,200">
 https://matcha-jp.com/en/15228
 
 9.5hr Sydney to Haneda
 (21:30 -&gt; 05:00)
 
 7hr Narita to Honolulu
-20:30 -&gt; 08:30</tw-passagedata><tw-passagedata pid="38" name="Chuo Line" tags="" position="2100,2000" size="100,200">
+20:30 -&gt; 08:30</tw-passagedata><tw-passagedata pid="38" name="Chuo Line" tags="" position="7700,975" size="100,200">
 Chuo Line stations
 
 Rapid trains  - kaisoku
@@ -435,7 +435,7 @@ Akihabara (2)
 
 (Shinjuku to Akihabara is 18min)
 
-https://www.japan-guide.com/e/e2372.html</tw-passagedata><tw-passagedata pid="39" name=":: NOTES :: Austin" tags="" position="3600,3100" size="100,100">
+https://www.japan-guide.com/e/e2372.html</tw-passagedata><tw-passagedata pid="39" name=":: NOTES :: Austin" tags="" position="9200,2075" size="100,100">
 Austin is the player character.
 
 Edge of 30.
@@ -469,7 +469,7 @@ Type 2 with a wing of 5 would bring a unique blend of empathy, insight, independ
 https://www.youtube.com/watch?v=PbBH7ftgXTg
 
 What are you writing about?
-</tw-passagedata><tw-passagedata pid="40" name="Flight to Japan" tags="" position="2900,3500" size="100,100">
+</tw-passagedata><tw-passagedata pid="40" name="Flight to Japan" tags="" position="8475,2350" size="100,100">
 You look at the three seats.
 
 Window, Middle or Isle seat?
@@ -499,7 +499,7 @@ Arrives in Tokyo at 6:30.
 
 You&#39;ve slept maybe 4 or 5 hours at the most. A bit lost in your thoughts.
 
-[[Haneda Airport]] </tw-passagedata><tw-passagedata pid="41" name=":: ChatGPT guidance ::" tags="" position="2200,2400" size="100,100">What would a Type 2, who is in stress acting like an 8 think if they believed they were a 5 acting in growth?
+[[Haneda Airport]] </tw-passagedata><tw-passagedata pid="41" name=":: ChatGPT guidance ::" tags="" position="7800,1375" size="100,100">What would a Type 2, who is in stress acting like an 8 think if they believed they were a 5 acting in growth?
 ChatGPT
 A Type 2 under stress often exhibits behaviors associated with Type 8, becoming more assertive, controlling, and possibly aggressive as a way to protect themselves and cope with feelings of vulnerability and rejection. However, if this Type 2 mistakenly believes they are a Type 5 in growth, they might misinterpret their behaviors and motivations. Here’s how this misunderstanding might manifest and what they might think:
 
@@ -781,7 +781,1069 @@ I&#39;ve just finished the Commercial Pilot exams, and have a few more </tw-pass
 Can the conversation pull the story?
 
 Trauma points as you go around the loop?
-</tw-passagedata><tw-passagedata pid="53" name="Untitled Passage" tags="" position="3600,4200" size="100,100">
+</tw-passagedata><tw-passagedata pid="53" name="Departure Lounge" tags="" position="103,302" size="100,100">Queueing area.
+
+	//&quot;What is your reason for visiting the USA?&quot;// The Customs Official asked.
+	(link:&quot;&gt; explain you are flying home&quot;)[=
+	&quot;Travel, I am transiting through New York for a day. Then flying back to Australia,&quot; You reply, worried there would be some complication because of the small lie you told when you entered Canada. They didn&#39;t remove the Departure card because you had said you were only visiting Montreal for a weekend.
+	
+	//&quot;Ok,&quot;// The Official smiled. She checked the front page of your passport and then stamped and stapled the Arrival-Departure card inside. //&quot;Don&#39;t loose this Arrival-Departure card. It is required to exit the USA when you fly home.&quot;//
+	
+	&quot;It will stay stapled in,&quot; You answer.
+	
+	//&quot;And have a good journey Mr Casey.&quot;// She then hands you your boarding pass and passport with the Arrival-Departure card stapled inside.
+	
+	You walk quickly through the Duty Free area, very aware you only have US$35 and a credit card in your wallet. [[Check your boarding pass]]</tw-passagedata><tw-passagedata pid="54" name="Check your boarding pass" tags="" position="103,453" size="100,100">(dialog:&quot;Boarding Pass/Carte d&#39;acces a bord
+	&#39;&#39;Air Canada&#39;&#39;
+	^^Flight/Vol et date:^^ AC 0742 28Jul
+	^^Gate/Porte:^^ 74
+	^^Seat/Place:^^ 21A &lt;!-- left window, next to 21C isle --&gt;
+	^^Boarding Time/Heured&#39;embarquement:^^ 0810
+	^^From/De:^^ Montreal
+	^^To/Destination:^^ LaGuardia-M
+	^^Name/Nom:^^ Michael, Dylan&quot;,&quot;board&quot;)
+	
+	You board the flight and take your seat behind the over wing exit row.
+	
+	A young woman in a plain black t-shirt with dark shoulder length hair, a light tan and brown eyes slows checking the seat numbers near your seat. She stops puts her green leather shoulder bag on the seat next to you, and pulls out a red checked flannel or maybe tartan scarf. Then she pushes her bag up into the overhead compartment.
+	
+	&quot;Hi,&quot; The young woman says as she sits down. &quot;This is going to be the shortest flight I have been on,&quot; she continues with a smile. You can&#39;t pick where she is from, if the accent is French or something else.
+	
+	&gt; [[The flight to New York is over 500km]]
+	&gt; [[I&#39;ve been on shorter flights]]</tw-passagedata><tw-passagedata pid="55" name="The flight to New York is over 500km" tags="" position="28,603" size="100,100">{&quot;The flight to New York is a little over 500km.&quot; You begin to explain, but then decide to just say: 
+	(display: &quot;I&#39;ve been on shorter flights&quot;)}</tw-passagedata><tw-passagedata pid="56" name="I&#39;ve been on shorter flights" tags="" position="178,603" size="100,100">&quot;I&#39;ve been on one or two shorter flights.&quot;
+	
+	//&quot;Where?&quot;// She querries reaching forward to check the seat pocket for something to read.
+	
+	&quot;I can think of two. I&#39;ve once flew from Canberra to Sydney what was maybe half this distance (240km). I also flew from Melbourne to Launceston once what is 450km,&quot; you explain.
+	
+	She turns to you with a smile, //&quot;Wow. Are you from Australia?&quot;//
+	
+	&gt; [[Yes, my name is...]]</tw-passagedata><tw-passagedata pid="57" name="Yes, my name is..." tags="" position="178,753" size="100,100">(text-colour:red)[&quot;Yes, my name is Dylan from the La...&quot;] You stop yourself before you continue the spiel of introducing yourself as a member of the political group.
+	
+	//&quot;From where?&quot;// She asks, eyes narrowing on your face. Intrigued.
+	
+	(display:&quot;#linklet&quot;)</tw-passagedata><tw-passagedata pid="58" name="ask for her name" tags="" position="399,98" size="100,100">{(storylet: when visits is 0)
+	(exclusivity: 0)
+	(urgency: 5)
+	&lt;!-- check for bonus of waiting so long to ask her name --&gt;}
+	&quot;What is your name?&quot;
+	
+	//&quot;(text-colour:orange)[Carla] Barbero, I&#39;m from Velencia.&quot;// She answers holding out her hand.&lt;!-- Carla Barbero Cardell --&gt;
+	
+	You shake hands.
+	(display:&quot;#linklet&quot;)</tw-passagedata><tw-passagedata pid="59" name="#linklet" tags="" position="27,901" size="100,100">(for: each _p, ...(open-storylets:)&#39;s 1stTo4th)[
+	&gt; (link-goto: _p&#39;s name)]</tw-passagedata><tw-passagedata pid="60" name="expalain that just quit a political group" tags="" position="523,99" size="100,100">{(storylet: when visits is 0)
+	(exclusivity: 0)
+	(urgency: 5)}
+	hmm
+	(display:&quot;#linklet&quot;)</tw-passagedata><tw-passagedata pid="61" name="TimeCtrl" tags="" position="901,98.5" size="100,100">{&lt;!--This script edits the minutes, hours in a day (i.e turn -5 min to 55min and revert the hour)--&gt;
+	(if: $min is &gt;59)[
+	  (set: $hour to $hour + 1)
+	  (set: $min to $min - 60)
+	](else-if: $min is &lt;0)[
+	  (set: $hour to $hour - 1)
+	  (set: $min to 60 - $min)
+	]
+	
+	(if: $hour is &gt;23)[
+	   (set: $day to $day + 1)
+	   (set: $hour to $hour - 24)
+	](else-if: $hour is &lt;0)[
+	   (set: $day to $day - 1)
+	   (set: $hour to 24 - $hour)
+	]
+	
+	&lt;!-- note it doesn&#39;t handle the day, as game is designed to be 28, 29, 30th of July--&gt;
+	}</tw-passagedata><tw-passagedata pid="62" name="#header" tags="header" position="1016,155.5" size="100,100">{ &lt;!-- increment the standard 5min for turn, and then adjus the time 
+	(note - some passages had time modifiers to counter or increase this) --&gt;
+	(set: $min to $min+5)
+	(display: &quot;TimeCtrl&quot;)
+	
+	&lt;!-- display: time - date - location --&gt;
+	(text-colour:(hsl:0,0,0.5333,0.45))[(if: $hour is &lt;10)[0]$hour:(if: $min is &lt;10)[0]$min - $day/Jul/06 - $location] $|cashNo&gt;[$cash] 
+	}
+	</tw-passagedata><tw-passagedata pid="63" name="#startup" tags="startup" position="1016,41.5" size="100,100">{ &lt;!-- setting up the variables used in the story --&gt;
+	(set: $hour to 6) &lt;!-- this is military time, 0hr-&gt;23hr --&gt;
+	(set: $min to 28) &lt;!-- time usually ticks in 5 min intervals --&gt;
+	(set: $day to 28) &lt;!-- The Game is on Fri 28 and Sat 29 July 2006 --&gt;
+	(set: $location to &quot;Montreal Airport&quot;) &lt;!-- --&gt;
+	(set: $destination to &quot;New York&quot;) &lt;!-- where you are headed --&gt;
+	(set: $cash to 10)
+	(set: $d1 to &quot;Doug&quot;)
+	}</tw-passagedata><tw-passagedata pid="64" name="747 Bus" tags="" position="2500,300" size="100,100">
+	You shoulder your [dufflebag]&lt;c1| over the strap of backpack and step onto the [747 bus]&lt;c2|. $d1
+	
+	Through the silent journey, as you watch the concrete industrial buildings and fields zoom by on the express way, you feel a |Sadness&gt;[pang of sadness][what?]
+	
+	[]&lt;c5|
+	(click: ?c1)[(replace:?c5)[A hand-me-down from your great aunt.]]
+	(click: ?c2)[(replace:?c5)[A garish shade, to your reckoning.]]
+	(click: ?c3)[(replace:?c5)[Only their faint shine keeps them from being seen as grey.]]
+	(click: ?c4)[(replace:?c5)[Dreadfully heavy, they weigh you down and make dancing arduous.]]
+	
+	
+	&lt;!--
+	Leaving a cult is often a drawn out and difficult process.
+	The most common reason for leaving is disillusionment with either the leadership or other group members.
+	These are &quot;Push factors&quot; and serve to drive the individual away from the group. Once they begin to take effect &quot;pull factors&quot; such as relationships with family and friends become much more impactful.
+	
+	If they are mainly motivated by companionship and the need to belong to a group they are also highly vulnerable to disillusionment if the friends the group or the leaders do not live up to the high expectations of friendship loyalty and leadership.
+	When disillusionment took place a dismissal of the group&#39;s narative also followed.
+	
+	The narative is - an economic collapse will happen because of the rotten economy.
+	
+	pseudo-personality (that ingested the cult&#39;s bullshit/lies) and the pre-cult personality. To aid in the post-cult identity is aided by chewing the introjected (gestalt process) part being broken down - any positive or nourishing aspects retained and toxic or harmful elements discarded.
+	
+	impacts range from low self-esteem, increased narcissism and depression to the more abstract - such as users having a tendency to jump to incorrect conculsions about other users social, physical and moral qualities.
+	
+	conspiracy therories are main stream. Reading garbage and beliving it.
+	
+	&quot;down the rabbit hole&quot; 
+	
+	don&#39;t pigeon hole them, actually read it and talk about the issue with them. 
+	
+	A small league of golden souls who had mastered Lyndon&#39;s philosophies to overthrow the British Oligarchy.
+	Teaching his ideals will lead to unpresidented technological leaps.
+	
+	Pull all the money from cult members -
+	&quot;Loans for research&quot;
+	
+	NCLC Inteligence gathering - with Reagan. Bad Intel in EIR.
+	Democratic Leadership Commity.
+	
+	Fussion Energy Foundation - in 1983 beams weapons - SDI.
+	Isolating supporters in Leesberg Virgina. 
+	
+	A 440hz, 432hz. 
+	singing slave spiritals. --&gt;</tw-passagedata><tw-passagedata pid="65" name="Flight to Melbourne" tags="" position="3700,100" size="200,100">(dialog:&quot;{color:cyan}&#39;&#39;QANTAS&#39;&#39;
+	^^Flight:^^ QF 421 31Jul
+	^^Gate:^^ XX
+	^^Seat:^^ 06C
+	^^Boarding Time:^^ 0915am
+	^^From:^^ SYD
+	^^To:^^ MEL
+	^^Name:^^ Mr Cyril Casey&quot;, &quot;board&quot;)
+	
+	This is the epilogue
+	
+	It is Monday morning, you probably are bleary eyed after the long flight.
+	
+	The flight is a little over an hour in the air, with boarding at 0915 – 
+	and arriving in Melbourne around 1045.
+	
+	
+	
+	If you resolve within yourself, it is a happy trip.
+	You are optomistic, with a world of posibilities awaiting you when you land.
+	
+	(Think about how nice the hosty was, giving you extra fruit)
+	Above the clouds the cabin is bright, and not too full.
+	You have an isle seat.
+	
+	
+	If you are still weighed down by the cult then... well it is not so nice.
+	
+	
+	But arriving in Melbourne it is cold and overcast.</tw-passagedata><tw-passagedata pid="66" name="Flight to Sydney (part 1)" tags="" position="3300,100" size="200,100">(dialog:&quot;
+	&#39;&#39;&lt;span class=\&quot;hi\&quot;&gt;QANTAS&lt;/span&gt;&#39;&#39;
+	^^Flight:^^ QF 108 29Jul
+	^^Gate:^^ XX
+	^^Seat:^^ 63 K
+	^^Boarding Time:^^ 1815
+	^^From:^^ LAX
+	^^To:^^ SYD
+	^^Name:^^ Mr Cyril Casey&quot;, &quot;board&quot;)
+	
+	6hr flight
+	You can watch a storm over the mid-west desert
+	
+	Take off 1830 landing in LA at 2130
+	
+	Your seat is on the starboard side, so you look north over the USA during the flight.
+	Maybe you know POSH - Port Out, Startboard Home &quot;and think this is a POSH seat as you are starboard home).
+	Row 63 is the 4th row in the last section of the cabin. Economy.
+	
+	Then you have about 1.5hrs at LAX where nothing is open, it is just uncomfortable seats next to the plane.
+	</tw-passagedata><tw-passagedata pid="67" name="Flight to Sydney (part 2)" tags="" position="3300,300" size="200,100">LAX to Sydney
+	
+	15 hours
+	same seat (63K) against the window looking North.
+	
+	Take off 2300 - landing in Sydney at 0700.
+	
+	The whole flight is darkness over the Pacific ocean, maybe looking out the window you see a distant light.
+	
+	But mostly you see clouds, or darkness and the reflection of the plane&#39;s strobes.
+	</tw-passagedata><tw-passagedata pid="68" name="Sydney Airport Ground Transfer" tags="" position="1213,480.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="69" name="Waiting at LAX" tags="" position="1213,356.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="70" name="Focus on what you can do" tags="" position="500,300" size="100,100">
+	Focus on what you can do, rather than stress about what you have no control over.
+	
+	A year from now you may wish you had started today</tw-passagedata><tw-passagedata pid="71" name="Last night in Montreal" tags="" position="300,225" size="100,100">
+	You want to scream.
+	
+	Rob and Val
+	
+	Elodie and Patrick, two members of the Montreal office, who you haven&#39;t managed to keep track off. Who for the past month have been elsewhere, and not in the office. Have just insulted you.
+	
+	Telling you about how the rest of the Australian team, are working hard singing for the recently passed organiser Brock.
+	
+	&quot;I can&#39;t believe how selfish you are?&quot; Elodie started.
+	&quot;The rest of the team is in there recording a song for Brock, and you are here alone and getting out of the movement for what?&quot;
+	&quot;I understand, they are doing what they can,&quot; I offer to console.
+	&quot;No you don&#39;t,&quot; Patrick retorts. &quot;You should be ashamed of yourself,&quot; 
+	
+	&quot;I am sorry,&quot;
+	&quot;Everyone else I have spoken to. But you two, I barely know. I actually thought you had left, I saw you Elodie working the other day.&quot;
+	&quot;With Jean-Phillipe and Pascal I reguarly would go organising with. Even though I can&#39;t even say Bonjour properly, I would go with them to try and learn.
+	Even </tw-passagedata><tw-passagedata pid="72" name="When you found out" tags="" position="625,300" size="100,100">
+	* When you found out Will hasn&#39;t paid any contributions for food
+	
+	* or Kelly and Will had moved into the back of the old office so they could go drinking after the last train.
+	
+	* Found the condom when cleaning up the couch, that Will and Kelly shared for a week.
+	
+	* How rascist Kelly was, even going as far as to claim everyone in Montreal can speak English but choose to speak French because they hate us.
+	
+	
+	</tw-passagedata><tw-passagedata pid="73" name="ALYM - org reports" tags="" position="1500,1500" size="100,100">https://web.archive.org/web/20060402220433/http://melb-lym.blogspot.com/
+	&quot;Daily Report for 23 January 2006. Today we had a Schmitt Hot organising day on Collins street...
+	&quot;Shane as the site was cooling down a little (with not many people after the Lunch time rush) went to some back alleys where on briefing a guy another one stopped and listened, the other guy then got a CoSIV and listened to the stuff on how &quot;The Unitary Executive translated into German is Führer&quot; when he offered him a job in his consulting firm because of his hard hitting briefing. Shane then explained intention to him and got a small donation from the guy.
+	
+	We then moved out table two or three blocks down the street to a busy intersection catching people going home or to their arvo shift job. Shane called out to a guy who shouted back &quot;I don&#39;t give a stuff about any of the people!&quot;, Shane challenged him and he came back a second latter. Shane got him to explain why he doesn&#39;t care about people, he explained his story about having to pay huge court fines and being unemployed and now not caring about anything (how he was an underdog) Shane then told him &quot;I knew you cared about something&quot;, and the guy then asked Shane what he was doing, and after explaining why he was on the street (to organise the people to care in a more directed way) the guy asked about what was going on politically, then about our philosophy leading into a good five-ten minute discussion. At which the guy then ran away seeing that he was caring...&quot;
+	
+	
+	http://lymcanada.org/classes/
+	Audios of some classes when we were in Montreal, and a debrief
+	
+	http://www.larouchepub.com/eiw/public/2005/2005_50-52/2005-51/pdf/04_49_dialog_lhl.pdf
+	A pdf about the requirements of the LYM &lt;- mostly verbal poo from LydonLaRouche
+	
+	https://www.cecaust.com.au/main.asp?act=pics&amp;sub=alym/photos&amp;id=33&amp;cnt=4&amp;nme=ozilym
+	Photos from the first cadre school
+	
+	https://www.cecaust.com.au/alym/remarks.html
+	December 2004 LaRouche talk
+	(this was the Cadre School, where all the visitors were organised by me except Larner)
+	I wore a Melbourne Uni shirt
+	
+	https://web.archive.org/web/20050617024830/https://www.cecaust.com.au/alym/reports.html
+	A weekly report - by Lucas (I never knew these were a thing)
+	
+	http://www.cecaust.com.au/alym/whatis.html
+	&quot;The secret of statecraft, as distinct from mere politics, is the work of raising the level of more and more parts of the population from their accustomed small-mindedness and intellectual mediocrity, to a sense of the beauty of ideas of principle. Populism, which is the generic name for those doses of mediocrity by which oligarchs turn most ordinary people into bleating sheep (to be herded by nasty beasts), induces people to dumb themselves down into an approximation of herded cattle...&quot;
+	
+	I wish my version with the LaRouche youth are wierd was here
+	
+	http://cecaust.com.au/lym/talktolyn.html
+	&quot;On Australia&#39;s Identity
+	
+	If you&#39;re asking the typical question &quot;What does LaRouche have to do with Australia?,&quot; or &quot;Why are you working with an American?,&quot; then you need a dose of healthy truth. As you read LaRouche in dialogue with the Australian youth committed to creating a Renaissance, ask yourself, &quot;What am I doing for future generations?&quot;
+	
+	Then, once you think you know what the purpose of the LYM is, read LaRouche&#39;s dialogue with the LYM: &quot;The Principle of &#39;Power&#39;&quot;
+	
+	Lyndon LaRouche&#39;s message to the Labor Day cadre school, March 6 2004.
+	
+	&quot;Well, you&#39;ve got quite a job to do. If you&#39;ve got 40, you&#39;ve got the base for building something. Because it takes class sizes of 15 to 25, to do any real intellectual work of any importance to a youth movement. You have to think of a youth movement as a university-on-wheels, which is somewhat like a regular university, except the people in it generally work harder at knowledge, than people in universities do. People in universities tend to be very lazy. They get habits, they get routines. They try to pick up learning, rather than actually going through the process of discovering knowledge. Whereas young people who will go through the Socratic method of Plato, starting from rather elementary questions, to build up actual discoveries of knowledge-they work much harder. They have much better motivation. And they develop much better moral character.
+	&quot;
+	
+	
+	https://web.archive.org/web/20060110085149/http://cecaust.com.au/lym/reports.html
+	
+	&quot;Dec 15, 2005
+	The LaRouche Youth Movement last week deployed to Canberra to leave the politicians and the population with a Christmas present- EIRs and New Citizen Extras. The visit was short and powerful, lasting three days.
+	The first two mornings commenced early, hitting the Bus stations, Department of Foreign Affairs and Trade (DFAT), the Governor Generals Department, the Prime Ministers, Treasury and Finance departments.
+	EIRs were on the agenda and we set out to saturate and mobilise the population.
+	At DFAT, Kat and Brian had a guy who asked for two papers so he could give one to the Labor Party. When Kat asked if he did that last time he replied, &quot;I do it every time. It&#39;s a good read&quot;.
+	Some people at DFAT didn&#39;t think it was a good read. A security guard approached Kat and Brian asking them to step aside from where they were deploying so he could have a word.
+	&quot;There&#39;s been a report that you have been calling people a**holes. Is this true?&quot; Kat told him, &quot;If we did what you accuse us of, it would be counter productive to what they were doing.&quot; The security guard said that he didn&#39;t think we would do that as our visits are frequent, and we don&#39;t usually cause trouble.
+	At the buses, Adam had a person take an EIR, then come back to him after reading a few pages and told him that he agrees with what we were saying.
+	Another person Adam spoke to heard we were accused of being fascist but agreed with everything that came out of Adam&#39;s mouth!
+	We are noticing a lot, particularly as a result of our regular organising of the population with the NC, shifts in the mindset of the population.
+	Following the early morning deployments, we set up two tables in the mall. Both days we had balloons and a party-style atmosphere, wearing Christmas hats and giving Canberra a Christmas present -Dick Cheney&#39;s departure, and soon to follow, Johnny Howard&#39;s departure.
+	We had a lady who kept coming back to the table to talk to us and put in a donation each time. Aaron and Matt who spoke to her said, &quot;It was like she was doing a donation just to talk to us.&quot; She took an EIR and several NC&#39;s.
+	On the second day in the mall, Daniel met a guy who put in for an EIR, left his contact details and took not one, but four bundles of New Citizen Extra&#39;s which was a great help to us.
+	Doug spoke to a lady who had read the NC before and loved it. She contributed and encouraged us to keep up the fine work.
+	Kat had a similar incident where a lady had read our material about a year ago and wanted to sign up as a member but lost our contact details. She did a membership and got the literature she needed to get active in politics.
+	Kat spoke to a guy from the navy, who thought he already had the New Citizen she was handing him. He took it when he discovered that he didn&#39;t have that issue. They discussed the urgent need to get a new economic system, as per LaRouche&#39;s proposal and agreed that Cheney had to go.
+	The Youth did letter-boxing in the regions of Canberra, and Albury and Wodonga on the way back to Melbourne, getting out over 8000 NC&#39;s. Overall, a productive week of mass distribution.
+	
+	By Katherine Reid
+	
+	Dec 8, 2005
+	This was the first week that the LYM has spent in Melbourne for quite a few weeks, and was more than eventful with three interventions (including one with Scott Ritter, one at a state conference for the ALP and an intervention against a pro- free trade conference) and several meetings with state MP&#39;s to discuss the passing of an amendment to the existing [Crimes (Homicide) Bill], which legalises murder &quot;If the person carrying out the conduct reasonably believes that …The conduct is a reasonable response to the emergency.&quot; We also had one of our contacts, Lars from WA, over for the week, and stepped up our intellectual routine to account for a shortage of time whilst travelling and the like. On Tuesday night the LYM members were inspired to stay up to past three am reading Plato&#39;s Phaedo dialogue, in which Plato develops the conception of immortality.
+	The LYM started the week by mobilising to get out as many of our last NCE&#39;s in Melbourne as was humanly possible. We did this with great success, having literature towers set up on more than one day and getting very polarised reactions about LaRouche, ranging from the occasional freak-out by pro- free trade members of the 68er generation to one case when a complete stranger whom we had met over a month ago, gave Doug and Kat a free lift back to our bus.
+	The highlight though, was, without doubt, the intervention with Scott Ritter, former UN weapons inspector and opponent to the Iraq war. This was an entirely new experience for our newest recruit Daniel, as well as Lars. After Scott Ritter&#39;s speech, in the Question and Answers section, we got a chance to ask him what he thought about LaRouche, to which he replied: &quot;No comment&quot;!! Members of the LYM approached him in the aisle, and Rachael asked him what he thought about the Cheney/torture question. Ritter, being an ex-intelligence operator and soldier, reacted violently against what Cheney is doing. As the discussion started to take off, one of the events organisers pulled Ritter away from us to go upstairs to his book signing. Kat and Aaron out-flanked Ritter again when they went to buy a copy of his book, &quot;Iraq Confidential&quot; for our library. When asked who to make it out to, Aaron replied, the &quot; LaRouche Youth Movement.&#39; Kat presented him with the Cheney torture EIR. Ritter said that he had already got one and that he reads EIR every week on the Internet. He also said that he speaks to one of our phone organisers in the US every week. Kat got him to sign an EIR for us as well, which is going into our library. They were then asked to move so that the book-signing could continue.
+	The intervention at the state conference of the ALP was definitely one to remember, with the LYM singing canons such as, &quot;End Impotence in the ALP, go back to Curtin, and Ben Chifley,&quot; and &quot;End speculation, get a New Bretton Woods, Like LaRouche has said, Rebuild the world.&quot; We had very good responses (bar the occasional impotent unionist), especially from older members of the Labor Party who personally remember the legacies of men like Curtin. Doug had long conversations with a number of State MP&#39;s concerning the work that the LYM is doing in the U.S. with the UAW, (United Auto-motive Workers) including the rally we had with them on Capitol Hill. One bewildered MP replied that Lyn &quot;needs more real life experience&quot; to which Doug replied, &quot;Oh, he has plenty of that.&quot; We were in many ways the life of the party, to the extent that when Kat was waiting in queue to get some food, every single other person in the line was discussing LaRouche&#39;s campaign in the U.S. which most are knowledgeable about due to the links between the ALP and the Democrats. We got out a bundle or so of LaRouche&#39;s program for America.
+	
+	By Adam Ellery&quot;
+	
+	</tw-passagedata><tw-passagedata pid="74" name="ALYM - quotes" tags="" position="1500,1300" size="100,100">In all really important developments in history, things are never really what traditional ways of thinking have been able to recognize up to that point. The popular mind clings desperately to its old ways of thinking, up to the proverbial last minute, or even beyond that, and attempts, desperately, even hysterically, to interpret the existence of the crisis-elements of a radically changed, new situation, as a continuation of the doomed old, habitual ways.
+	
+	-LaRouche, The Gravity of Economic Intentions
+	
+	
+	
+	It&#39;s no good sitting back and complaining about what&#39;s going on in the world. I realised that I have no right to complain unless I&#39;m doing something about it.
+	
+	- Daniel
+	
+	Our political campaigns to defeat the Synarchists once and for all, and to create a national bank to rebuild the country, provides the mission to get elected, which will be strengthened by the Youth Movement. If you are young, and wondering what to do with your life, get into the office and join the Australian Intellectual Revolution!
+	
+	- Doug
+	
+	
+	http://cecaust.com.au/alym/reports2.html
+	 What Gauss attacked, specifically, was Euler’s and Lagrange’s fraudulent evasion of the fact that their false argument depended axiomatically on “ivory tower” adherence to the prescriptions of a Cartesian geometry. What Gauss had demonstrated in his 1799 paper on the fundamental theorem, is that the real universe, the physical universe, does not conform to a mathematics premised on the assumed self-evidence of Cartesian geometric assumptions, but, rather, a different universe, that of the complex domain, in which Leibniz’s universal physical principle of least action occupies a central position.
+	—Lyndon LaRouche; Insanity as Geometry: Rumsfeld as Strangelove II, March 26, 2003.
+	
+	
+	There is simply not the space here to even begin to work through the paper, and that’s not the purpose of the report. Anyone who wants to work through it, should ring the CEC National Office, get a copy of the paper sent to them, and then talk to an ALYM member. 
+	
+	
+	</tw-passagedata><tw-passagedata pid="75" name="ALYM - about (web 2003)" tags="" position="1500,1100" size="100,100">Some members of the ALYM will tell you that we are training to be statesmen, while others will tell you that we are campaigning to get the CEC elected. The truth be told, we are sort of doing both, but to get the story across more clearly, the “University on wheels” title sometimes given to the LaRouche Youth Movement has been taken here, and we have made an introductory course to what the ALYM is about, or ALYM 101.
+	
+	
+	* The ALYM endeavors to maintain where possible weekly classes for interested people between the ages of generally 16 and 25. These classes are aimed at broadening ones understanding of the world and universe in which we live, through the classical scientific method.
+	
+	*The LaRouche Youth Movement strongly intervened in a meeting hosted by the Australian Fabian Society (a &quot;pro-worker&quot; arm of British imperial policy, which runs the Australian Labor Party)
+	
+	* Since most of our classes are after hours, the entrance for youth events is via the carpark to the building (just press the buzzer on the door and you shouldn&#39;t have to wait very long before someone lets you in).</tw-passagedata><tw-passagedata pid="76" name="LYM link" tags="" position="300,1400" size="100,100">https://larouchepub.com/lar/2003/3007cadre_sch.html
+	BUILDING A YOUTH MOVEMENT</tw-passagedata><tw-passagedata pid="77" name="ALYM history" tags="" position="1500,900" size="100,100">In October 2003 the members of the ALYM, with the help of some members of the International Youth Movement, organised its first &quot;Cadre School&quot;. The ALYM hopes to &quot;organize the youth population of the country and harness the enthusiasm and optimism that they offer.&quot; The ALYM works for CEC candidates in election campaigns, distributes LaRouche literature and collects signatures for petitions.
+	
+	The ALYM claims that its membership grew during the 2004 federal election campaign, during which they worked for CEC candidates in three election campaigns in the Melbourne region, in Maribyrnong, Calwell and Melbourne Ports, where they went door-to-door handing out copies of the election edition of the New Citizen, which featured articles on the fight for a National Bank in Australia and the founding of the Australian Liberal Party in the 1940s, and explaining the potential of &quot;LaRouche&#39;s New Bretton Woods&quot; and the &quot;dirty state of the Australian political scene&quot;.
+	
+	Twelve ALYM members ran for the House of Representatives and for the Senate in Victoria at the 2004 election. They also managed three flagship campaigns in the Melbourne Region, including the campaign of Aaron Isherwood, himself a member of the ALYM, standing against Michael Danby (long parliament&#39;s only Jewish MP and a well-known LaRouche opponent) in the seat of Melbourne Ports. All candidates were unsuccessful.
+	
+	-- wikipedia
+	
+	https://laroucheorganization.nationbuilder.com/20210404_larouche_show
+	
+	
+	https://aijac.org.au/australia-israel-review/no-joke/
+	
+	To LaRouche followers, baby boomers are a lost cause. “I can’t stress this enough, baby boomers are insane,” Hamler says. “They say: ‘Don’t mess with this LaRouche guy. You can’t endanger my comfort zone.’ They look at their kids as objects.”
+	
+	LaRouche followers are big on doubling the square. Outside the room where LaRouche just spoke is a signboard marked with a square and the teasing question: “Can you double this square?” As Hamler leads a reporter through trying to double the square, a small crowd gathers. 
+	
+	The cheerful young men clearly relish this exercise. It’s an important recruiting tool on street corners and college campuses across the United States and Europe. To join forces with LaRouche — to enter his world of conspiracies and counter-conspiracies — you have to accept that everything you know, even the way you think, is wrong.
+	
+	“They say things like LaRouche is a leader of a cult or that he is anti-Semitic, or some other vile epithet,” the release says. “Don’t be fooled by these rumors and lies.” They originate from Gestapo-style “thought police”, and the families of the financial oligarchy who “exert control over politics in the US, through the top-down management of ‘approved’ popular beliefs…”
+	
+	
+	</tw-passagedata><tw-passagedata pid="78" name="What LYM do" tags="" position="1700,100" size="100,100">The cadre school, held at a Virginia state park, was a taxing series of lectures and discussions that “scared you to death” about the state of the world, says Winstead, now 28. 
+	
+	“He tells these kids ‘You have no future, you are finished, the economy is collapsing. It’s going to be famine and flood… unless you find not God, but find me, or support me, or we win.’”
+	https://aijac.org.au/australia-israel-review/no-joke/
+	
+	http://larouchewatch.fileferrets.org/larouche-summer-camp.htm
+	
+	t&#39;s a political movement that a lot of people would describe as a cult because the leader, Lyndon LaRouche has complete and unquestioned control over all of their policy and operational choices. He thinks the British Empire is behind basically all the evil in the world, and that Obama is a Hitler-like figure, along with a lot of other crazy shit.
+	
+	Positively, I&#39;ve been exposed to a lot of stuff most kids my age haven&#39;t, such as classical music (I play violin and viola), Shakespeare, philosophy by Plato, etc. The movement is very interested in intellectual pursuits, &quot;expanding your mind&quot; and stuff like that. Instead of watch TV or listen to pop music, I listened to and played classical music and read books I could barely understand. I acted in King Lear when I was very young and know a lot of it by heart still.
+	
+	Negatively, my family is very poor and my upbringing has made me weird in a lot of ways it&#39;s hard to explain to anyone because they didn&#39;t grow up in a political cult. I can&#39;t relate with kids my age on a lot of things. I watched Nickelodeon and Cartoon Network sometimes at friends&#39; houses, but that&#39;s about it. Also, I suck really bad at video games because the movement (and therefore my parents) considered them evil and I rarely played as a kid. Harry Potter, most movies, all pop music (and jazz or blues), all evil and meant to dumb down the population, according to LaRouche.
+	
+	I tell most of my close friends and they&#39;re very interested when I tell them usually. They don&#39;t really give me negative shit for it.
+	
+	&quot;Participating&quot; entailed sitting in their office every day, attending their meetings and listening to webcasts by Lyndon LaRouche (he still gives them sometimes). Also going out on the street wearing signs and passing out our literature, talking to grown adults when I was 7+, telling them why Dick Cheney, Al Gore, John McCain, Joe Lieberman, etc. were evil puppets of the Queen of England. I didn&#39;t really know much about US Politics outside of the lens of the movement, obviously, since I was a kid.
+	
+	If I were head of this cult/organization, I&#39;d let the very smart and well-meaning people within it realize that they could have their own ideas and that their input was as valuable as mine. The movement is filled with people who really honestly do want to see the world a better, smarter, more intellectual and scientific-minded place, and I agree with them about all that. So I&#39;d like to get them to gear these passions in a useful, non-crazy direction.
+	
+	&gt;&gt;&gt; Wanting_to_know
+	·
+	10 yr. ago
+	
+	Larouchieama, thank you for posting. I recently went through a debunking process for myself from LaRouche. I agree with that that the organization has drawn to itself some very intelligent and dedicated people. Several years ago, I was searching around the internet to try to figure out what the heck was going on with the world and came across the LaRouche movement. In 2003, his commentary on Bush and Cheney seemed right on. And the organization was building what was to be the LaRouche Youth Movement.
+	
+	The US was in Iraq and the torture pictures has just come out from Abu Graeb (sp?). For me, as a previously apolitical person, it was great to see someone calling for the impeachment of Cheney as a puppet of whatever evil forces there were. LaRouche called it the oligarchy. I called in and was put in touch with someone with whom I became friends, even hosted a couple of the LaRouche Youth in my home. Then lost interested in their program. A couple of years ago, I was again distressed about what was going on and looked up LaRouche again. This time, I was very impressed with the caliber of the young people and the news and science they presented. (Yes, I now know it wasn&#39;t really, hard science and it was used to back up LaRouche&#39;s crazy ideas, but the young people were sincere and some of the information was solid and accurate.)
+	
+	Again, I hosted a few of the LaRouche Youth in my home, they were out promoting NAWAPA. I would describe them as sincere, concerned about the welfare of the nation, intelligent and wholesome. I would watch the video presentations on LaRouchePac. Sure, they were over the top with the Hitler mustache on Obama, but when one listens to their reasons, they seemed to back it up with what seemed at least plausible. The independent payment advisory board (IPAB) does have the authority to, with the stroke of a pen, determine which class of procedures can be denied, thus taking the power of medical decisions out of the hands of doctors and patients and their families. (Although this is what insurance companies and HMO&#39;s do and have been doing all along.) Obama did sign the NDAA (of course it had been approved by Congress) that allows for indefinite detention of US citizens without out trial, he is overseeing and expanding the drone strike program further enabling warfare to be surgically clean and not even be called warfare, etc, etc.
+	
+	The crazy thing about the LaRouche organization is that there seem to be sincere people in there, who somehow end up explaining LaRouche&#39;s paranoid world view with enough subsance to make it plausible. And there are plenty of crazy things to be explained even if it were not from LaRouche.
+	
+	Several months ago, I noticed that one of the LaRouche youth who had been at the forefront of the LaRouche Youth Movement (LYM), stopped being on the videos and wondered why. So occasionally I would search the internet for a clue. For LaRouche curious folks, Why We Left (WWL) by Sky Shields, et al is an indepth view into the paranoid world of Lyndon LaRouche. That document sent me back to the debunking process (I had done it once before, but somehow it didn&#39;t completely stick.) It is a strange organization that gives simple answers to complex problems. Glass-Steagall to fix our financial problems, NAWAPA, North American Water and Power Alliance, a grand scheme to bring fresh water down from Alaska, to put people back to work at scientifically and technologically advanced work. You know, build ourselvers out of the financial mess. Simple. If only the rest of the world would just listen, perhaps is they (the Larouchies) say it often enough and the world with listen, the problems with the economy and the world will be fixed.
+	
+	And yet, while I now completely agree that Lyndon LaRouche is bat shit crazy, I can also understand your situation. I consider myself reasonably intelligent, I never cared much for politics and was rather forcefully awakened to them by the current state of affairs in our country and our world. For a novice in the political world, LaRouche&#39;s explanations seemed to make as much sense as the pundits on the Left and on the Right that are always going after each other without getting to solutions. Ya gotta admit there is a lovely grandeur to the NAWAPA project, unfeasible as it is in today&#39;s political climate.
+	
+	My best to you, I would suggest that you, without ever mentioning it to your well meaning parents, attempt to get in contact with some of the young people that have left. Let the sorting out process begin. &lt;&lt;&lt;
+	https://www.reddit.com/r/IAmA/comments/10uzty/my_parents_are_both_members_of_the_lyndon/
+	
+	
+	https://www.henrymakow.com/2013/08/larouche-movement-a-cult-says-.html
+	MY STORY
+	
+	My involvement in the Larouche  Movement was at quite a low level, and it&#39;s not really &quot;bad&quot; per se.  I am grateful for having had this experience.  I am now much more aware of crucial matters than most people I encounter (mathematics, economics, arts, history) due to my involvement.  So my experience was more positive than negative.  (Without my Larouche experience, I probably wouldn&#39;t have followed your writing Henry.)
+	 
+	I left mostly because I wanted to go back to a normal life and to have a family (which is rather impossible when living in that movement).
+	 
+	But my experience was good because EVERYDAY, we would be practicing our voice to sing in &quot;Bel Canto&quot; method (the method of the Renaissance). We would read Classics in groups, either be Socrates&#39; Republic, Friedrich Schiller&#39;s plays, the Fundamental theorem of Algebra from Carl Freidrich Gauss or the Habilitation Dissertation from Bernard Riemann, or Gottfreid Leibniz&#39;s Monadology, calculus or metaphysics.  Constitutional papers was also read like the Federalist papers and so on.  Geometrical papers were also read and practiced.
+	 
+	The Larouche movement was my university.  We were briefed every morning (morning briefings) on how the political landscape was evolving and what would be our position, and how to be efficient.  This helped our organizing in the streets. I thought we would change the world for the better.
+	 
+	But at some point.. I had used up all my savings and wanted to get back to a normal life.  I still attended some classes, read Lyn&#39;s papers, organized from time to time.
+	 
+	kronberg-suicide.jpg(left. Kronberg committed suicide by jumping off a busy freeway bridge)
+	
+	KEN KRONBERG&#39;S DEATH
+	
+	But when Kenneth Kronberg died in 2007 and I saw the briefings following his death, I realized how lucky I was not to be forced to follow the narrative. There  was no compassion for Ken and gratitude for his lifelong contribution.  The youth group had to rationalize Ken&#39;s death in terms of Lyn&#39;s contempt against Baby Boomers.  The gist was that Baby Boomers had no idea how to create wealth (or that they only know how to consume, instead of producing).  
+	 
+	There was a untenable paradox in the air:  How could the youth think they could be saved when a lifelong contribution to the movement couldn&#39;t spare him from Lyn&#39;s contempt?    So what could spare you?  This is where the cult thing comes up.  I guess you have to follow everything Lyn&#39;s says.  Even if you have to crumble under major debt ON BEHALF OF HIM doesn&#39;t mean you&#39;ll get his respect.  Just thinking about this makes me puke.
+	 
+	Lyn created a tension between the youth and the Baby Boomers.  The Baby Boomers had to work hard trying to get donations (in telephone boiler rooms) while the youth were outside on the streets trying to persuade people and sell books. But Lyn kept the tension that the youth were doing &quot;right&quot;  by singing in the street, while Baby Boomers were &quot;wrong&quot; because they could never grasp the idea of being productive. 
+	</tw-passagedata><tw-passagedata pid="79" name="Untitled Passage 6" tags="" position="1500,100" size="100,100">LaRouche seems devoid of humility and genuine compassion or gratitude for his devoted followers. </tw-passagedata><tw-passagedata pid="80" name="CEC Youth Paper" tags="" position="100,1400" size="100,100">http://cec.cecaust.com.au/pubs/pdfs/ncye09-05.pdf
+	
+	I am ashamed to have written this shit on page 1
+	&quot;Culture of Death!&quot; no -
+	
+	&quot;&quot;&quot;
+	Australian youth have inherited a dying culture, which was engineered toward that end. We all believe on some level or another, that this is a culture of no future, a culture that cannot continue.
+	&quot;&quot;&quot;
+	
+	Now, look at some of the other
+	hallmarks of the devastation of our
+	generation:
+	* 6% of year 11 and 12 students
+	commit acts of self harm. (Austral-
+	ian 2/8/05)
+	* One in every three young peo-
+	ple admitted to the adolescent med-
+	ical unit at the Royal Children’s
+	Hospital Melbourne are mental
+	health related (Sunday Age 26/06/
+	05), while one in five of all young
+	Australians have mental health
+	problems. (The Age 22/7/05).
+	* 15% of deaths among Austral-
+	ian youth between 1993 and 2002,
+	a staggering 2643, can be attribut-
+	ed to the consumption of alcohol
+	(Canberra Times 13/11/04), and one
+	teenager a week dies from alcohol-
+	related causes (The Age 29/12/04).
+	* Half of Victorian 19-20 year
+	olds are depressed, anxious, binge
+	drink and partake in illegal behav-
+	ior according to the latest Austral-
+	ian Institute of Family Studies re-
+	port.
+	Ask yourself how much of this
+	suffering and misery and death
+	could have been prevented?
+	
+	COVERS http://cec.cecaust.com.au/main.asp?sub=pubs&amp;id=newcitizen.htm
+	</tw-passagedata><tw-passagedata pid="81" name="Untitled Passage 8" tags="" position="225,25" size="100,100">Be ecstatic, provided you do not sail without sextant, compass, and, above all else, a well-aimed rudder.’ Albatrosses will not be supplied for this journey.</tw-passagedata><tw-passagedata pid="82" name="LYM Control your life" tags="" position="1500,700" size="100,100"> Behavior Control
+	=============
+	“Many of the younger members were asked to leave school. Most members have no other source of income other than what is parceled out from fundraising. In some cases, no stipend is given and the member is totally dependent upon the structure of the organization to provide necessities, including food. Daily routine is strictly scheduled beginning with a morning briefing. Most of time spent is in long hours of fundraising on the streets and follow-up phone calls as well as organizing for meetings. Members also engage in “intellectual” activities that encourage the member to reinforce the philosophical doctrine of LaRouche, including reading Larouche’s own writings promptly. The average work day is at least 12-13 hours. Association with family or former friends is highly discouraged and members are made to feel guilty about spending holidays with family. Outside leisure activities are discouraged.”
+	
+	Information Control
+	===============
+	“A daily briefing is produced every day detailing the news events and the particular interpretation of the global strategic situation by LaRouche. The lead of the briefing is supposed to contain the latest message that the group organizes around. At least 2 weekly meetings are held for the leadership where LaRouche gives his speech to the rest of the members which is to be repeated and incorporated in to the next day’s briefing. In addition LaRouche also does this on shows put on the website. According to LaRouche, the global situation is always dominated by the competition between Larouche and his enemies, the British Empire. Members at the headquarters on Purcellville, VA are expected to make several videos a day with this information. Often times the particular spin put on news is supposed to be insider knowlegde given to LaRouche by contacts and therefore cannot be questioned or traced. Field organizers are usually kept so busy so that they could not research it anyway. Spying is definitely encouraged among members. Any demoralization is looked at as a threat and demands an intervention. The fear that there may be an enemy operation run on a member by outsiders or family is exploited when someone expresses doubt. When the doubt is not subject to control, LaRouche will explicitly lie about the person to divert attention.”
+	
+	Thought Control
+	============
+	“Members are pushed to their physical and psychological limit by the thought that the global economy can disintegrate at any moment or that the British will launch thermonuclear war. This is the reason given for why people cannot leave or do anything other than what is prescribed to them by LaRouche. LaRouche will usually give time frames for when a policy must be passed in order to avert the immediate crisis.”
+	Emotional Control
+	
+	“LaRouche uses emotional manipulation regularly. He can never be wrong. When he changes his story it is always the fault of the membership. Any problem that is raised is always blamed on the membership, specifically the older membership of baby boomers. LaRouche blames the entire generation of baby boomers for all the problems in the world since the death of Franklin Roosevelt. He belittles them as a whole and will use specific people as examples of cowardice. This type of belittlement may have been influential in the suicide of one of the long term members. Anyone not with the views of LaRouche is said to be immoral and less than human. Anyone that leaves the organization is considered spiritually dead and is seen to be forfeiting their human claim to immortality.”
+	</tw-passagedata><tw-passagedata pid="83" name="LaRouche short passage" tags="" position="100,1200" size="100,100">Once again, the fear of Lyn [Lyndon LaRouche] and his ideas has the oligarchy quaking in their seats. They are terrified. And I think they are consulting with those little green men beneath the floorboards that Lyn refers to. And the biggest question ringing in their ears is: How does Lyndon LaRouche get all of these young people? Why can&#39;t we recruit the youth? Where did they come from?
+	
+	Unfortunately, where we came from is why they are not recruiting us. Now, &quot;What&#39;s wrong with where we came from?&quot; some of you might ask. We are the Baby Boomers&#39; kids, &quot;Generation X,&quot; the &quot;lost generation&quot; or, as we all know, the &quot;no-future generation.&quot; Any way you say it, it is not very uplifting. I am sure when our parents were young, they did not envision this as their legacy, but when they were challenged, they did very little in the face of corruption. Now LaRouche says that we have the potential to become the new Renaissance generation. And we were never told by anybody but Lyn, that we should do something good for humanity, that humanity needs us, and that we would be a part of humanity forever. What we were told instead was never to stand out: &quot;Be part of the crowd!&quot;...
+	
+	https://larouchepub.com/other/2003/3018bad_schw_youth.html
+	</tw-passagedata><tw-passagedata pid="84" name="History of Lyn" tags="" position="1500,500" size="100,100">In 1971, his followers even managed to set up a debate between LaRouche (who would soon be advertising himself as the greatest economist on the planet) and the great post-Keynesian economist Abba Lerner.
+	 
+	Around 1973, however, this changed, as LaRouche launched “Operation Mop-Up,” essentially a declaration of war on the rest of the Left. Focused initially on the rump Communist Party, which he accused of being an FBI front, LaRouche’s backers were soon engaged in physical combat with leftists.
+	Around this same time, LaRouche’s group was becoming a bona fide cult. Long fascinated by psychoanalysis, LaRouche began employing techniques of “ego-stripping” and psychological manipulation to his own followers.
+	
+	&quot;&quot;&quot;
+	Impotence! Fear of rats! CIA-rats, KGB-rats, FBI-rats, trade-union-official-rats, Left-rats generally. Rats! Rats! Rats! Save yourself! Be impotent! The rats hate anything which is not impotent! There are so many rats! Gigantic, awfully monstrous beetles, malevolent beetles with beetle eyes and gigantic sexual organs are coming to rape us. . . . Find a woman to be a surrogate for your mother, and propitiate the awful gigantic rat of a mother-image sadist within you with another woman. . . . You feel better at the same time you feel the awfulness of that degradation. Mother always loved you again after you were punished. . . . Live a private life of Hell, keep your frightened Self cowering within the rat-mask you wear for the edification of the world of rats. Be impotent; be a “Trotskyist.”
+	&quot;&quot;&quot;
+	
+	At the same time, LaRouche’s own literary output began to assume a particular style of classically informed (Plato, Liebniz, and Schiller being particular touchstones) long-winded psychosis. A good example is the twenty-six-thousand-word treatise “The Sexual Impotence of the Puerto Rican Socialist Party,” which covers everything from Hegel and “the agony of self-consciousness” to LaRouche’s racist ramblings on Latin American “macho” culture. From here on out, this kind of prose would remain LaRouche’s métier.
+	
+	LaRouche had long been concerned with the effects of music on psychology, writing in 1980 that “Rock was not an accidental thing. This was done by people who set out in a deliberate way to subvert the United States. It was done by British intelligence,” and that the Beatles were “a product shaped according to British Psychological Warfare Division specifications.” The brainwashing of John, Paul, and company could be resisted, however, through proper tuning.  (LaRouche and his followers favored A4 tuned to 432 Hz).
+	
+	
+	
+	---
+	Wikipedia policy doesn&#39;t allow compromising between now and fantasy land/the New Economic Order after the final economic collapse that&#39;s been coming next year for thirty odd years</tw-passagedata><tw-passagedata pid="85" name="Cadre School class" tags="" position="300,1200" size="100,100">I began to study List with this book Outlines of American Political Economy, and I had not been reading many pages, maybe the first 20 pages, and it was like, &quot;Wow!&quot;: Globalization, free trade, that has been proven wrong in the 1820s, maybe earlier. So why are we in this mess today? And this was quite a shock, and I decided to work more on this. I mean, it is just ridiculous. We have to get out of this and create a new Renaissance.
+	
+	...
+	What is wealth? What is true wealth? Is it just money on an account, or is it having gold and diamonds somewhere in your palace, is it raw materials, maybe military power? Friedrich List said: That is not true, none of them is true wealth. And he said: True wealth is our ability to produce, to produce wealth. That is the true wealth, to be able to produce it.
+	
+	...
+	And what really struck me in this book The National System of Political Economy was that he said: Look, maybe in the future we could figure out a way to produce heat without using one of the known materials to make fire with. So we could say he hypothesized nuclear energy. He did not know anything about it, but he said: Look, maybe we will find something else, we will find something new. This is just great!
+	
+	Who talks like that today? Who talks about production and investment in the future and having science-driver projects? It is Lyndon LaRouche and his movement. Here we find optimism and people who say: Look, let&#39;s produce, let&#39;s get things done, let&#39;s develop...
+	
+	...
+	Honestly, how many of you guys looking up here thought you were watching a panel on the Youth Movement? 
+	Come on, raise your hand! [After a while, some hands timidly go up.] 
+	Okay, you are being deceived! 
+	You have to realize, if you thought you were looking here at some nice kids, you are blocked! 
+	I really have to be honest here, what is up here is not the youth per se, it is not about us—it is about LaRouche, and if you think about it, it is really about you. The policymakers are in need of your help. Before I start my presentation, I want to personally thank Mr. LaRouche and let him and the youth in this room know, that LaRouche&#39;s Presidential campaign doesn&#39;t tap-dance.
+	
+	---
+	By 2003, recruitment was successful enough to receive LaRouche&#39;s own enthusiastic approval.&quot;Give me 1,000 youth leaders like these,&quot; he announced that year, &quot;and I&#39;ll take over the country.&quot;
+	
+	That goal may have been a little optimistic. The figure of 1,000 new members has not been mentioned in a while. But the movement&#39;s Web site now lists contact information for 21 cities. 
+	
+	---
+	When they are not busy studying geometry or learning to sing properly, youth organizers are expected to meet a daily fund-raising quota. In an open letter to the father of a Youth Movement member, a former long-time supporter of the LaRouche organization described the life of a full-timer organizer as &quot;dreary.&quot;
+	
+	But one might never know that from LaRouche&#39;s speeches to the movement, which often end, &quot;Have fun!&quot; 
+	---
+	
+	Members &quot;spent countless hours reading and studying,&quot; she wrote, &quot;getting a better education in Western philosophy and politics than we had gotten [in college]. But that benefit was far outweighed by the brutalized and controlled nature of our day-to-day lives. Even as we were verbally flogged each day to use creative thinking to achieve &#39;humanistic relevance&#39; in the world, the reality was that we and our comrades used most of our time in dehumanizing and mind-deadening activity.&quot; 
+	
+	---
+	Members are recruited in part around the claim that the movement will give them a real education in classical culture, with a particular emphasis on mastering Plato and Leibnitz.
+	</tw-passagedata><tw-passagedata pid="86" name="Untitled Passage 13" tags="" position="1500,300" size="100,100">The LaRouchies
+	
+	Number one on our list of campus crazies is the Lyndon LaRouche Youth Movement, which targets kids who feel like they &quot;don&#39;t fit in.&quot; LaRouche&#39;s literature suggests that he&#39;s totally against Dick Cheney and fascism and the Man, but really, LaRouche exists to perpetuate LaRouche. &quot;Recruiters&quot; for the LaRouche Youth Movement will try to convince you to drop out of school and work for &quot;the movement&quot; full-time; in exchange, they&#39;ll offer room, board, and spending money. Along with your new life, new friends, and new apartment, you&#39;ll get a lunatic conspiracy-theory-based ideology that has been variously described as &quot;fascist demagoguery,&quot; anti-Semitic, and deranged. Tell them to fuck off.</tw-passagedata><tw-passagedata pid="87" name="ALYM History" tags="" position="700,1300" size="100,100">
+	The LaRouche Youth Movement is a movement created by Lyndon LaRouche, with many branchs throughout the world, including the Australian LaRouche Youth Movement.
+	
+	The Main role of the Australian LaRouche Youth Movement is to generate politcal interest umongst the public. What is why during the 2004 Australian Election they door knocked three electorates, and regulary have tables upon campuses, student meetings and rallys. 
+	
+	Hisotry
+	
+	the following is the story of the LaRouche Youth Movement in Australia, pretty much blow by blow. Up until roughly two years ago (December 2003)
+	
+	For security names have not been revealed.
+	
+	
+	Phase One: where the force sort of gets formed.
+	
+	The “Youth Movement” was formed in Australia on some otherwise uneventful day in August 2002. When four young members of the Citizens Electoral Council were (as some will say) “thrown together”. The original four, consisted of CC who had been on the field team, JL who had been in admin, and DM and RM who had been in intel.
+	
+	This orginal team was then complemented within a month with two Tasmanians, CP and SL. Then in November with another two members, being WL (the brother of SL) and KI (the son of the CEC&#39;s founder, and the middle child at that). The shift then started to change towards organising for the New South Wales State Elections in March 2003, where the Flagship Campaign for the CEC was to be Maitland.
+	
+	In January the whole of the CEC including the youth movement went to Maitland, where they started to systematically doorknock the electorate and started to kick up a storm to try and get our candiate elected. The three month campaign was broken for the “Youth Movement” by a trip to the USA.
+	
+	So after the campaign the crew then returned to Melbourne (minus CP, who had quit with the end of the campaign), where they started to hit the University Campuses to try and recruit more “Youth Movement” members.
+	
+	Phase Two: where forces reaches eight again.
+	
+	After basically a month of organising on campuses, where the force of seven set up tables and tried to get students interested in what is happening around them. It is sort of ironic, that their next member was neither a University Student, nor recruited during the semester. KR, was recruited for the first trip since Maitland, being a trip to Canberra in June 2003, to get out the new Children of Satan pamphlet.
+	
+	The CEC office also put on a performance of Schiller&#39;s “Joan d&#39;Art” at the July Confrence 2003, in which all of the Youth Movement Members played roles: JL playing Joan d&#39;Art.
+	
+	
+	Phase Three: A Cadre School.
+	
+	Then an idea hit the CEC, that after a year of organising on Universities that having a Student only conference (or a Cadre School) at a camp in Anglesea would be the way to boost their numbers above eight members. Many weeks of organising went into aranging for students to come, and then when the main International guests Leini Rubinstien arrived and whipped them into a phoning frenzy for the last week to aim at doubling the number of people attending. Also for the Cadre School BM from Philadelphia LYM local came down as well as Leni from the LA LaRouche campaign office.
+	
+	The Cadre School was a huge success in recruiting people, DA a contact from the Maitland campaign finished his year at University then joined. AR a contact from the Aston by-election quit his Accounting course at TAFE, and SG a contact previously not contactable until two days before the Cadre School, joined dropping his University program at RMIT.
+	
+	But with the three extra people, no squish was really felt as CC, DM, RM, KI and WL had all headed to the USA for November. 
+	
+	</tw-passagedata><tw-passagedata pid="88" name="ALYM more history" tags="" position="825,1300" size="100,100">2004 Federal Election
+	
+	ALYM campaign cars in procession election eve
+	
+	During the 2004 Federal Election, the ALYM had 12 of its members run for the House of Represenatives in the Melbourne Region, and Senate. They also managed three &quot;flag ship&quot; campaigns in the Melbourne Region, including the campaign Aaron Isherwood himself a member of the ALYM standing against Michael Danby in the seat of Melbourne Ports.
+	
+	They started campigning from April 2004, door knocking the electorates of Melbourne Ports, Maribyrnong and Calwell with the Election edition of the New Citizen, that went through the fight for a National Bank in Australian Politicts and the founding of the Australian Liberal Party in the 1930-40 period.
+	
+	But also during this time aided campaigns in Western Australia and Queensland.
+	
+	
+	New Bretton Woods Campaign
+	
+	LaRouche&#39;s renewed calls for the New Bretton Woods International Monetary System in late 2004, had the CEC formulate a National Petition that was read out on 20 June 2005 in the House of Represenatives.
+	
+	The Back bone of this petition drive was the Australian LaRouche Youth Movement, that send squads into Adelaide, Canberra, Sydney and even breif visits to surrounding areas NewCastle, Geelong, Bendigo and Ballarat. And the Melbourne region, where they set up tables in comerical areas, distributed New Citizen papers and organised students through classes. To reach an average weekly petition signer rate of around 500-600 as a group. </tw-passagedata><tw-passagedata pid="89" name="Email to me" tags="" position="700,1425" size="100,100">The secret of statecraft, as distinct from mere politics, is the work of raising the level of more and more parts of the population from their accustomed small-mindedness and intellectual mediocrity, to a sense of the beauty of ideas of principle. Populism, which is the generic name for those doses of mediocrity by which oligarchs turn most ordinary people into bleating sheep (to be herded by nasty beasts), induces people to dumb themselves down into an approximation of herded cattle.
+	
+	Take the case of the recent Democratic National Convention held in Boston, Massachusetts. There, with a small staff of my campaign around me, and with something more than a hundred singing LYM, we changed the course history during the past week. The crucial action was not propaganda as such, but the combination of what I did personally, with support of a handful of close collaborators, as done in the context of an environment in which convention-goers avowed that we had deployed a thousand or more youth, where scarcely more than a hundred had been on premises. Our impact was tenfold more than could have been achieved with a thousand of your typical political groups. This actually shaped the setting of Senator Kerry&#39;s acceptance address, if not the address itself, and also shaped the emerging view of our efforts, as that view was expressed by leading figures at the close of the proceedings. The deployment of our U.S.A. youth movement, co-deployed in close coordination with me, will now be a major factor in shaping what happens to politics in the U.S.A. during the coming ninety days. The higher intellectual level of our youth deployment, is of crucial importance in the success so far, and the greater successes soon to come.
+	
+	The most important problem in the LYM&#39;s work does come from the pressures exerted upon the LYM by the older generations of &quot;Baby Boomers and Tweeners. This is an acute difficulty to be overcome in most of Central Europe, and an endemic problem against which I have had to fight in the U.S.A.
+	
+	The problem is, that those who have settled into regarding the Baby Boomer generation as the yardstick of political and intellectual competence are not only wrong; they fail to grasp the reality, that the Boomers, even most of our own internationally, do not realize how deep the corruption is which has been caused by the accelerating cultural decadence through globally extended European culture during, especially, the course of the recent four decades, as, for the British Commonwealth since the already disastrous, first Harold Wilson government of Britain.
+	
+	Thus, I have fought, not always successfully, for the functional independence of the youth movement as my personal movement, not necessarily under the control of the Boomers and Tweenies. The point is, that the characteristic of a healthy youth ferment is rooted in a more or less clear understanding, that the Boomers are committed to habits which define the present global situation as on an accelerating slide into a new dark age. The healthy fraction of the adult youth is defined by the recognition that the present cultural trend, as set by the Baby Boomers, is into the mucky swamps of a no-future society planet-wide; those young adults who see this reality, are thus faced with the prospect of living the next fifty years or so of their lives, if that long, in a no- future society. While their parents&#39; generation says &quot;Sit back and shut up!&quot; the alert young adult plunges into changing things, away from Baby Boomer culture, into something embodying the best taken from a happier, healthier time, forty years or so ago.
+	
+	However, once that is said and agreed, the task of the youth is to become qualified, especially in sufficiently deep grasp pf modern history, science, and poetry, to become the emerging new leadership of society during the emerging decade or so ahead. This means, above all, a mastery of the &quot;secrets&quot; of the mind. To win, one must become a professional winner, in the best sense of those terms.</tw-passagedata><tw-passagedata pid="90" name="2004 election results" tags="" position="1500,1700" size="100,100">Name - ballot position					   votes electorate
+	==========
+	Doug Mitchell – No.1 	                   557	Aston
+	Andrew Reed – No.1 	                      446	Kooyong
+	Jordon Davidson – No.2 	               256	Menzies
+	Kat Reid	- No.3 	                           242	Higgins
+	Kel Isherwood	-No/6 	                  149	Gellibrand
+	Aaron Isherwood	- No.6 	               146	Melbourne
+	Andre 	-2nd_last 		                  656	Maribyrnong
+	Will Larner	-bottom 	                   282	Bruce
+	Adam Ellery	-bottom 	                 224	Hotham
+	
+	
+	Pro-words used in their material:
+	Isherwoods “fundamental”
+	“Hate politics” “want to make real political changes” “focus on the real issues” “measure the real economy” “help real people”
+	“Philosophical Political Movement”
+	“endowed with creative reason”
+	“unique fundamental principles of the real/physical economy”
+	“Divine nature of man”
+	“Master the physical principles”
+	“New Economy”
+	“I saw a distinct difference: a party philosophically committed to fostering the essential creativity of individuals and advancing the common good”
+	“paramount importance of national banking as a policy solution.”
+	“separation of speculation from banking”
+	“denied the chance to reach their full potential because I didn’t take personal responsibility for political decisions effecting their futures”
+	“We are facing an economic breakdown crisis today.”</tw-passagedata><tw-passagedata pid="91" name="Flight to New York" tags="" position="2800,100" size="200,100">(dialog:&quot;Boarding Pass/Carte d&#39;acces a bord
+	&#39;&#39;Air Canada&#39;&#39;
+	^^Flight/Vol et date:^^ AC 0742 28Jul
+	^^Gate/Porte:^^ 74
+	^^Seat/Place:^^ 21A &lt;!-- left window, next to 21C isle --&gt;
+	^^Boarding Time/Heured&#39;embarquement:^^ 0810
+	^^From/De:^^ Montreal
+	^^To/Destination:^^ LaGuardia-M
+	^^Name/Nom:^^ Casey, Cyril&quot;,&quot;board&quot;)</tw-passagedata><tw-passagedata pid="92" name="Quotes (about Australia)" tags="" position="1500,1900" size="100,100">Colonies are the seeds of nations, begun and nourished by the care of wise and populus countries, conceiving them best for the increase of human stock, and beneficial for commerce.
+	-William Penn
+	
+	the possibilities and toential of his golden land of Australia were seemingly unlimited.
+	- Dr. JD Lang
+	
+	the spirit of nationality comes down to us from heaven. Like a main-spring of a watch, it sets the whole machinery in motion. Like the heart, it causes the pulse of life to beat in the farthest extremities of the system. It is the nevey soul of society, which animates and exalts the whole brotherhood of associated men. And must the young Australia be debarred from teh exercise of that generous and manly feeling, of which every rightly constituted mind is conscious, when he exlaims, with deep emotion &quot;THIS IS MY OWN, MY NATIVE LAND!&quot;
+	- JD Lang
+	
+	</tw-passagedata><tw-passagedata pid="93" name="Buzz" tags="" position="100,100" size="100,100">Oliver has been pouncing and bouncing around the office telling everyone about the unusual Sunday organising in his cryptic way.
+
+		Oliver, Josh and you had setup a table in downtown Montreal, out front of what you thoght would be a closed Tattoo shop.
+		Except only half an hour or so after setting up, the owner and some of the employees dropped by.
+		
+		You organised them, they let you into the shop, at which point the appentice offered to give you a tattoo.
+		
+		But Oliver is being telling everyone you lost your V-plates,
+		rather than try intercept them you keep [[preparing dinner]].</tw-passagedata><tw-passagedata pid="94" name="preparing dinner" tags="" position="225,100" size="100,100">Hard as it seems you are trying to dodge questions
+		
+		During the six or seven hours in that tattoo parlour you decided whilst being inked he needs to leave.
+		Azora (the apprentice) really laid out how the organisation is a cult. Demonstrating how what Oliver was saying was a trick called &quot;Though stopping&quot;. Then she helped you see the plan is just a fantasy - not a real plan, and your conditions are just a way of controlling you...
+		
+		Just around the corner from Beri Uqam on Avenue Savoie.
+		
+		But as dinner is ready everyone comes together to eat [[Eat]]
+		
+		So from this present standpoint of standing on my decision to leave, and not let myself be guilt-ed or anything like that to keep working,</tw-passagedata><tw-passagedata pid="95" name="Eat" tags="" position="350,125" size="100,100">You (Zaiah) are confronted with Mike, who you have been meaning to ask for his share of the food money.
+		
+		&quot;I don&#39;t pay&quot; he says.
+		
+		This makes you furious...
+		From here there are going to be storyletes
+		* We are trying to live on $30-40 a week, and you decide to not pay... meaning we have less food. I&#39;m hungry
+		* I don&#39;t have any money...
+		* I haven&#39;t had my own room for over six months
+		* What have you been doing (other than not getting a tattoo)
+		* Bring up the condom you found tidying up the couch after he moved into the new flat
+		* I&#39;m sick of this and leaving.</tw-passagedata><tw-passagedata pid="96" name="The punch" tags="" position="600,200" size="100,100">Mike punches your arm - at the Tattoo
+		
+		</tw-passagedata><tw-passagedata pid="97" name="You&#39;ll be back" tags="" position="600,600" size="100,100">
+		But most memorable of all, is the fact that Rachel believes that I will want to come back to work here because of the person I am. And Kel outlined that I may want to come back and I will think myself not potent enough to be able to come back and organise.</tw-passagedata><tw-passagedata pid="98" name="When can I leave" tags="" position="800,600" size="100,100">A big fear is that you lack money, and don&#39;t know how long you will have to stick around until you can fly back to Australia
+		
+		Offer to take a bus (cost $90USD to New York) 9.5hrs - 7am-4:30pm; 11am-8:30pm; 5pm-1:30am
+		as the flights are $1,000 or more less.</tw-passagedata><tw-passagedata pid="99" name="Future Faking" tags="" position="1100,400" size="100,100">FUTURE FAKING - lies about your potential in the future, to get your time and effort in the present.
+		painting a picture of what you want - fabircate a picture of the future - your dreams won&#39;t get actualised</tw-passagedata><tw-passagedata pid="100" name="Accusations" tags="" position="1100,525" size="100,100">Accusations -
+		hurling accusations that you are abusive,
+		
+		Part of the DAVOS
+		DENY - 
+		ATTACK - 
+		REVERSE VICTIM AND OFFENDER - 
+		Shame victims into believing they are responsible for abuse.</tw-passagedata><tw-passagedata pid="101" name="Asking for more is your flaw" tags="" position="1100,275" size="100,100">Zaiah asking for more money, personal time etc. is a flaw in him.
+		He is not strong enough to do this.
+		
+		No chance at life, is Zaiah&#39;s failing - but his request for support in form of money, time etc. is sign he doesn&#39;t deserve to be given a chance.</tw-passagedata><tw-passagedata pid="102" name="Love bomb" tags="" position="600,725" size="100,100">You are a fantastic organiser...
+		
+		Maybe even in private offer to kick Mike out...
+		
+		But Zaiah remembers feeling worthless when they pulled away his class at the last minute.
+		When nothing was done when he reported the theft of his money (in the house he stayed in)
+		No one supporting him when he was sick.</tw-passagedata><tw-passagedata pid="103" name="Can you wait for the weekend" tags="" position="1100,150" size="100,100">Has a mission to get Zaiah to commit to staying one more weekend - then one more week - then staying forever</tw-passagedata><tw-passagedata pid="104" name="Is it too hard baby" tags="" position="1100,650" size="100,100">
+		Believes Zaiah is leaving because it has become too hard for him.
+		Babying out</tw-passagedata><tw-passagedata pid="105" name="British v American" tags="" position="1300,100" size="100,100">
+		contradictory derides capitalism as a British invention whilst simultaneously calling for a return to the American system of political-economy...
+		
+		he is about making the system work better, rather than providing a critique...
+		</tw-passagedata><tw-passagedata pid="106" name="End of lunatics " tags="" position="1300,225" size="100,100">This is reactionary, 
+		
+		what could be better is actually a global international workers control of the economy to overthrow imperialism and economic piracy... so people can move, and </tw-passagedata><tw-passagedata pid="107" name="Why isn&#39;t Bush on the cover of COS" tags="" position="1300,350" size="100,100">ye-opening insight into
+		the Synarchist evil known as Dick
+		Cheney and the neo-conservatives,
+		through the distribution of a series of
+		three LaRouche in 2004 campaign
+		reports, Children of Satan I, II, and III.
+		Each edition of the trilogy contained
+		totally new material, exposing the “ignoble liars” behind the Bush-Cheney Iraq
+		war hoax; plumbing the depth of their
+		philosophical depravity; and providing
+		vital historical insight, by documenting
+		the parallels between the current crop of
+		wanna-be American imperialists, and
+		such figures as Napoleon Bonaparte,
+		Tomás de Torquemada, and Adolf
+		Hitler.
+		
+		Bush (the US President) is seen as the saviour in LaRouche&#39;s system.
+		So he doesn&#39;t 
+		
+		LaRouche made it clear
+		that his efforts on behalf of the KerryEdwards ticket would concentrate on
+		the “unlikely voters,” the “Forgotten
+		Men and Women” of the original
+		Franklin D. Roosevelt coalition, who
+		must be mobilized in November</tw-passagedata><tw-passagedata pid="108" name="Milking anti-monarchist sentiment" tags="" position="1325,500" size="100,100">
+		Why do we go after the Mont Pelerin society? Claim they are running Australia, even though the Liberal party is in power...
+		
+		Why don&#39;t we work 8 hour days?</tw-passagedata><tw-passagedata pid="109" name="Triple Bottom Line" tags="" position="1400,625" size="100,100">Economists aren&#39;t moneterist like LaRouche says
+		
+		Economists look at a thing called the Tripple Bottom line - 
+		Profit
+		People
+		Planet
+		
+		encouraging orgs to think about their social and environmental effects.
+		There is also the +1 Governance - to ensure the organisation is healthy in the long run.</tw-passagedata><tw-passagedata pid="110" name="Sustainability" tags="" position="1525,625" size="100,100">The Tripple bottom lines leads to Sustainability
+		
+		Sustainability isn&#39;t just digging at the coal, it is about moving with technology ...
+		not a system with an axiom of continuous growth, but sustainable - can we continue doing this? Will it effect profit, people or the planet?</tw-passagedata><tw-passagedata pid="111" name="Derivatives are good" tags="" position="1400,750" size="100,100">Derivatives give stability
+		it is like tarrifs and other protectionist measures that LaRouche is calling for. Just not at a fascist level</tw-passagedata><tw-passagedata pid="112" name="Critical thinking" tags="" position="1000,775" size="100,100">Critical thinking is not apparent
+		don&#39;t rock the boat
+		
+		listen to LaRocuche, read LaRouche.
+		
+		Even when you organise you still talk about teh tripple bottom lin...
+		You have come to believe LaRouche&#39;s explanation of the current corrupted system - not actually having looked at it yourself...
+		it is really hard to look at it...</tw-passagedata><tw-passagedata pid="113" name="Boarding" tags="" position="50,100" size="100,100">
+		You assume this flight back to Australia is via Tokyo...
+		[[Cheapest]]
+		[[An opportunity]] to experience a bit more of the world, even if just from a window seat.
+		</tw-passagedata><tw-passagedata pid="114" name="Thoughts" tags="" position="200,475" size="100,100">It starts with your thoughts, which are the mental processes involving your perceptions, beliefs, interpretations, and inner dialogue.
+		
+		Your thoughts trigger emotions or [[Feelings]].</tw-passagedata><tw-passagedata pid="115" name="Feelings" tags="" position="50,550" size="100,100">The specific emotion you feel is often a direct result of the thoughts you have. For example, if you think about a pleasant memory, you might feel happy, but if you dwell on a stressful situation, you might feel anxious or sad.
+		
+		Your emotions, in turn, influence your actions or [[Behaviour]].</tw-passagedata><tw-passagedata pid="116" name="Behaviour" tags="" position="50,400" size="100,100"> How you feel can lead you to behave in certain ways. For example, if you&#39;re feeling angry, you might react aggressively or withdraw from a situation. If you&#39;re feeling happy, you might engage in more social or positive activities.
+		 
+		The cycle doesn&#39;t end with actions. Your actions can then feed back into your [[Thoughts]].</tw-passagedata><tw-passagedata pid="117" name="Cheapest" tags="" position="250,175" size="100,100"></tw-passagedata><tw-passagedata pid="118" name="An opportunity" tags="" position="250,25" size="100,100"></tw-passagedata><tw-passagedata pid="119" name="What if I..." tags="" position="100,800" size="100,100">Define your nightmare
+		
+		[[Define the worse things than could happen]]
+		
+		[[What are the benefits of an attempt or particual success]]
+		
+		[[What is the cost of inaction]]</tw-passagedata><tw-passagedata pid="120" name="Define the worse things than could happen" tags="" position="250,800" size="100,100">
+		[[What could you do to prevent those things]]</tw-passagedata><tw-passagedata pid="121" name="What could you do to prevent those things" tags="" position="400,800" size="100,100">[[How would you repair the damage]]</tw-passagedata><tw-passagedata pid="122" name="How would you repair the damage" tags="" position="550,800" size="100,100">If thethings happened, what could you do to repair the damage?
+		i.e. who could you ask for help? How long will it take you to get back on your feet?</tw-passagedata><tw-passagedata pid="123" name="What are the benefits of an attempt or particual success" tags="" position="275,925" size="100,100">Take a look at the updsides of doing the thing.</tw-passagedata><tw-passagedata pid="124" name="What is the cost of inaction" tags="" position="250,1050" size="100,100">Think about what it will cost emotionally, physically, financially etc.
+		
+		If you don&#39;t do this, where will you be in 2-3 months, 1 year or 5 years from now?</tw-passagedata><tw-passagedata pid="125" name="What is the problem?" tags="" position="100,1300" size="100,100">
+		[[What goal would you like to achieve?]]</tw-passagedata><tw-passagedata pid="126" name="What goal would you like to achieve?" tags="" position="225,1325" size="100,100">
+		[[What are all the possible solutions?]]</tw-passagedata><tw-passagedata pid="127" name="What are all the possible solutions?" tags="" position="350,1350" size="100,100">[[What is a realistic solution?]]</tw-passagedata><tw-passagedata pid="128" name="What is a realistic solution?" tags="" position="475,1375" size="100,100">[[How will you know if this solution is working?]]</tw-passagedata><tw-passagedata pid="129" name="How will you know if this solution is working?" tags="" position="600,1425" size="100,100">What things are you looking for to ensure you&#39;re on-track?</tw-passagedata><tw-passagedata pid="130" name="Chapter 1: Crossing Montreal" tags="" position="1000,100" size="100,200">
+		Your flight is at 10am.
+		You figure you have to be at Montreal Airport at 8am to check your bags, then clear security and customs before boarding your flight.
+		
+		Oh did I mention, you are leaving a cult...
+		
+		You wait for the first bus. about 20km from the airport.
+			There is the:
+			* 460 bus, only 100m from your place - that takes 1 hour
+			* a 20 min bus ride (94 down D&#39;Iberville) then a Green train from Frontenac (where you have never been before) to Lionel-Groulx, then a 30min bus to the airport (747)
+			* 1km (4min 94 bus) to D&#39;Iberville - 2 stops (blue line) to Jean-Talon, change to orange line, 20min to Lionel-Groulx then 30min bus to airport (747)
+				(or 15min to Snowdown, then 5 min to Lionel-Groux)...
+				
+		
+		[[Chapter 2: 13hrs to Tokyo]]
+		
+		
+		During this chapter,
+		
+		think about the other members of the team.
+			Kristi and Mike and their partying (and leaving a condom in the sofa)
+				(Mike is brother of previous member Jenny, and we had been trying to recruit Micah)
+			
+		
+			Peter - stand-offish
+			Danielle - warm, friendly... only single female member.
+			Sam - open (worried he is stuck because his low self esteme)
+			Josh - dedicated - did get introuble because of visa or something in USA.
+			
+			Amos - little brother of previous member Joe, good technicial knoweldge, driven...
+			Judy - (Judy, Amos and Oliver were in Germany until three weeks ago)
+			
+			The King brothers:
+			Ethan, Oliver, Caleb, Mason
+				and Sam (the eldest brother&#39;s girlfriend)... slow? Young? 
+				
+			* not here is Harrison - who is a leader and in France, because not everyone was sent to Canada.
+			* Caroline - who recruited you, and now in the New York team with her husaband Frank.
+				
+		As you think about them, you sort of place them in the &quot;don&#39;t care what they end up doing, or worried about their future categories&quot;.
+		Like Sam (the guy) you worry he is smoking only because he is worried, he wants to do well, but well, is lost.</tw-passagedata><tw-passagedata pid="131" name="Chapter 2: 13hrs to Tokyo" tags="" position="1200,100" size="100,200">[[Chapter 3: Tokyo]]
+		
+		The inflight entertainment in your section of economy is broken. This is a 13 hour flight, through the daytime...
+		
+		When you land it will be like it is 11pm (montreal time) but in Tokyo it is lunch time (1pm). 
+		
+		During the flight, you will talk to your seat mate, and think about your journey to get here.
+		
+		Depending on the choices you make, it will 
+		
+		Your seat-mate is an old guy, who is going to help you process a little bit about what happened over the past two years...
+		
+		&quot;Everyone has to live for themsleves., and not wait around for someone to tell them who they are.
+		We can sit around, and feel bad and blame other people for what they did or didn&#39;t do.
+		Or blame ourselves for things we never told them, but in the end life doesn&#39;t stop for anybody...
+		
+		---
+		
+		I realised I had a list of things I wanted to do when I was done doing what I thought I had to do.
+		I realised everyone wants you to forget you&#39;re gonna die, because if they convince you your not going to die you waste your time doing what they want you to do. Spend money on what they are selling.
+		
+		---
+		
+		You incorrectly assume everyone has it all together and figured out, and you don&#39;t. 
+		So you feel like - I just got here, and already I don&#39;t have what it takes. Making your confidence go down even more.
+		
+		My goals -
+			... but you don&#39;t have it...
+			
+			so why are you here?
+			
+			all love to fly. Motivation... 
+			When he validates you...
+			
+			You feel less like an outsider.
+			This step is worthy of your time and interest
+			anymore, an insider because you want it.
+			
+		2. You are not alone - common bond &#39;we love to fly&#39;
+		
+		3. Just need to do it - just figure out what the next domino to fall needs to be, scheduling a coffee
+		FIGURE OUT THE EASIEST THING TO DO TO START THE COMMITMENT AND THEN GO DO IT!
+		Get the ball rolling...
+		
+		</tw-passagedata><tw-passagedata pid="132" name="Chapter 3: Tokyo" tags="" position="1400,100" size="100,200">[[Chapter 4: 10hrs to Australia]]
+		
+		Tokyo.
+		33hrs (1 day + 9hrs)
+		Saturday Afternoon - Sunday Night.
+		
+		You have a chhoice to catch the N&#39;EX to Shinjuku, Or a Skyliner to Ueno...
+		
+		Cantake the Yamanote line around the city. See some things.
+		
+		Maybe some choices of hotels
+			Ebisu - near some clubs, you can brave.
+			Waseda - need to catch a tram, and meet some young people, maybe go to Roppongi, or Shibuya with them... or get worried they will recruit you into a cult.
+		
+		Going out - meet a lonely young woman. Make out, maybe go back to your place or her&#39;s, this will be your first girl...
+		It makes you worried. Maybe you won&#39;t try anything...
+		If you had spent the flight from Montreal to Tokyo thinking about inability to make friends, then maybe it will make you freeze with fear.
+			
+		-----
+		Next day you need to find way to Heneda airport.
+		Catch Yamanote to Hamamatsucho, then monorail to airport...
+		
+		</tw-passagedata><tw-passagedata pid="133" name="Chapter 4: 10hrs to Australia" tags="" position="1600,100" size="100,200">
+		Flight back to Melbourne, at night, alone with your throughts.
+		
+		It makes the past two days feel like a fever dream.
+		
+		You get to review the things that happened... and try to understand what you want to do next...</tw-passagedata><tw-passagedata pid="134" name="Zaiah Thomas" tags="" position="850,25" size="100,100"></tw-passagedata><tw-passagedata pid="135" name="Bus stop" tags="travel" position="900,400" size="100,100">//This whole North American trip has been (cycling-link: bind $though1, &quot;a mess&quot;,&quot;too stressful&quot;,&quot;eye opening&quot;).//
+		
+		{(if: visits is 1)[
+		You drop your duffle bag at the bus stop. Then slide your hand into your pocket to double check you haven&#39;t dropped your passport or printed itinerary.
+		&lt;br&gt;&lt;br&gt;
+		You quietly shoulder your duffle bag. Leaving the house silently, so you don&#39;t confront the others.
+		]
+		(click-append:&quot;itinerary.&quot;)[&lt;br&gt;2 flights:
+		* Montreal (YUL) Fri 10am -&gt; Tokyo (HND) Sat 1pm
+		* Tokyo (NRT) Sun 9pm -&gt; Melbourne (MEL) Mon 9am
+		On the back you have scribbled directions to Montreal Airport.]
+		(click-append:&quot;directions to Montreal Airport&quot;)[ (94 bus - Metro - Lionel-Groulx - airport bus)]
+		(click-append:&quot;so you don&#39;t confront the others.&quot;)[ Peter, Sam, Josh and Danielle (your fellow Australian members) are asleep in the house, along with Roch and Lucien...]
+		(click-replace:&quot;...&quot;)[. Today they are heading away for a leadership camp. Ethan had asked you stay around for.]
+		
+		(if: $stress is &lt;1)[* walk to the bus stop under the Highway for a direct [[460 bus]].]
+		* wait for the [[94 bus]].}</tw-passagedata><tw-passagedata pid="136" name="94 bus" tags="" position="1100,400" size="100,100">(if: visits is 1)[The first four blocks to [[Station D&#39;Iberville]] are familiar. You&#39;d often walked the blocks, and caught the Metro from [[Station D&#39;Iberville]] to the Montreal Office.
+		But Google maps also suggested you could save time if you [[stay on the bus|94 bus]] south to the Green metroline.](else: )[
+		
+		(if: $stress is &gt;1)[
+		With each stop your mind races...
+		[[94 bus]]
+		](else-if: visits is &gt;2)[
+		
+		You see the familiar Blue Metro Sign
+		(link-append: &quot;Blue Metro Sign&quot;)[ [[Station Frontenac]]]
+		](else: )[
+		[[94 bus]]
+		]]</tw-passagedata><tw-passagedata pid="137" name="Station D&#39;Iberville" tags="" position="1300,525" size="100,100">[[Blue train]] </tw-passagedata><tw-passagedata pid="138" name="Station Frontenac" tags="" position="1050,575" size="100,100">
+		[[Green train]] 
+		
+		Grab a copy of the free [[Métro paper]].</tw-passagedata><tw-passagedata pid="139" name="Green train" tags="" position="1050,775" size="100,100">[[Station Lionel-Groulx]] </tw-passagedata><tw-passagedata pid="140" name="747 bus" tags="" position="1100,1225" size="100,100">
+		[[Montreal Airport]] </tw-passagedata><tw-passagedata pid="141" name="460 bus" tags="" position="900,675" size="100,100">
+		[[Montreal Airport]] </tw-passagedata><tw-passagedata pid="142" name="Blue train" tags="" position="1300,650" size="100,100">
+		[[Station Jean-Talon]] 
+		or stay on until the end of the Blue line [[Station Snowdon]] </tw-passagedata><tw-passagedata pid="143" name="Station Jean-Talon" tags="" position="1225,775" size="100,100">[[Orange train (long)]] </tw-passagedata><tw-passagedata pid="144" name="Station Lionel-Groulx" tags="" position="1100,1100" size="100,100">[[747 bus]] </tw-passagedata><tw-passagedata pid="145" name="Station Snowdon" tags="" position="1375,775" size="100,100">[[Orange train (short)]] </tw-passagedata><tw-passagedata pid="146" name="Orange train (long)" tags="" position="1225,900" size="100,100">[[Station Lionel-Groulx]] </tw-passagedata><tw-passagedata pid="147" name="Orange train (short)" tags="" position="1375,900" size="100,100">[[Station Lionel-Groulx]] </tw-passagedata><tw-passagedata pid="148" name="Montreal Airport" tags="" position="850,1225" size="200,100">Doval, Jean-</tw-passagedata><tw-passagedata pid="149" name="#STARTUP" tags="startup" position="700,400" size="100,100">{(set: $stress to 1)
+		(set: $fname to &quot;Zaiah&quot;)(set: $sname to &quot;Jack&quot;)
+		}</tw-passagedata><tw-passagedata pid="150" name="#HEADER" tags="header" position="700,275" size="100,100">[Unknown ]&lt;feel| stress
+		(display: &quot;STRESS&quot;)</tw-passagedata><tw-passagedata pid="151" name="STRESS" tags="" position="575,275" size="100,100">{
+		(if: $stress is 0)[
+			(replace: ?feel)[Low ]
+		](else-if: $stress is 1)[
+			(replace: ?feel)[Elevated ]
+		](else-if: $stress is 2)[
+			(replace: ?feel)[Increasing ]
+		](else-if: $stress is 3)[
+			(replace: ?feel)[Overwhelming ]
+		](else: )[
+			(replace: ?feel)[Unknown ] &lt;!-- need to handle issue of no stress variable here --&gt;
+		]
+		}</tw-passagedata><tw-passagedata pid="152" name="No Future" tags="" position="1600,500" size="100,100">
+		You now imagine this is a dead end job.
+		
+		Working here you 
+		won&#39;t make any money, 
+		won&#39;t get to have hobbies, 
+		won&#39;t become independent,
+		won&#39;t have a future.</tw-passagedata><tw-passagedata pid="153" name="Jealousy" tags="" position="1600,625" size="100,100">Rooted in feelings of inadequacy or insecurity.</tw-passagedata><tw-passagedata pid="154" name="DRIVE" tags="" position="450,275" size="100,100">(if: $drive is 0)[
+			(replace: ?str)[Apprehensive ]&lt;!-- you feel like this is wrong... --&gt;
+		](else-if: $drive is 1)[
+			(replace: ?str)[Apathetic ]&lt;!-- you don&#39;t feel strongly --&gt;
+		](else-if: $drive is 2)[
+			(replace: ?str)[Optimistic ]&lt;!-- you are happy, and know this is the right path--&gt;
+		](else-if: $drive is 3)[
+			(replace: ?str)[Tenacious ]&lt;!-- you feel determined in your actions --&gt;
+		](else: )[
+			(replace: ?str)[Unknown ] &lt;!-- need to handle issue of no stress variable here --&gt;
+		]</tw-passagedata><tw-passagedata pid="155" name="Kafka trap" tags="" position="1600,750" size="100,100">
+		A Kafka trap is where you are accused of a psychological flaw, but whenyou deny it thedenial is evidence of the flaw.
+		
+		You are only given negative options, 
+			but you could ignorethe accuse, or mock/expose the accusation...
+			
+		This is simliar to the DO X - DON&#39;T DO X trap (i.e. be serious, don&#39;t be a drag)
+		
+		this compells you to figure out what the manipulatior wants, and makes you unable to ignore the dilema.
+		You are also unable to point out the injust, or consult the manipulator.</tw-passagedata><tw-passagedata pid="156" name="plans" tags="" position="2600,600" size="100,100">
+		Zaiah is worried about going back to Uni
+			because last time he was sucked into the cult.
+			and had no money
+			has no money now, unsure how to find a house etc.
+			
+		Not sure which career to undertake.
+		
+		Worried about what people will think about his history, dropping out of uni to join cult.
+		
+		Needs to break down and figure out what is truth, and what is the cult&#39;s delisional science.
+		</tw-passagedata><tw-passagedata pid="157" name="Métro paper" tags="" position="1175,625" size="100,100">[[Green train]]</tw-passagedata><tw-passagedata pid="158" name="Untitled Passage" tags="" position="2025,100" size="100,100">Flight Path
+		0	Montreal
+		1	East of Akimiski Island (south corner of Hudson Bay)
+		2	Hudson Bay (middle near Manitoba)
+		3	Aberdeen Lake(Nunavut)
+		4	Artic Sea (West of Victoria Island)
+		5	Beaufort Sea (North of Alaska)
+		6	Chikchi Sea - about to cross international date line
+		7	Chikchi Sea - about to fly over Russia (now Saturday)
+		8	Over Eastern Rusia (Chukotka)
+		9	Shelikov Gulf (west of Koryakia)
+		10	Sea of Okhotsk (still west of Kamchatka)
+		11	North of Hokkaido (near Sakhalin Island)
+		12	North of Tokyo
+		13	Landing at Tokyo</tw-passagedata><tw-passagedata pid="159" name="Battery Park" tags="" position="1025,125" size="100,100">Battery Park
+
+			You can see the light of the Statue of Liberty across the harbour.
+			Behind you are bench seats facing out to sea,
+			then across the park the canyonous aveues, that cut from North to South of Manhattan begin.
+			
+			
+			[[Bowling Green]]
+			
+			</tw-passagedata><tw-passagedata pid="160" name="Bowling Green" tags="" position="1025,250" size="100,100">
+			Walking up Broadway,
+			you look down and read the &quot;Canyon of Heroes&quot; strips.
+			
+			[[Rector Street]]</tw-passagedata><tw-passagedata pid="161" name="Rector Street" tags="" position="1025,375" size="100,100">
+			At Rector Street, you turn and walk down to see Alexander Hamilton&#39;s grave.
+			It looks almost like a little pyramind above the white stone square
+			
+			&quot;Alexander Hamilton who died July 12th 1804 Aged 47&quot;
+			
+			[[Wall Street]]
+			</tw-passagedata><tw-passagedata pid="162" name="Wall Street" tags="" position="1025,500" size="100,100">
+			Where is the charging bull?
+			
+			[[Federal Hall]]
+			
+			[[Liberty Street]]
+			</tw-passagedata><tw-passagedata pid="163" name="Liberty Street" tags="" position="1025,625" size="100,100">
+			Go west to [[World Trade Centre ruins]]
+			
+			[[St Paul&#39;s church]]
+			</tw-passagedata><tw-passagedata pid="164" name="World Trade Centre ruins" tags="" position="1225,625" size="100,100"></tw-passagedata><tw-passagedata pid="165" name="Federal Hall" tags="" position="900,500" size="100,100">A statue of George Washington is here
+			
+			[[Wall Street]] 
+			
+			https://en.wikipedia.org/wiki/Statue_of_George_Washington_(Wall_Street)#Description
+			
+			Wall street bombing accross the road in 1920?
+			</tw-passagedata><tw-passagedata pid="166" name="St Paul&#39;s church" tags="" position="1025,750" size="100,100">[[World Trade Centre ruins]] 
+			
+			[[City Hall Park]]
+			</tw-passagedata><tw-passagedata pid="167" name="City Hall Park" tags="" position="1025,875" size="100,100">
+			[[Park Row]]
+			
+			[[Tribeca]]</tw-passagedata><tw-passagedata pid="168" name="Park Row" tags="" position="875,875" size="100,100">[[Brooklyn Bridge]]
+			</tw-passagedata><tw-passagedata pid="169" name="Brooklyn Bridge" tags="" position="700,1100" size="100,100">
+			[[Manhattan Bridge]]
+			
+			[[Dumbo]]
+			
+			</tw-passagedata><tw-passagedata pid="170" name="Flatiron Building" tags="" position="1025,1525" size="100,100">[[Madison Square Park]]
+			
+			[[Chelsea]]</tw-passagedata><tw-passagedata pid="171" name="Manhattan Bridge" tags="" position="725,1250" size="100,100">
+			[[Canal Street]] 
+			</tw-passagedata><tw-passagedata pid="172" name="Madison Square Park" tags="" position="1025,1650" size="100,100">[[5th and 26th]] [[Madison and 26th]]
+			</tw-passagedata><tw-passagedata pid="173" name="Empire State Building" tags="" position="1100,1900" size="100,100">
+			[[New York Library]]  continue up 5th
+			
+			[[Garmet District]]</tw-passagedata><tw-passagedata pid="174" name="5th and 26th" tags="" position="1100,1775" size="100,100">[[Empire State Building]] </tw-passagedata><tw-passagedata pid="175" name="Madison and 26th" tags="" position="900,1775" size="100,100">
+			[[Park Ave]]</tw-passagedata><tw-passagedata pid="176" name="Park Ave" tags="" position="850,1900" size="100,100">[[Library Way]] (at 41st street)</tw-passagedata><tw-passagedata pid="177" name="Library Way" tags="" position="850,2025" size="100,100">Some books are to be tasted
+			
+			https://www.nypl.org/blog/2022/04/01/literary-inspiration-library-way
+			
+			along 41st
+			
+			[[New York Library]] to the West
+			
+			[[Grand Central]] to the North
+			
+			[[Chrysler Building]]</tw-passagedata><tw-passagedata pid="178" name="New York Library" tags="" position="1000,2025" size="100,100">
+			Continue up 5th Ave. [[Rockerfeller Centre]]
+			West down 42nd [[Times Square]]
+			</tw-passagedata><tw-passagedata pid="179" name="Grand Central" tags="" position="850,2150" size="100,100"></tw-passagedata><tw-passagedata pid="180" name="Chrysler Building" tags="" position="725,2150" size="100,100">
+			East to [[UN Headquarters]]
+			
+			up [[Lexington and 43rd]]</tw-passagedata><tw-passagedata pid="181" name="UN Headquarters" tags="" position="725,2275" size="100,100">
+			[[Midtown East]]</tw-passagedata><tw-passagedata pid="182" name="Lexington and 43rd" tags="" position="850,2275" size="100,100"></tw-passagedata><tw-passagedata pid="183" name="Rockerfeller Centre" tags="" position="1000,2150" size="100,100">
+			[[Pulitzer Fountain]] </tw-passagedata><tw-passagedata pid="184" name="Times Square" tags="" position="1150,2075" size="100,100">
+			up [[ Central Park]]
+			Broadway [[Broadway]]
+			
+			[[Hell&#39;s Kitchen]]</tw-passagedata><tw-passagedata pid="185" name=" Central Park" tags="" position="1150,2200" size="100,100">
+			West [[Columbus Circle]] 
+			East [[Pulitzer Fountain]]</tw-passagedata><tw-passagedata pid="186" name="Broadway" tags="" position="1275,2200" size="100,100">
+			up [[Columbus Circle]]</tw-passagedata><tw-passagedata pid="187" name="Columbus Circle" tags="" position="1275,2325" size="100,100">A tall column with golden statue atop
+			
+			[[Central Park West]]</tw-passagedata><tw-passagedata pid="188" name="Central Park West" tags="" position="1425,2325" size="100,100">[[The Dakota]]
+			</tw-passagedata><tw-passagedata pid="189" name="The Dakota" tags="" position="1425,2450" size="100,100">[[Museum of Natural History]]</tw-passagedata><tw-passagedata pid="190" name="Museum of Natural History" tags="" position="1425,2575" size="100,100"></tw-passagedata><tw-passagedata pid="191" name="Pulitzer Fountain" tags="" position="1150,2325" size="100,100">[[Central Park and 5th]]
+			</tw-passagedata><tw-passagedata pid="192" name="Central Park and 5th" tags="" position="1150,2450" size="100,100">[[The Met]]</tw-passagedata><tw-passagedata pid="193" name="The Met" tags="" position="1150,2575" size="100,100">It is a long walk from the corner...</tw-passagedata><tw-passagedata pid="194" name="Untitled Passage 1" tags="" position="1300,2575" size="100,100">Near Belvedere Castle, or the great lawn of central park you can cut between
+			
+			[[Museum of Natural History]] 
+			
+			[[The Met]] </tw-passagedata><tw-passagedata pid="195" name="Houston Street" tags="" position="975,1250" size="100,100">
+			[[SOHO]]
+			
+			[[NOHO]]</tw-passagedata><tw-passagedata pid="196" name="Canal Street" tags="" position="950,1075" size="100,100">
+			[[SOHO]] </tw-passagedata><tw-passagedata pid="197" name="SOHO" tags="" position="1075,1125" size="100,100">[[Houston Street]] </tw-passagedata><tw-passagedata pid="198" name="NOHO" tags="" position="900,1400" size="100,100">[[Union Square]]</tw-passagedata><tw-passagedata pid="199" name="Union Square" tags="" position="1050,1400" size="100,100">[[Flatiron Building]] 
+			
+			[[Greenwich Village]]</tw-passagedata><tw-passagedata pid="200" name="Hell&#39;s Kitchen" tags="" position="1725,2125" size="100,100"></tw-passagedata><tw-passagedata pid="201" name="Garmet District" tags="" position="1725,1925" size="100,100"></tw-passagedata><tw-passagedata pid="202" name="Chelsea" tags="" position="1725,1525" size="100,100"></tw-passagedata><tw-passagedata pid="203" name="Greenwich Village" tags="" position="1725,1425" size="100,100"></tw-passagedata><tw-passagedata pid="204" name="Tribeca" tags="" position="1725,925" size="100,100"></tw-passagedata><tw-passagedata pid="205" name="Dumbo" tags="" position="1725,1100" size="100,100"></tw-passagedata><tw-passagedata pid="206" name="Midtown East" tags="" position="725,2400" size="100,100"></tw-passagedata><tw-passagedata pid="207" name="Untitled Passage" tags="" position="3600,4200" size="100,100">
 The course required you to buy life insurance, that covered suicide immediately.
 
 With such a large 
@@ -826,6 +1888,22 @@ MPL started in 2005 - adopted by ICAO in 2006.
 https://www.flightglobal.com/analysis-mpl-pilot-training-works-but-still-needs-fine-tuning/112727.article
 https://www.flightdeckfriend.com/pilot_programs/tui-airline-multi-crew-pilot-licence-mpl-cadet-programme/
 https://pilotvisnu.com/mpl-detailed-explanation-comparison-with-cpl-pilot-license/
+
+
+Inspo
+https://www.youtube.com/@elliottchadwick1671
+https://www.youtube.com/watch?v=sd4hSipKPh0 -new pilot Stuart
+</tw-passagedata><tw-passagedata pid="208" name="Interview" tags="" position="4100,4100" size="100,100">Austin, we are really impressed with the depth of knoweldge you have about this program.
+I really liked that you demonstrated learning about the type rating training, and helped others during the weights and balance demonstration lesson.
+Your communication skills, and team work I think will be valuable to the program.
+
+Incorporate outside information, and thinking outside the box.
+Works together with other people to get better quality and safest outcome.
+https://www.youtube.com/watch?v=u0uEYY01pQc
+
+Subject to you getting your Medical ceritifcate and security checks completed, we would like to offer you a position in our Multi-crew Pilot License Program. </tw-passagedata><tw-passagedata pid="209" name="Flight - escape" tags="" position="4100,3900" size="100,100">Austin leaves the cult in Canada.
+He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacific to Sydney.
+
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
