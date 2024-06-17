@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play TokyoDay.</tw-noscript></noscript></tw-story>
-<tw-storydata name="TokyoDay" startnode="276" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-tag name="Quote" color="purple"></tw-tag><tw-tag name="Montreal" color="blue"></tw-tag><tw-tag name="Escape" color="yellow"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="11775,7625" size="100,100">It is raining.
+<tw-storydata name="TokyoDay" startnode="276" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-tag name="Quote" color="purple"></tw-tag><tw-tag name="Montreal" color="blue"></tw-tag><tw-tag name="Escape" color="yellow"></tw-tag><tw-tag name="Phone" color="orange"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="11775,7625" size="100,100">It is raining.
 
 Raleigh says she is going straight to Narita, where maybe she can find a lounge or one of those capsules to sleep the day in before tonights flight to Hawaii.
 [[Keikyu airport Line]]
@@ -871,7 +871,7 @@ Trauma points as you go around the loop?
 	(set: $destination to &quot;New York&quot;) &lt;!-- where you are headed --&gt;
 	(set: $cash to 10)
 	(set: $d1 to &quot;Doug&quot;)
-	}</tw-passagedata><tw-passagedata pid="64" name="747 Bus" tags="Montreal" position="10750,4000" size="100,100">
+	}</tw-passagedata><tw-passagedata pid="64" name="747 Bus" tags="" position="6300,6500" size="100,100">
 	You shoulder your [dufflebag]&lt;c1| over the strap of backpack and step onto the [747 bus]&lt;c2|. $d1
 	
 	Through the silent journey, as you watch the concrete industrial buildings and fields zoom by on the express way, you feel a |Sadness&gt;[pang of sadness][what?]
@@ -1980,7 +1980,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	* (text-colour:red)[Qantas QF 12 - Sat 10:45pm LAX to SYD (Mon) 7am]
 	* (text-colour:red)[Qantas QF 7702 - Mon 9am SYD to MEL 10am]
 	
-	[[bus-stop]]</tw-passagedata><tw-passagedata pid="211" name="End of the line" tags="Ending" position="4375,6075" size="100,200">(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and $hour is &gt;7)
+	[[bus-stop]]</tw-passagedata><tw-passagedata pid="211" name="End of the line" tags="Phone" position="4375,6075" size="100,200">(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and $hour is &gt;7)
 	(exclusivity: 1)
 	(urgency: 0)
 	
@@ -2120,7 +2120,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	_i}
 	
-	[[Gare Lionel-Groulx]] </tw-passagedata><tw-passagedata pid="222" name="Missed flight" tags="Ending" position="4600,7275" size="100,200">(storylet: when $location is &quot;Montreal-Trudeau International Airport, Montreal&quot; and $hour is &gt;9)
+	[[Gare Lionel-Groulx]] </tw-passagedata><tw-passagedata pid="222" name="Missed flight" tags="Phone" position="4600,7275" size="100,200">(storylet: when $location is &quot;Montreal-Trudeau International Airport, Montreal&quot; and $hour is &gt;9)
 	(exclusivity: 1)
 	(urgency: 0)
 	&lt;!-- If you haven&#39;t checked-in by 10am you will miss your flight --&gt;
@@ -2225,7 +2225,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	You smile to yourself and swing the single bag over your shoulder. Even though it is heavy on your shoulder, it is easier now to carry.
 	
-	[[Leave]]</tw-passagedata><tw-passagedata pid="230" name="No luggage" tags="Ending" position="4500,6075" size="100,200">(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and $bags is 0)
+	[[Leave]]</tw-passagedata><tw-passagedata pid="230" name="No luggage" tags="Phone" position="4500,6075" size="100,200">(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and $bags is 0)
 	(exclusivity: 1)
 	(urgency: 0)
 	
@@ -2528,7 +2528,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	_i
 	
-	[[Wait at Gate]]</tw-passagedata><tw-passagedata pid="267" name="Panicked" tags="Ending" position="5000,5525" size="100,200">(storylet: when $wor is &gt; 8)
+	[[Wait at Gate]]</tw-passagedata><tw-passagedata pid="267" name="Panicked" tags="Phone" position="5000,5525" size="100,200">(storylet: when $wor is &gt; 8)
 	(exclusivity: 1)
 	(urgency: 10)
 	
@@ -3044,7 +3044,7 @@ cleared up]
 
 [then maybe going into the idea of least actions role would be good to wrap it up with I think]
 
-[[</tw-passagedata><tw-passagedata pid="290" name="stressed running" tags="" position="4700,925" size="100,100">ell really, the only spare time I have is what I create (it is almost like stealing free time). So when I have spare time it is something like half an hour when I decide to go for a walk around the city I am in after having grabbed something to eat, or just in want of clearing my head a little.
+[[</tw-passagedata><tw-passagedata pid="290" name="stressed running" tags="" position="4700,925" size="100,100">Well really, the only spare time I have is what I create (it is almost like stealing free time). So when I have spare time it is something like half an hour when I decide to go for a walk around the city I am in after having grabbed something to eat, or just in want of clearing my head a little.
 
 I really wished I was able to get this running thing of the road, but last time I started I got up to doing something like five minutes for five laps of a soccer field on the second or third night of the scheme and then got sick not to want to push it since. I also two nights kicked a football home to kick it around a bit and get up my skills, but that too also came to a stop... but then again the idea with that was to have some fun and build up some skills by doing just some dribbling drills around some parks, the second night I did it it was at a smaller park so I felt a little weird compared to kicking it all the way home like I did the night before that.
 
@@ -3137,7 +3137,7 @@ I joined and organised because I detested John Howard, and how he was abusing hu
 His policies abusing people in detention centres.
 Privitisation, griefing the physical economy
 
-Only being 20 I didn&#39;t run in the 2004 election - but I was devistated when we didn&#39;t even dent the Liberal&#39;s majority. After months of telling </tw-passagedata><tw-passagedata pid="299" name="Beri UQAM" tags="Escape" position="5050,1000" size="100,100">
+Only being 20 I didn&#39;t run in the 2004 election - but I was devistated when we didn&#39;t even dent the Liberal&#39;s majority. After months of telling </tw-passagedata><tw-passagedata pid="299" name="Beri UQAM" tags="Escape" position="3100,200" size="100,100">
 Mid September.
 Your birthday at the end of the month is on your mind.
 
@@ -3159,7 +3159,7 @@ You glance across the footpath where Stuart is handing out leaflets to the crowd
 
 &gt; Organise
 &gt; Ask to help her if she wants a hand with her bags [[Walk with Jess]]
-</tw-passagedata><tw-passagedata pid="300" name="Walk with Jess" tags="Escape" position="5050,1125" size="100,100">
+</tw-passagedata><tw-passagedata pid="300" name="Walk with Jess" tags="Escape" position="3100,325" size="100,100">
 &quot;Wow, that&#39;s amazing! Uh, do you need help with those?&quot; you offer, glancing at her heavy-looking duffle bag.
 
 Jess sighs in relief. &quot;That would be amazing, thank you. It’s been a trek.&quot;
@@ -3195,14 +3195,14 @@ You pause before the station gages, helping Jess to use the ticket machine to pu
 
 &gt;
 &gt; [[Tell her how you feel stuck]]
-</tw-passagedata><tw-passagedata pid="301" name="Tell her how you feel stuck" tags="Escape" position="5050,1250" size="100,100">As you wait with Jess for the next train, the hum of the Metro station buzzing around you, she turns to you with curious eyes. &quot;So, how did you end up in Montreal, Austin?&quot;
+</tw-passagedata><tw-passagedata pid="301" name="Tell her how you feel stuck" tags="Escape" position="3100,450" size="100,100">As you wait with Jess for the next train, the hum of the Metro station buzzing around you, she turns to you with curious eyes. &quot;So, how did you end up in Montreal, Austin?&quot;
 
 You take a breath, considering how much to share. &quot;Actually, I work for a political party in Australia. But to educate us, they sent us to America. I don&#39;t want to burden you with all the details, but it&#39;s been pretty rough. Since January, I&#39;ve been working, studying, traveling around North America... Seattle, Portland, Sacramento, LA, Montreal, Toronto, even drove all the way to Windsor, next to Detroit, stopping at cities along the way.&quot;
 
 Jess raises an eyebrow, clearly intrigued. &quot;What sort of visa are you on for that?&quot;
 
 &gt; [[Technically I&#39;m a tourist]]
-</tw-passagedata><tw-passagedata pid="302" name="Technically I&#39;m a tourist" tags="Escape" position="5050,1375" size="100,100">You shift a little uncomfortably, knowing how it might sound. &quot;Uh, just a tourist visa.&quot;
+</tw-passagedata><tw-passagedata pid="302" name="Technically I&#39;m a tourist" tags="Escape" position="3100,575" size="100,100">You shift a little uncomfortably, knowing how it might sound. &quot;Uh, just a tourist visa.&quot;
 
 Her eyes widen slightly, and she lets out a low whistle. &quot;Wow, that&#39;s... risky. Aren&#39;t you worried about getting in trouble?&quot;
 
@@ -3228,7 +3228,7 @@ The train arrives, and you both step inside, finding a spot to stand among the c
 
 &gt; [[Um, I don&#39;t know]]
 
-</tw-passagedata><tw-passagedata pid="303" name="Um, I don&#39;t know" tags="Escape" position="5050,1500" size="100,100">You rub the back of your neck, feeling a bit sheepish. &quot;Actually, I haven&#39;t really gone out for a drink since I got here. Or at all, really.&quot;
+</tw-passagedata><tw-passagedata pid="303" name="Um, I don&#39;t know" tags="Escape" position="3100,700" size="100,100">You rub the back of your neck, feeling a bit sheepish. &quot;Actually, I haven&#39;t really gone out for a drink since I got here. Or at all, really.&quot;
 
 Jess&#39;s jaw drops. &quot;You&#39;re kidding, right? I&#39;ve heard the nightlife in Montreal in summer is wild. You have to get a drink with me after we drop my bags in my room. It&#39;s non-negotiable.&quot;
 
@@ -3250,10 +3250,10 @@ The lobby has couches that you sit on as she checks in, gets a load of papers an
 You have negative thoughts as Jess steps into her shower.
 
 &gt;&gt;[[ Feel bad for escaping]]
-&gt;&gt; [[Try to recruit Jess]]</tw-passagedata><tw-passagedata pid="304" name="Try to recruit Jess" tags="Escape" position="5050,1625" size="100,100">
+&gt;&gt; [[Try to recruit Jess]]</tw-passagedata><tw-passagedata pid="304" name="Try to recruit Jess" tags="Escape" position="3100,825" size="100,100">
 Jess steps out of the bathroom in a towel.
 
-</tw-passagedata><tw-passagedata pid="305" name=" Feel bad for escaping" tags="Escape" position="5175,1625" size="100,100">You flick through the stations, not really interested in anything.
+</tw-passagedata><tw-passagedata pid="305" name=" Feel bad for escaping" tags="Escape" position="3225,825" size="100,100">You flick through the stations, not really interested in anything.
 It has only been twenty minutes since you left Stuart at the table, but you feel bad for leaving.
 
 Jess steps out of the shower, no longer in jeans and a t-shirt, she now has a skirt and tank top on.
@@ -3261,7 +3261,7 @@ Jess steps out of the shower, no longer in jeans and a t-shirt, she now has a sk
 &quot;The guy at checkin said there is an Irish bar a block away, my shout,&quot; Jess says picking up her wallet keys and sun glasses.
 
 &gt;&gt; Say you don&#39;t want to...
-&gt;&gt; </tw-passagedata><tw-passagedata pid="306" name="Untitled Passage 6" tags="" position="5200,1750" size="100,100">The dim lighting and lively atmosphere of the Irish bar were a welcome change from the suffocating environment I&#39;d been immersed in. Jess led the way, weaving through the crowd until she found an empty booth near the back. I followed, feeling the weight of my exhaustion lifting just a little with each step.
+&gt;&gt; </tw-passagedata><tw-passagedata pid="306" name="Irish Pub" tags="Escape" position="3225,950" size="100,100">The dim lighting and lively atmosphere of the Irish bar were a welcome change from the suffocating environment I&#39;d been immersed in. Jess led the way, weaving through the crowd until she found an empty booth near the back. I followed, feeling the weight of my exhaustion lifting just a little with each step.
 
 &quot;First round&#39;s on me,&quot; Jess said with a grin, heading to the bar. I slid into the booth, trying to ignore the persistent ache in my muscles and the fog in my mind.
 
@@ -3307,7 +3307,192 @@ As we sat there, the noise of the bar fading into the background, I realized tha
 
 &quot;You&#39;re welcome, Austin. I&#39;m here for you, no matter what,&quot; she replied.
 
-And with that, we spent the rest of the evening mapping out my escape</tw-passagedata></tw-storydata>
+And with that, we spent the rest of the evening mapping out my escape</tw-passagedata><tw-passagedata pid="307" name="Untitled Passage 6" tags="" position="2400,200" size="100,100">Talking to Bruce this afternoon as I was thinking about leaving Canada, 
+he suggested that it is most likely due to being home sick, I have been away from contact with Australia for a long time and am not really knowing how long it will be until I will be back in Australia.
+
+And then add to that the stress created by the economic situation (Internationally as well as personally) and you have a really stress full situation. So a suggestion made was to become a test for going across the border, staying a month in Boston or something and then moving about like that.
+
+I sort of am growing to like this, but also I understand that the social sort of dynamic I am around here I will be eventually going to in Australia when we do eventually return.
+
+===
+
+I am a political organiser, trainee statesman and student in the LaRouche Youth Movement from Australia currently in Montreal, Canada.
+
+Just today Bruce Director (who writes the Riemann for Anti-Dummies series) actually in a question about patriotism said &quot;Australia is not the centre of world politics, it is a corner, but at that a very important corner...&quot;; what I think hints at the point that the reason we are in North America is because of the fact that Australia&#39;s isolation was hindering the ability of the LYM in Australia becoming self perfecting, and so the odd dozen of us are cycling through the USA, spending three months in the USA and then at the moment 6 months in Canada (well one or two people got to do some time in Europe). We had a good conversation with Bruce on the reasons we are here in Canada, what was demoralising a lot of us organisers (not to mention the poor Canadians that we landed on). And he said we need to be calling him at least weekly (if not more often).
+
+I am a weird sort of organiser in the LYM though I must admit, I joined just around my twentieth birthday in November 2003, after a trip to Sydney and Canberra to hit up a George Bush Visit. Then when I joined most of the guys in the movement were in the West Coast of America for two months, meaning we had one or two organisers and a whole bunch of new people that really worked in raising the potential of the organisers (rather than entering a lull because everyone else is doing what you want to do). I like modern history, mathematics and seem to get away with far to little singing; and at the moment of a night (last night and tonight) I have been doing some pretty basic soccer drills late at night for some exercise.
+
+So as most LYM organisers I have a tight schedule, but what I intend on doing is writing every night a &quot;nightly&quot; as you will, before going to bed. It is 2:10am (28June) right now and I need to be up by 7:00 to be in for French at 8:00am.
+
+===
+https://revolutionarydoug.blogspot.com/2001/07/one-of-my-lifes-achievements.html</tw-passagedata><tw-passagedata pid="308" name="Phone Call" tags="Phone" position="2000,200" size="100,100">
+You look at the email reply. To your request for better working conditions and pay.
+
+
+
+Australia is not the centre of world politics, it is a corner, but at that a very important corner...
+
+As you say &quot;I&#39;m leaving&quot; you feel shiit...
+
+there is a pull to get you back.
+
+
+They are unlikely to let you leave, because they have just renewed leases on houses in Montreal for you guys.
+Even though you don&#39;t have a room.
+The couples all have rooms... they are comfortable now.
+
+Maybe bring up finding a condom when cleaning up the lounge after Phil and Swyn moved off the couch.
+
+Maybe convince Trixy to go to Boston...
+
+Nathaniel, Trixy and you try to get a beer the night before you leave...
+
+As you talk, maybe remember people like Lo leaving just before the federal election, or Ted leaving after the election. </tw-passagedata><tw-passagedata pid="309" name="Untitled Passage 10" tags="" position="1800,300" size="100,100">
+You think about how you have never been on a joint call with any of the phone team.
+
+Or how you locked heads with Natasha the daughter of the party chairman. Or the arguments with their middle son Rhys.
+
+Rhys dropped out of high school in Year 11 at 16 to help in the Aston by-election with Ike.
+
+Ike. He calls himself a Revo-LaRouche-anary (now RevoLaRoucheionary@gmail.com).
+His name is Ike, not Dwight - though he likes military history and thinks </tw-passagedata><tw-passagedata pid="310" name="Moral quality of the army" tags="Quote" position="2400,600" size="100,100">https://larouchepub.com/other/2003/3018bad_schw_youth.html
+
+If we had a youth movement without the pedagogical work, without keeping track of Lyn&#39;s thinking all the time, forget it. People are brought up in a completely amoral society. And you cannot win any battle like that.</tw-passagedata><tw-passagedata pid="311" name="Austin&#39;s history in group?" tags="" position="2600,2100" size="100,100">Join at 19 in May 2003 just after the Iraq war invasion.
+
+2002 -
+Bali Bombing 12 Oct 
+
+2003 - US team visited, 
+
+19 Mar Iraq invasion
+NSW election - 22 March (Anne Lawler 7% in Maitland)
+
+
+
+Cadre school -  17-19 Oct
+Bush Rally 22 Oct.
+Then travel through Snowies for 1 week back home.
+
+2004 -
+Jan - big recruitment ... 8 members
+Jan - Sydney 1 week (Aus day)
+
+Feb - 4 weeks Perth.
+11 Apr Easter
+
+Jun - 2 weeks Adelaide
+
+Election called - 29 Aug
+5 Sep - conference
+Sep - cars and Campaign Manager !
+Federal Election - 9 Oct
+
+Oct - 2 weeks Sydney
+Nov -1 week Mount Gambia
+
+Dec 2004 Tsunami - Indonesia . life loss caused by lack of development.
+
+2005 -
+Jan-Feb satellite team - Broken Hill 5 weeks. (Duff Street)
+Got license (May)
+
+Jun - Sydney 1 week
+Jul - Adeldaide 1 week
+Aug - Swan Hill, Ouyen 
+Oct - 2 weeks Sydney
+
+11 Dec - Cronulla riots
+
+2006 -
+Jan Fly to Seattle...
+
+
+100 days before Christmas
+16 Sept. 1983 (Virgo)
+
+
+It angers you hearing about Phil spending his time in LA going to the pool, and not organising or going to classes.
+
+In Montreal Phil doesn&#39;t contibute to the food, that you are annoyed about, because he eats it - and thinks he is just eating Swyn&#39;s share.
+(Swyn was organising the food for a week or two).
+</tw-passagedata><tw-passagedata pid="312" name="Austin Edward" tags="" position="2600,2300" size="100,100">Player Character</tw-passagedata><tw-passagedata pid="313" name="Carl Vink" tags="" position="2600,2500" size="100,100">
+When joined, was in relationship with Swyn.
+But broke up, now in relationship with Trixy (who he &quot;recruited&quot;)
+
+[[Trixy Brown]] </tw-passagedata><tw-passagedata pid="314" name="Trixy Brown" tags="" position="2725,2500" size="100,100">
+She is really bright.
+Her family are artists or something.
+
+Dating Carl.
+But sometimes they aren&#39;t
+She was in her own room etc. until a few weeks ago, when you figure she got back with Carl (they were in different places in LA).</tw-passagedata><tw-passagedata pid="315" name="Stuart Loggins" tags="" position="2600,2700" size="100,100">Stuart is a year older than you, but acts &quot;40 year old virgin&quot;
+enjoys speaking with a received accent,
+reads and likes poetry, but not academicly gifted.
+
+He likes the idea of a classical society.
+When he joined you were surprised.
+
+In 2005 he took up smoking in Detroit, where Carl, Rose, Swyn, Barrett, Rhy and him spent three months organising living in hotels.
+They bonded a bit there. It made you want to go OS too. But you only got a week in 2004 in the first week of the election.
+</tw-passagedata><tw-passagedata pid="316" name="Zed Logans" tags="" position="3000,2500" size="100,100">He is from Gipsland, and dropped out of highschool to join the party in 2001.
+
+[[Natasha Fitzgerald]] </tw-passagedata><tw-passagedata pid="317" name="Natasha Fitzgerald" tags="" position="3125,2500" size="100,100">Eldest daughter of the Party chairman and secretary.
+
+Natasha seemed a bit of a party girl, who was dating Zed in 2003, 2004. Until you asked her to get serious.
+
+Natasha is only a week older than you...
+</tw-passagedata><tw-passagedata pid="318" name="Rhys Fitzgerald" tags="" position="3125,2625" size="100,100">
+Rhys dropped out of school at 15 or 16 to be part of the Aston By-election campaign, and then worked organising all 2002, and away in Maitland for 2003.
+
+He is often childish.
+Not showering, wearing Chicago Red Bulls shirts and the like.
+He has taken ownership of one of the company cars, an old Torana...</tw-passagedata><tw-passagedata pid="319" name="Tristian Fitzgerald" tags="" position="3125,2750" size="100,100">
+When someone said Tristian was really smart and could had become a doctor - even thought you know he just finished Year 12 in 2005, You almost laughed.
+
+You remember him and his friend cleaning the toilets at the office.
+Never seen him attend a meeting.</tw-passagedata><tw-passagedata pid="320" name="Untitled Passage 12" tags="" position="3300,2500" size="100,100"></tw-passagedata><tw-passagedata pid="321" name="Wikipedia ALYM (that I put up there in 2005)" tags="" position="2775,2100" size="200,100">Hisotry
+the following is the story of the LaRouche Youth Movement in Australia, pretty much blow by blow. Up until roughly two years ago (December 2003)
+
+
+Phase One: where the force sort of gets formed.
+The “Youth Movement” was formed in Australia on some otherwise uneventful day in August 2002. When four young members of the Citizens Electoral Council were (as some will say) “thrown together”. The original four, consisted of CC who had been on the field team, JL who had been in admin, and DM and RM who had been in intel.
+
+This orginal team was then complemented within a month with two Tasmanians, CP and SL. Then in November with another two members, being WL (the brother of SL) and KI (the son of the CEC&#39;s founder, and the middle child at that). The shift then started to change towards organising for the New South Wales State Elections in March 2003, where the Flagship Campaign for the CEC was to be Maitland.
+
+In January the whole of the CEC including the youth movement went to Maitland, where they started to systematically doorknock the electorate and started to kick up a storm to try and get our candiate elected. The three month campaign was broken for the “Youth Movement” by a trip to the USA.
+
+So after the campaign the crew then returned to Melbourne (minus CP, who had quit with the end of the campaign), where they started to hit the University Campuses to try and recruit more “Youth Movement” members.
+
+Phase Two: where forces reaches eight again.
+After basically a month of organising on campuses, where the force of seven set up tables and tried to get students interested in what is happening around them. It is sort of ironic, that their next member was neither a University Student, nor recruited during the semester. KR, was recruited for the first trip since Maitland, being a trip to Canberra in June 2003, to get out the new Children of Satan pamphlet.
+
+The CEC office also put on a performance of Schiller&#39;s “Joan d&#39;Art” at the July Confrence 2003, in which all of the Youth Movement Members played roles: JL playing Joan d&#39;Art.
+
+
+Phase Three: A Cadre School.
+Then an idea hit the CEC, that after a year of organising on Universities that having a Student only conference (or a Cadre School) at a camp in Anglesea would be the way to boost their numbers above eight members. Many weeks of organising went into aranging for students to come, and then when the main International guests Leini Rubinstien arrived and whipped them into a phoning frenzy for the last week to aim at doubling the number of people attending. Also for the Cadre School BM from Philadelphia LYM local came down as well as Leni from the LA LaRouche campaign office.
+
+The Cadre School was a huge success in recruiting people, DA a contact from the Maitland campaign finished his year at University then joined. AR a contact from the Aston by-election quit his Accounting course at TAFE, and SG a contact previously not contactable until two days before the Cadre School, joined dropping his University program at RMIT.
+
+But with the three extra people, no squish was really felt as CC, DM, RM, KI and WL had all headed to the USA for November.
+
+https://en.wikipedia.org/w/index.php?title=Australian_LaRouche_Youth_Movement&amp;oldid=15439283
+
+===
+2004 Federal Election
+ALYM campaign cars in procession election eve
+
+During the 2004 Federal Election, the ALYM had 12 of its members run for the House of Represenatives in the Melbourne Region, and Senate. They also managed three &quot;flag ship&quot; campaigns in the Melbourne Region, including the campaign Aaron Isherwood himself a member of the ALYM standing against Michael Danby in the seat of Melbourne Ports.
+
+They started campigning from April 2004, door knocking the electorates of Melbourne Ports, Maribyrnong and Calwell with the Election edition of the New Citizen, that went through the fight for a National Bank in Australian Politicts and the founding of the Australian Liberal Party in the 1930-40 period.
+
+But also during this time aided campaigns in Western Australia and Queensland.
+
+
+New Bretton Woods Campaign
+LaRouche&#39;s renewed calls for the New Bretton Woods International Monetary System in late 2004, had the CEC formulate a National Petition that was read out on 20 June 2005 in the House of Represenatives.
+
+The Back bone of this petition drive was the Australian LaRouche Youth Movement, that send squads into Adelaide, Canberra, Sydney and even breif visits to surrounding areas NewCastle, Geelong, Bendigo and Ballarat. And the Melbourne region, where they set up tables in comerical areas, distributed New Citizen papers and organised students through classes. To reach an average weekly petition signer rate of around 500-600 as a group.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
