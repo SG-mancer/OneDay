@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play TokyoDay.</tw-noscript></noscript></tw-story>
-<tw-storydata name="TokyoDay" startnode="276" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-tag name="Quote" color="purple"></tw-tag><tw-tag name="Montreal" color="blue"></tw-tag><tw-tag name="Escape" color="yellow"></tw-tag><tw-tag name="Phone" color="orange"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="11775,7625" size="100,100">It is raining.
+<tw-storydata name="TokyoDay" startnode="329" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Yamanote" color="green"></tw-tag><tw-tag name="Quote" color="purple"></tw-tag><tw-tag name="Montreal" color="blue"></tw-tag><tw-tag name="Escape" color="yellow"></tw-tag><tw-tag name="Phone" color="orange"></tw-tag><tw-tag name="Google-Notes" color="blue"></tw-tag><tw-passagedata pid="1" name="Haneda Airport" tags="" position="11775,7625" size="100,100">It is raining.
 
 Raleigh says she is going straight to Narita, where maybe she can find a lounge or one of those capsules to sleep the day in before tonights flight to Hawaii.
 [[Keikyu airport Line]]
@@ -823,7 +823,7 @@ Trauma points as you go around the loop?
 	
 	//&quot;From where?&quot;// She asks, eyes narrowing on your face. Intrigued.
 	
-	(display:&quot;#linklet&quot;)</tw-passagedata><tw-passagedata pid="58" name="ask for her name" tags="" position="7600,3350" size="100,100">{(storylet: when visits is 0)
+	(display:&quot;#linklet&quot;)</tw-passagedata><tw-passagedata pid="58" name=":: ask for her name" tags="" position="7600,3350" size="100,100">{(storylet: when visits is 1)
 	(exclusivity: 0)
 	(urgency: 5)
 	&lt;!-- check for bonus of waiting so long to ask her name --&gt;}
@@ -833,7 +833,7 @@ Trauma points as you go around the loop?
 	
 	You shake hands.
 	(display:&quot;#linklet&quot;)</tw-passagedata><tw-passagedata pid="59" name="#linklet" tags="" position="7525,3525" size="100,100">(for: each _p, ...(open-storylets:)&#39;s 1stTo4th)[
-	&gt; (link-goto: _p&#39;s name)]</tw-passagedata><tw-passagedata pid="60" name="expalain that just quit a political group" tags="" position="8075,3000" size="100,100">{(storylet: when visits is 0)
+	&gt; (link-goto: _p&#39;s name)]</tw-passagedata><tw-passagedata pid="60" name=":: expalain that just quit a political group" tags="" position="8075,3000" size="100,100">{(storylet: when visits is 1) 
 	(exclusivity: 0)
 	(urgency: 5)}
 	hmm
@@ -1918,7 +1918,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	[[Pick up both bags]]
 	[[Pack messenger bag inside duffle bag]]
-	[[Leave]]...</tw-passagedata><tw-passagedata pid="206" name="#header Montreal" tags="" position="4600,5600" size="100,100">{ &lt;!-- increment the standard 5min for turn, and then adjus the time 
+	[[~ Leave]]...</tw-passagedata><tw-passagedata pid="206" name="#header Montreal" tags="" position="4600,5600" size="100,100">{ &lt;!-- increment the standard 5min for turn, and then adjus the time 
 	(note - some passages had time modifiers to counter or increase this) --&gt;
 	(set: $min to $min+5)
 	(display: &quot;TimeCtrl&quot;)
@@ -1959,7 +1959,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	(display: &quot;d&#39;Iberville Bus&quot;)
 	
 	&lt;!-- This bus would be visible if the time ($min) was 15 or 20 --&gt;
-	}</tw-passagedata><tw-passagedata pid="210" name="Look-over Itinerary" tags="relax" position="5125,5900" size="100,100">{(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and visits is 0)
+	}</tw-passagedata><tw-passagedata pid="210" name="Look-over Itinerary" tags="Google-Notes" position="5125,5900" size="100,100">{(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and visits is 0)
 	(exclusivity: 0)
 	(urgency: 5)
 	(set: $wor to it - 1)}
@@ -2017,7 +2017,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	//You remember the many times(click:&quot;many times&quot;)[ (in Sydney, Melbourne, Adelaide, and now Montreal)] spending a few hours of a morning handing out progaganda to commuters. You felt like you would spin from commuter to commuter attempting to hand them flyers or magazines, each face a blur in the rush.//
 	
 	[[Change to (long) Orange Line]]
-	[[Exit the station]]</tw-passagedata><tw-passagedata pid="215" name="Snowdon" tags="transport relax" position="5000,6575" size="200,100">{
+	[[Exit the station]]</tw-passagedata><tw-passagedata pid="215" name="Snowdon" tags="transport Google-Notes" position="5000,6575" size="200,100">{
 	(set: $min to $min+20)
 	(set: $trans to &quot;STM Orange Line&quot;)
 	(set: $destination to &quot;Lionel-Groulx&quot;)
@@ -2069,7 +2069,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	[[Gare Lionel-Groulx]]
 	
-	&lt;!-- time for this route is 45min (10min longer than other way) --&gt;</tw-passagedata><tw-passagedata pid="218" name="Gare Lionel-Groulx" tags="wait relax" position="4850,6875" size="100,100">{
+	&lt;!-- time for this route is 45min (10min longer than other way) --&gt;</tw-passagedata><tw-passagedata pid="218" name="Gare Lionel-Groulx" tags="wait Google-Notes" position="4850,6875" size="100,100">{
 	&lt;!-- consider making the player find this location... --&gt;
 	&lt;!-- This bus-stop has a 20 min cycle, as each of the memories is 15min --&gt;
 	}(if: visits is 1)[(set: $destination to (either:&quot;Montreal International Airport (YUL)&quot;,&quot;Montreal-Dorval Airport&quot;,&quot;Montreal Airport&quot;))(set: $trans to &quot;747 bus&quot;)(set: $wor to it - 2)
@@ -2102,7 +2102,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	You remember last time visiting Battery Park, Ground Zero, walking across both the Brooklyn and Manhattan bridges, then zig zagging on quiet streets until you reached Penn Station for a morning train back to the hotel.//
 	
-	The bus exits the freeway into an industrial looking area, and then enters the carpark of [[Montreal Airport]]...</tw-passagedata><tw-passagedata pid="220" name="Montreal Airport" tags="wait relax" position="4800,7275" size="100,100">{
+	The bus exits the freeway into an industrial looking area, and then enters the carpark of [[Montreal Airport]]...</tw-passagedata><tw-passagedata pid="220" name="Montreal Airport" tags="wait Google-Notes" position="4800,7275" size="100,100">{
 	&lt;!-- You will be relaxed if you arrive before 0830, otherwise you are a bit worried. --&gt;
 	(if: visits is 1)[(set: $destination to &quot;Flight AC744 (Gate 60)&quot;)(set: $trans to &quot;Montreal Airport&quot;)(if: ($hour+($min/100)) is &lt;8.3)[(set: $wor to it - 2)]&lt;!-- decrease stress if early --&gt;]
 	}
@@ -2165,7 +2165,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	_i
 	
-	[[Montreal Airport]] </tw-passagedata><tw-passagedata pid="225" name="Leave" tags="" position="4700,5975" size="100,100">{(set: $min to it - 5)
+	[[Montreal Airport]] </tw-passagedata><tw-passagedata pid="225" name="~ Leave" tags="" position="4700,5975" size="100,100">{(set: $min to it - 5)
 	(if: $bags is &gt;0)[(set: $wor to it - 1)]}
 	You say a silent goodbye to your co-workers and step out of the door into the crisp summer morning air.
 	
@@ -2194,7 +2194,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	]
 	
 	&lt;!-- note it doesn&#39;t handle the day, as game is designed to be 28, 29, 30th of July--&gt;
-	}</tw-passagedata><tw-passagedata pid="227" name="d&#39;Iberville Bus" tags="relax" position="4975,6325" size="100,100">{(exclusivity: 0)
+	}</tw-passagedata><tw-passagedata pid="227" name="d&#39;Iberville Bus" tags="Google-Notes" position="4975,6325" size="100,100">{(exclusivity: 0)
 	(urgency: 10)
 	&lt;!-- time control --&gt;
 	(set: $min to $min + 10)
@@ -2216,7 +2216,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	Maybe you should put the messenger bag inside your duffle bag?
 	
 	[[Pack messenger bag inside duffle bag]]
-	[[Leave]]...</tw-passagedata><tw-passagedata pid="229" name="Pack messenger bag inside duffle bag" tags="relax" position="4600,5775" size="100,100">{(set: $bags to 2)
+	[[~ Leave]]...</tw-passagedata><tw-passagedata pid="229" name="Pack messenger bag inside duffle bag" tags="Google-Notes" position="4600,5775" size="100,100">{(set: $bags to 2)
 	(set: $wor to it -1) &lt;!-- &quot;relaxed&quot; tag is used to highlight this passage decreases your stress level --&gt;
 	}
 	You put your messenger bag inside your duffle bag. The zipper is holding precariously taught.
@@ -2225,7 +2225,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	
 	You smile to yourself and swing the single bag over your shoulder. Even though it is heavy on your shoulder, it is easier now to carry.
 	
-	[[Leave]]</tw-passagedata><tw-passagedata pid="230" name="No luggage" tags="Phone" position="4500,6075" size="100,200">(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and $bags is 0)
+	[[~ Leave]]</tw-passagedata><tw-passagedata pid="230" name="No luggage" tags="Phone" position="4500,6075" size="100,200">(storylet: when $location is &quot;Rue d&#39;Iberville, Montreal&quot; and $bags is 0)
 	(exclusivity: 1)
 	(urgency: 0)
 	
@@ -2255,7 +2255,7 @@ He speeds home, at 480 knots (890km/hr) from New York to LA, then over the pacif
 	&lt;!-- note this flight boards at possibly 0935, 0940 (from waiting at the gate), 
 	or you link directly here (skipping waiting at gate) if you check-in any time after 0905 (i.e. 0910-0955) --&gt;
 	
-	}</tw-passagedata><tw-passagedata pid="234" name="Wait at Gate" tags="wait relax" position="4700,7800" size="100,100">(set: $wor to it - 1)
+	}</tw-passagedata><tw-passagedata pid="234" name="Wait at Gate" tags="wait Google-Notes" position="4700,7800" size="100,100">(set: $wor to it - 1)
 	&lt;!-- if you wait at the gate, you become less and less worried, you can see your plane --&gt;
 	
 	(for: each _p, ...(open-storylets:)&#39;s 1stTo2th)[
@@ -3307,7 +3307,7 @@ As we sat there, the noise of the bar fading into the background, I realized tha
 
 &quot;You&#39;re welcome, Austin. I&#39;m here for you, no matter what,&quot; she replied.
 
-And with that, we spent the rest of the evening mapping out my escape</tw-passagedata><tw-passagedata pid="307" name="Untitled Passage 6" tags="" position="2400,200" size="100,100">Talking to Bruce this afternoon as I was thinking about leaving Canada, 
+And with that, we spent the rest of the evening mapping out my escape</tw-passagedata><tw-passagedata pid="307" name="Untitled Passage 6" tags="" position="2300,275" size="100,100">Talking to Bruce this afternoon as I was thinking about leaving Canada, 
 he suggested that it is most likely due to being home sick, I have been away from contact with Australia for a long time and am not really knowing how long it will be until I will be back in Australia.
 
 And then add to that the stress created by the economic situation (Internationally as well as personally) and you have a really stress full situation. So a suggestion made was to become a test for going across the border, staying a month in Boston or something and then moving about like that.
@@ -3325,10 +3325,15 @@ I am a weird sort of organiser in the LYM though I must admit, I joined just aro
 So as most LYM organisers I have a tight schedule, but what I intend on doing is writing every night a &quot;nightly&quot; as you will, before going to bed. It is 2:10am (28June) right now and I need to be up by 7:00 to be in for French at 8:00am.
 
 ===
-https://revolutionarydoug.blogspot.com/2001/07/one-of-my-lifes-achievements.html</tw-passagedata><tw-passagedata pid="308" name="Phone Call" tags="Phone" position="2000,200" size="100,100">
+https://revolutionarydoug.blogspot.com/2001/07/one-of-my-lifes-achievements.html</tw-passagedata><tw-passagedata pid="308" name="Emails" tags="" position="2000,200" size="100,100">
 You look at the email reply. To your request for better working conditions and pay.
 
+:: Gmail ::
+Sent:
+☐☆ me | Ground Conditions | Aug 2
+☐★ me | Need Pay | Jul 27
 
+Emails explaining the problems on the ground.
 
 Australia is not the centre of world politics, it is a corner, but at that a very important corner...
 
@@ -3347,7 +3352,7 @@ Maybe convince Trixy to go to Boston...
 
 Nathaniel, Trixy and you try to get a beer the night before you leave...
 
-As you talk, maybe remember people like Lo leaving just before the federal election, or Ted leaving after the election. </tw-passagedata><tw-passagedata pid="309" name="Untitled Passage 10" tags="" position="1800,300" size="100,100">
+As you talk, maybe remember people like Lo leaving just before the federal election, or Ted leaving after the election. </tw-passagedata><tw-passagedata pid="309" name="Phone team" tags="" position="2600,200" size="100,100">
 You think about how you have never been on a joint call with any of the phone team.
 
 Or how you locked heads with Natasha the daughter of the party chairman. Or the arguments with their middle son Rhys.
@@ -3492,7 +3497,935 @@ But also during this time aided campaigns in Western Australia and Queensland.
 New Bretton Woods Campaign
 LaRouche&#39;s renewed calls for the New Bretton Woods International Monetary System in late 2004, had the CEC formulate a National Petition that was read out on 20 June 2005 in the House of Represenatives.
 
-The Back bone of this petition drive was the Australian LaRouche Youth Movement, that send squads into Adelaide, Canberra, Sydney and even breif visits to surrounding areas NewCastle, Geelong, Bendigo and Ballarat. And the Melbourne region, where they set up tables in comerical areas, distributed New Citizen papers and organised students through classes. To reach an average weekly petition signer rate of around 500-600 as a group.</tw-passagedata></tw-storydata>
+The Back bone of this petition drive was the Australian LaRouche Youth Movement, that send squads into Adelaide, Canberra, Sydney and even breif visits to surrounding areas NewCastle, Geelong, Bendigo and Ballarat. And the Melbourne region, where they set up tables in comerical areas, distributed New Citizen papers and organised students through classes. To reach an average weekly petition signer rate of around 500-600 as a group.</tw-passagedata><tw-passagedata pid="322" name="Intervention" tags="" position="3100,2000" size="100,100">Intervention
+
+2004 after the election was finished, I felt lost and wrote to the leadership saying so.
+
+There response was to pull me into a room, and try to get me to open up, say that I had a bad past or something. It was all attacks at me. I cried, and couldn&#39;t answer their questions.
+
+I then asked for a break. Was told no. After about thirty minutes I then got up and left.
+The chairman in the toilet, whilst I pissed for a solid minute told me I was weak.
+
+Then I witnessed two other people getting interogated in similar ways.
+Stories of not knowing if they were raped as children.
+
+A story of a girls room smelling like piss, in which he answered she had been fucking another member (not present) and fingering herself like a horny possessed witch. Later thinking about it, I thought - hey a pissed bed, and sex smells different.
+
+Two or three days after the intervention, the secretary said everyone thought I was more level headed, and nicer since the intervention. 
+
+
+I went to the doctors to check some lumps on the day the chairman had an &quot;intervention&quot;, walking back into the room to see him teary eyed. I had asked the doctor that I thought I was getting anxiety. He suggested I join a sports group, spend time away from the party, I heard &quot;it was unhealthy to dedicate all your time to the party.&quot;
+
+The chairman&#39;s kids played sport. Even Rhys who had been an organiser for two years longer than I&#39;d been a member.
+But I also thought of how difficult it would be to find a group. I&#39;m rubbish at sport, and also I would need to find a group, then arrange to sneak away from the 24/7 work we did to participate.
+
+I had started to talk to the Jehovah&#39;s Witness people that visited my place. The bible they gave me was tucked into my bag, though I hadn&#39;t read it.
+</tw-passagedata><tw-passagedata pid="323" name="Untitled Passage 11" tags="" position="3500,1900" size="100,100">Another organisation...
+
+https://www.abc.net.au/news/2021-09-13/jehovah-witnesses-child-abuse-four-corners-investigations/100444320</tw-passagedata><tw-passagedata pid="324" name="A320 training" tags="" position="4100,2100" size="100,100">
+https://www.youtube.com/watch?v=l1CIhsyGb_8
+Touch and goes - the 6 to get base training complete - after type rating - before line training.
+
+(if MPL - will need 12 instead of the 6 shown).
+
+## ATPL Theory exams ##
+You must have also of passed the following 14 ATPL theoretical examinations with a pass mark of 75% or greater. The ATPL theory subjects consist of the following:
+
+Air Law
+Aircraft General Knowledge – Airframe/Systems/Powerplant
+Aircraft General Knowledge – Instrumentation
+Mass and Balance
+Performance,
+Flight Planning and Monitoring,
+Human Performance,
+Meteorology,
+General Navigation,
+Radio Navigation,
+Operational Procedures,
+Principles of Flight,
+Visual Flight Rules (VFR) Communications.
+Instrument Flight Rules (IFR) Communications. (Only required to hold an IR)
+A number of airlines regularly stipulate their preference for candidates who achieved over an 85% average pass mark, so in reality, this is the minimum you should be aiming for.
+
+## Instrument Rating ##
+Fly an aircraft in conditions where you can’t see the ground, such as in or above cloud is referred to instrument meteorological conditions (IMC). In these conditions, you can’t fly the plane by looking out the window you have to fly through reference to the aircraft’s instruments without. This is called Instrument Flight Rules (IFR). In order to be qualified to operate IFR, you must first hold an Instrument Rating (IR). You can complete the instrument rating on either a single or multi engine aircraft, but to operate for an airline, you specifically need to hold a Multi Engine Instrument Rating (MEIR).
+
+When training for the instrument rating, the instructor will place special screens up in the windshield of the aircraft, or the student will wear special goggles to ensure the student can’t see outside. The screens go up at about 400 feet above ground level and are removed when coming into land at about the same height. After take-off, the student must navigate only using the aircraft instruments and radio beacons on a predetermined routing. A typical route involves navigating to another airfield, making an instrument approach followed by carrying out a missed approach before navigating back to the departure aerodrome to land.
+
+During this phase of training, much emphasis is placed on the student’s pilot in command capabilities, with a lot of training being conducted as Pilot in Command Under Supervision (PICUS). This basically means that whilst the instructor has the overall legal responsibility of the flight, the student is encouraged to act as the Pilot in Command (Captain).
+
+In addition to the theoretical examinations required to pass hold a CPL, you must also pass the IFR Communications theoretical examination before obtaining your MEIR.
+
+To obtain an IR you must have completed a minimum of 50 hours cross country flying under instrument flight rules (IFR) as pilot in command. When the candidate is deemed ready, he/she must complete a mock skills test (called a 170A) followed by an official skills test with an approved instrument rating examiner. The test requires you to fly a number of exercises with reference only to the aircraft instrumentation, including the routing as described as above.
+
+## Multi-crew cooperation training ##
+The MCC phase of your training is designed to help make the transition from single pilot operation to multi pilot operation. Just about all commercial aircraft are operated with a minimum of two flight crew, a Captain and a First Officer, and have to work together effectively to ensure the safety of the operation.
+
+The MCC course is comprises of both theoretical training and practical simulator training. The simulator used is typically a widely operated commercial aircraft such as a Boeing 737 or Airbus 320.
+
+The course places a large emphasis on non-technical Crew Resource Management (CRM) skills such as decision making, teamwork and communication. It is the first time you are introduced to multi-crew standard operating procedures (SOPs) in an airline environment. The course usually consists of around 20 simulator hours and is very intense.
+
+Some training organisations also include a Jet Orientation Course (JOC) as part of the MCC course. This shorter course is used to help develop the manual flight and automation managed skills needed to operate a large commercial jet aircraft.
+===
+
+## Type Rating ##
+A type rating is the endorsement to operate a specific commercial aircraft. The type rating has traditionally been provided by an airline once offered a job with that airline, but it is now becoming more common for the candidate to pay for the type rating him/herself when offered a job, or on completion of the ATPL training to become more employable.
+
+A type rating is required to operate a specific aircraft that meets any of these requirements:
+
+Carries more than 9 passengers
+Has a maximum take-off weight of more than 5,900 kilograms
+Is a jet aircraft
+To commence a type rating the candidate must have a valid instrument rating and have passed all 14 of the theoretical examinations.
+
+One person can hold a maximum of two type ratings at any one time. There are some generic type ratings, for example a type rating on the Airbus A320 allows the holder to operate the A318, A319, A320 and A321. Similarly, completing a type rating on the Boeing 737 NG allows the holder to operate any of the B737 series, both classic and next generation (300-900).
+
+## Base Training ##
+After completing your type rating, you’re ready to fly the aircaft for the first time. You take an empty aircraft up, and complete around 6 takes offs and landings (“touch and go’s) with a training captain. If you manage to complete the take-offs and landings to a good standard, the next time you fly the jet will be with passengers on board on day one of your Line Training.
+
+## Line Training ##
+Line training is where you operate the aircraft as part of normal airline operations (i.e. with passengers onboard) but with a Captain who holds special training qualifications (termed a ‘Training Captain’) who is there to provide training, supervision and mentorship.
+
+Line Training is the final phase of your flight training carried out to bring you up to “line standard”. Prior to this you will have only flown the aircraft once during your base training without passengers.
+
+Line training typically takes between 30 to 80 sectors (flights) and you are signed off when you are deemed proficient with the airline SOPs, non-technical skills and aircraft handling. You are then released “to the line” where you will fly with normal Captains as part of standard crew. This is where the learning really starts, and you never stop throughout your entire career!
+
+++++
+https://www.pprune.org/pacific-general-aviation-questions/237341-what-co-pilot-time-worth-2.html
+++++
+6th Aug 2006, 03:34	  #19 (permalink)  
+neville_nobody
+ 
+Join Date: Jul 2003
+Location: Somewhere
+Posts: 3,093
+Likes: 2
+Received 176 Likes on 74 Posts
+The multi crew license is more aimed at countries where they are struggling to get pilots. Read comments from QF recently say that they were not considering introducing such a scheme as their current system was sufficient and that they had many applicants that fit their criteria from Airlines/GA/Air Force/Cadets. Would also suggest that we don&#39;t have a pilot shortage in this country!
+
+I think that this post also points out the current obsurdity of the Australian system. I too have stories of people coming from overseas with Jet time unable to even get an interview in this country becuase of 500 Multi rule. However to axe the multi rule and replace it with a zero to hero program will just produce people whose first solo is in a 737. I cannot see how that is the safest option when we have such an enourous depth of pilot experience in this country. For countries that don&#39;t have the depth that kind of license is thier only option.
+
+Who is going to be able to afford a multi crew license in Australia?? It&#39;s
+$30 000 JUST FOR AN ENDORSEMENT!!!!!!!! How much will an entire license of 200+ hours going to cost???
+++++
+
+~~~
+What does the MPL training process look like?
+Theoretical preparation. Undoubtedly, every pilot dreams of passing to the practical preparation after the beginning of training right away. However, the theoretical part is an inevitable stage of training. In terms of theoretical preparation, the MPL course accumulates at least 750 hours of instruction to ATPL (A) level with the hours for the Type Rating a student is applying for.
+
+Practical training. The flight phase of the MPL programme consists of 4 stages:
+
+Phase 1: core flying skills (specific basic single-pilot training)
+Phase 2: basics (introduction of multi-crew operations and instrument flight)
+Phase 3: intermediate (application of multi-crew operations to a multi-engine turbine aeroplane certified as a high performance aeroplane)
+Phase 4: advanced (Type Rating training within an airline environment)
+
+So, in total, the MPL training scheme secures a student with the minimum of 240 hours of practical training and can maximally be extended up to 404 hours depending on the course duration and the airline needs.
+
+Areas of the competence after training. If a student completes MPL training programme, they are expected to have an advanced level of skills needed to operate and interact as a co-pilot of a multi-pilot turbine powered aeroplane under visual and instrument conditions.
+
+Commonly speaking, the students will have to be able to: apply human performance principles, including principles of threat and error management; perform aeroplane ground operations, take-off, climb, cruise, descent, approach, landing as well as after landing and aeroplane post-flight operations.
+
+What makes the MPL programme exceptional?
+In fact, MPL programme combines Ab Initio training, Type Rating training and training courses undergone at the airline company. Just like ATPL course, the MPL programme is also carried out in a close cooperation with an airline, although with a stronger commitment of a student to an airline. The programme is specifically tailored to the airline requirements and needs, keeping in mind the type of aircraft it operates. Thus, initially it was not allowed for a student to move from one operator to another during training. Meanwhile, the students were taking a risk when applying for this programme.
+
+
+</tw-passagedata><tw-passagedata pid="325" name="Untitled Passage 14" tags="" position="2500,1000" size="100,100">
+I spent 80 days in USA
+17 Feb - 8 May
+
+then 81 days in Montreal
+8 May - 28 Jul
+
+In this story</tw-passagedata><tw-passagedata pid="326" name="Untitled Passage 38" tags="" position="6975,900" size="100,100">This course comprises 187.3 hours of flight training including:
+
+49.8 hours of dual flight instruction and 5 hours simulator instruction - single engine aircraft including 5 hours of Upset Recovery Training (UPRT)
+70 hours Pilot in Command (solo) - single engine aircraft
+42.5 hours of dual instructional and 20 hours simulator instruction - multi engine aircraft.
+All flight tests (Private Pilot Licence, Multi Engine Class Rating, Multi Engine Command Instrument Rating, Commercial Pilot Licence) - first attempt only
+
+
+Aeronautical Knowledge Training
+
+This course includes 320 hours of classroom tuition covering aeronautical knowledge topics to enable the student to undertake the following CASA exams
+
+Private Pilot Licence (PPL)
+CPL Aerodynamics (CADA)
+CPL Aircraft General Knowledge (CSYA)
+CPL Human Factors (CHUF)
+CPL Meteorology (CMET)
+CPL Flight Rules &amp; Air Law (CLWA)
+CPL Navigation (CNAV)
+CPL Operation, Performance &amp; Flight Planning (CFPA)
+Instrument Rating Exam (IREX)
+
+The Commercial Pilot Licence with Multi Engine Command Instrument Rating are granted on successful completion of the following assessments.
+
+Private Pilot Licence
+Multi Engine Class Rating
+Multi Engine Instrument Rating
+Commercial Pilot Licence
+
+https://web.archive.org/web/20200806162252mp_/https://www.cae.com/civil-aviation/become-a-pilot/our-pilot-training-programmes/
+
+No rights to work in any country with MPL
+- EU, Malaysia
+or Canada for the CRJ200 &quot;take off&quot; course.
+</tw-passagedata><tw-passagedata pid="327" name="Mazarin" tags="" position="3900,400" size="100,100">In the Peace of Westphalia, Mazarin&#39;s and Colbert&#39;s common-good principle of the &quot;Advantage of the other&quot; triumphed over the imperial designs of both France&#39;s Louis XIV himself, and the Venetian-controlled Hapsburg Empire. In the 18th Century, the same principle brought the posthumous victory of Gottfrield Leibniz over John Locke…
+… In 1642, six years before the signing of the Peace of Westphalia was to end the Thirty Years&#39; War, Mazarin sent a negotiating team to Munster to begin working on his peace plan…
+
+https://larouchepub.com/eiw/public/2005/eirv32n03-20050121/eirv32n03-20050121_072-editorial.pdf
+
+https://larouchepub.com/lar/2004/3149second_wphalia.html
+TOWARD A SECOND TREATY OF WESTPHALIA
+The Coming Eurasian World
+… the oncoming waves of a great storm of global breakdown crisis are striking on the gates of the governments of the world, and are already pounding the hoaxster&#39;s illusion of Bush&#39;s economic recovery to shreds. The terminal breakdown-crisis of the 1971-2004 world monetary system is thus now fully under way.
+
+Asserts his truths about the historic context of Plato and the penelonesian wars
+Mirroring the current bush follies 
+
+…The great leader for a time of crisis is onewhose selection breaks the rules, those rotten rules which are the relevant expression of the relevant, essential corruption. For that reason, society has tolerated only a relatively few truly great leaders for more than a short time. For example, as in the case of President Charles de Gaulle of France&#39;s Fifth Republic after 1963, the way in which bad governments recur or are maintained, is that the relevant leading institutions of society kill or otherwise eliminate capable leaders,..
+
+…So, with rare exceptions, the most significant, but usually poorly sensed forces of history, proceed in long waves, even very long waves. The improved art of statecraft which our world needs for the present, and for the times before us, must return, away from the ruinous accumulation of present-day habits…
+
+===
+
+http://cec.cecaust.com.au/pubs/pdfs/TOW_vs_R2P.pdf
+
+http://www.archive.schillerinstitute.com/strategic/hzl_t_of_w_0599.html
+
+===</tw-passagedata><tw-passagedata pid="328" name=":: Handy ::" tags="" position="2100,0" size="100,100">☒
+☐
+
+★
+☆
+</tw-passagedata><tw-passagedata pid="329" name="Phone call" tags="Phone" position="1400,400" size="100,100">
+&quot;I need to...&quot; As you press your tounge behind your top teeth, you are immediately aware of the silence on the phone line &quot;..leave.&quot; 
+(click: &quot;leave&quot;)[==&quot;I need to leave&quot; you say it again, without the pause. &quot;Being here is futile. We are barely scraping together enough to cook a meal a day. I&#39;m sleeping under a table, and haven&#39;t had a bed or bedroom to myself since we arrived in America. I feel unsafe. There is no response to my emails requesting more pay, and better conditions.&quot;
+
+After a pause, (link-reveal: &quot;John&quot;)[ (Writer of the Anti-Dummies serries, John is the local liaison for you Australian&#39;s in America)] replies.
+
+&quot;Austin, I understand this is difficult. You&#39;ve been in America for 20, no, 30 weeks now, which is quite a long time. Right now is not the time for timidity or pragmatism.
+There&#39;s a swell caused by you and your Australian colleagues here in North America, particularly there in Montreal. You are actively opposing the policy direction spearheaded by Wall Street Synarchist Felix Rohatyn and his ally George Shultz. Their Synarchist agenda of radical global economic restructuring, which emphasizes privatization and the erosion of nation-states, is something we must stand against.
+It&#39;s important to recognize that while Australia is important, it isn&#39;t the center of world politics. It plays an essential role, but the main battle is here. You need to remain part of this fight, not retreat to your corner. Your presence and efforts are needed here.&quot;
+
+[[Security]]</tw-passagedata><tw-passagedata pid="330" name="Rescheduled" tags="" position="1675,400" size="100,100">Lying to get into Canada
+
+The &quot;early team&quot; who had been in Boston, were turned back at the Canada border on 25  April. Because their visa had less than a week for USA...
+So those three were flown to Germany.
+Your spot in Germany was cancelled -
+Ike is still going, but they can only handle 4.
+
+Maybe after Canada you will go to Europe.
+So now you are going to Montreal.
+On Sunday 7 May, Ike and you split up after 10 weeks together in Seattle, then California for the state convention
+
+https://larouchepub.com/other/2006/3319calif_dem_conv.html
+Apr 28 State convention.
+
+That night with Carl and Ike you walk from Battery Park to Times Square, rather than just crash at the airport motel. They really liked it too. Crossing the Manhattan and Brooklyn bridges, finding Alexander Hamilton&#39;s grave, Ground Zero, Wall Street, the UN building...
+
+You wonder if you ever had a ticket to Europe.</tw-passagedata><tw-passagedata pid="331" name="Security" tags="" position="1400,525" size="100,100">
+You try to quickly think of a way to emphasise the lack of safety, and 
+You think about when your money and things was stolen in Seattle, from the couch you slept on, likely by another member.
+
+Maslow,
+That second bottom one safety...</tw-passagedata><tw-passagedata pid="332" name="All hell broke loose when they got back" tags="" position="2900,1200" size="100,100">https://lymcanada.org/mp3/00000000_Conference_Call_with_CEC_Australians.mp3
+
+Feb 2007 - when they got back
+
+Mar 2007 launched &quot;demolist the global warming fraud&quot; - National Conference
+	Kat and &quot;Tony Chaitkin&quot; - visiting Canberra, Sydney to find links between Australian Republicians and US stuff... &quot;ground breaking&quot;
+    Lanse Endisby
+    
+    - Defeat fraud of Australia&#39;s environmentalist ideology... 540,000 copies &quot;Global warming is a fraud!&quot;
+    Organising in a mass way! - Felt they were the drive for defeating carbon tax.
+    
+Since getting back, question - &quot;Lyn taking on responsibility&quot; not fluffy,
+Bullshit and lack of commitment - infighting in the group - needed sorting
+process - become more commited (political and intellectual) forced comfort reasons, &quot;move to higher level or stay in their ways&quot;
+
+14 when they returned from USA.
+Coped a bit of &quot;well its not working for us&quot; - started in 2003 October, recruiting Willy-Nilly.
+Leni - wanted us to recruit. Rang everyone, to try recruit them... Didn&#39;t know what they were joining - 
+It was a process, it didn&#39;t come easily.
+Recruitng for the hell of recuiting - back in 2003/4 - had 20 at one point.
+
+Needed to run around constantly getting people to do what is necessary - rather than in coming from an internal drive.
+&quot;People have a great potential to do good, if they choose to take that responsibility onto themselves&quot; - but that is a scary thing to do - it means you can&#39;t sit back and justify your behavior. can&#39;t justify &quot;I can&#39;t do this, I can&#39;t do that, and here is why&quot;
+But it is a messy process.
+
+Down to 5 full time - 3 members before USA (1 new, 1 during USA).
+Healthier - lack of emotional baggage
+The whole process is finding... - national identity (when Al Gor got Academy award).
+
+Lucas - problems from the back - strong in the period, resulting in moving out to own office.
+Orientation - fighting the Greenies.
+Make a solid commitment - 300 organisers, committed to be out on the street once a week - (that is only 40)
+9 full time organisers - recruiting boomers from phone organisers...
+Dynamic of unified recruitment - you can recruit in a way that suprises you,
+meet new people - see a process, &quot;beat the door down on us to want to join&quot; - that changes the dynamic.
+
+$34,000 a week budget - $1.8 million a year. 300 people contribute $200, Anti-entropic orientation behind it</tw-passagedata><tw-passagedata pid="333" name="R&amp;R" tags="" position="1300,700" size="100,100">
+Even in Vietnam, soldiers were sent home every six months for leave...
+
+Today those guys in Iraq, are on 6 month deployments, and get 
+
+You have had none of that.
+If this is a fight, there must be a huge problem,
+</tw-passagedata><tw-passagedata pid="334" name="Away calculations" tags="" position="2900,1400" size="100,100">
+
+
+196 days - 14/7/2012 - 26/1/2013 &quot;Operation Slipper&quot;
+
+164days - 17/2/2006 - 31/7/2006</tw-passagedata><tw-passagedata pid="335" name="Storylet" tags="" position="1400,1200" size="100,100">(storylet: when $x is true and visits is 0)
+(exclusivity: 1)
+(urgency: 1)
+</tw-passagedata><tw-passagedata pid="336" name="Story selector" tags="" position="1400,1075" size="100,100">(set: $x to true)
+(for: each _p, ...(open-storylets:)&#39;s 1stTo5th)[(link-goto: _p&#39;s name) - ]</tw-passagedata><tw-passagedata pid="337" name="2006-02-19" tags="Google-Notes" position="600,700" size="100,100">Sunday, Feb 19,
+
+Arrived in Seattle.
+</tw-passagedata><tw-passagedata pid="338" name="2006-05-08" tags="Google-Notes" position="600,1350" size="100,100">Monday, May 8,
+
+Arrived in Montreal.
+
+Last night I lead the two guys on a walk from Battery Park to Times Square. It was fun...
+
+When we got back to the hotel in the morning, there wa a message from the team who went through to Montreal the day before us.
+
+Well the message was to X from Y (they are a couple). I didn&#39;t read it. But he explained it.
+In Montreal I was so tired from being up all night, that I got directions to the house, and somehow caught a train, then a bus and walked a few blocks to find the correct place.
+I moved a matress to the back room, and set it up under a table so I could hide away.
+
+</tw-passagedata><tw-passagedata pid="339" name="2006-04-28" tags="Google-Notes" position="550,1100" size="100,100">Friday, Apr 28,
+Drove down from Seattle Monday 24th.
+
+(Cadre School 25, 26, 27 April)
+
+Day 1 of the Democratic Conevention Sacremento
+</tw-passagedata><tw-passagedata pid="340" name="2006-05-06" tags="Google-Notes" position="550,1225" size="100,100">Saturday, May 6
+
+This week organised in San Francisco and LA.
+Monday the downtown area.
+	I think we were on Market St, but no one would tell me when I asked. It was a long long day.
+Tuesday Berkley in the morning, then First A.M.E. Zion Church for lunch.
+Wednesday Berkley again, but all day this time. Then I got a ride to the LA office in Pasadena.
+I don&#39;t know what time it was when we arrived. 
+I was on the breakfast team, waking up every morning around 6am to go to the Oakland office to make up breakfast and lunch wraps.
+
+On Wednesday night I crashed at one of the houses, I can&#39;t remember. Then carried my thingsto the office on Thursday morning, hoping to find a bed.
+Thursday we organised at UCLA. Then an evening class.
+
+It was explained how Will would wander off, and not organise in LA.
+
+Friday we went somewhere in Orange County. I forget the local organiser&#39;s name, she was an actress or something and had a &quot;Cutlass Supreme&quot;. 
+Saturday there was a rally of illegal immigrants in Hollywood near the community college.
+
+I don&#39;t know anyone&#39;s names here in LA.
+I also haven&#39;t seen anyone we usually talk to here.
+Most of my time is spent in the office gossiping with the Australians.
+
+3 headed to Montreal the day before us.
+
+</tw-passagedata><tw-passagedata pid="341" name="2006-04-10" tags="Google-Notes" position="600,900" size="100,100">Monday, Apr 10
+
+We organised at an Immigration reform march, the people at the march walked 10 or so miles, from up in the hills or somewhere. But, we organised in the Seattle downtown.
+
+
+</tw-passagedata><tw-passagedata pid="342" name="2006-06-01" tags="Google-Notes" position="650,1700" size="100,100">Thursday, Jun 30
+
+Just finished a deployment, I think we left on Monday...
+
+Oshawa - Chevoletet, and the CANDU reactors
+Toronto 1 night 
+
+Then drive across the &quot;horse shoe&quot;
+Hamilton for night 2
+	Kitchener in the morning - TOYOTA plant
+
+Woodstock (not sure if it is the 69 one)
+	Woodstock - Toyota
+	Cambridge - Toyota
+    then Windsor in evening Ford 
+    
+Windsor for night 3
+	University organising
+	then a 9 hour drive back in the afternoon to Montreal
+    
+I drove from just before Toronto for 2 hours, as the sun set.]
+
+The other half of the team visited Ottowa instead of the horeshoe run.
+	In Ottowa the spent 2 nights (compared to our 3)
+
+
+I sort of wish I&#39;d know the plan before hand, maybe I could had visited my distant relatives near Niagara Falls.
+
+But got to talk to lots of Union people, at the car plants.
+That are getting pulled appart - shipped to China or other countries to save money on labour.
+</tw-passagedata><tw-passagedata pid="343" name="2006-05-14" tags="Google-Notes" position="725,1375" size="100,100">Montreal Week 1:
+
+
+</tw-passagedata><tw-passagedata pid="344" name="Untitled Passage 10" tags="" position="725,1500" size="100,100"></tw-passagedata><tw-passagedata pid="345" name="2006-04-22" tags="" position="450,1000" size="100,100">Saturday, Apr 22.
+
+Most of the Seattle office drove down to California today.
+It would had been exciting to go camping but I had been planning to teach a class.
+
+Except today, around lunch time I was told I can&#39;t teach the class.
+It felt like a reall attack on me. </tw-passagedata><tw-passagedata pid="346" name="On LaRouches actual death" tags="Quote" position="2100,800" size="100,100">...
+The recruitment effort enjoyed a measure of success. LaRouche&#39;s rather canny move as the Iraq quagmire set in was to position himself as kind of elder statesman in exile of American politics at war with the George W. Bush presidency and with Dick Cheney in particular. But the momentum did not continue through the next presidential election. The LaRouche resurgence seems to have been cresting around the time my article appeared.
+
+Even so, the proselytizing campaign had done its work. The political ghoul got a taste of fresh blood. The young members brought with them the skills needed to burnish the movement&#39;s previously dismal web presence. New faces appeared in the videos promoting LaRouche&#39;s latest warning that a financial, thermonuclear and/or bacteriological catastrophe was coming in a few months, instead of the familiar ones who&#39;d been issuing virtually identical bulletins for 30 years.
+
+It might be funny if not for the realization that those people were sacrificing their lives, talents and minds at the altar of a megalomaniac&#39;s narcissism. Thomas Pynchon might as well have had LaRouche in mind when, in The Crying of Lot 49, he referred to &quot;the true paranoid for whom all is organized in spheres joyful or threatening about the central pulse of himself.&quot; Perhaps the creepiest thing about his followers&#39; web presence now is that the spheres have kept spinning even after the pulse was gone: they quit broadcasting or publishing him in late 2016, which would have been unlikely if he were still capable of putting together a remotely comprehensible sentence.
+
+But in revisiting LaRouche here after all this time, I want to end on an encouraging development that seems likely to be repeated, in various forms, before too long. In September 2012, several young recruits who were being groomed as leaders &quot;compile[d], in as much detail as possible from our combined experiences, a report of the events leading up to our departures from the LaRouche organization.&quot; Running to 75 single-spaced pages, &quot;Why We Left&quot; is difficult to follow on first reading and has its baffling moments the second time through, too. But in brief:
+
+The older generation of supporters is made up cliques almost as hostile to one another as they are to the younger generation of supporters. LaRouche celebrates the younger ones at every opportunity, permitting them to do the fun part of being his disciple -- i.e., research and writing -- while longtime members work the boiler rooms, phoning people who have donated in the past in hopes of squeezing more money out of them. Various backstabbings occur. The nonagenarian LaRouche becomes noticeably confused at times. He also tries to woo a woman not quite a third his age. (She thinks about it.) Most of the events unfold at one or two locations; tensions seem to ricochet in an enclosed space. The whole document feels like equal parts Peyton Place and the Diagnostic and Statistical Manual of Mental Disorders.
+
+When approaching global catastrophes are announced, then fail to come to pass, it doesn&#39;t bother the old-timers. But it compounds the growing cognitive dissonance among some of the youth, who also suspect they will be put on the phones for fund-raising before long. Individual doubts slip into conversation; when not pushed down by the urgency of preparing for the next catastrophe, they start to accumulate, leaving a sense that the whole organization is out of touch with reality.
+...
+https://www.insidehighered.com/views/2019/02/15/essay-death-lyndon-larouche-and-future-his-movement</tw-passagedata><tw-passagedata pid="347" name="Why we left" tags="Quote" position="2100,925" size="100,100">September 2nd-15th, 2012
+
+Dear Colleagues,
+We have long believed the foundations of our association to be built upon a commitment to the pursuit of truth. In that spirit, we have chosen to compile, in as much detail as possible from our combined experiences, a report of the events leading up to our departures from the LaRouche organization. We feel that you deserve to know what happened, and to finally hear our reasons for leaving, &quot;from the horse&#39;s mouth,&quot; so to speak. The accusations made against us as to why we left are conscious lies, manifesting the same spirit of corruption and cover-up that provoked us each in our decision to depart. The chief reasons why we chose not to discuss our thoughts more publicly will be revealed by what is related here.
+We no longer subscribe to the belief that withholding crucial information from other members of the organization for the sake of &quot;the mission&quot; is more important than truth. The truth must be told, let the chips fall where they may. What is related here is true to our best knowledge of how things unfolded, and is documented in order to provide access to crucial information which has been heretofore suppressed or obfuscated. What you do with this knowledge is ultimately up to you. We act of our own sovereign accord, under no influence by other persons, monetarily or otherwise. Though the composition and compilation of this dossier has not been an easy process, we felt that it must be done; for ourselves, for the sake of truth, and for you.
+
+Tarrajna Walsh
+Nick Walsh
+Sky Shields
+Summer Shields
+Alli Perebikovsky
+Riana Nordquist
+Todd Nordquist
+Oyang Teng
+
+https://web.archive.org/web/20210525233423/http://laroucheplanet.info/pmwiki/pmwiki.php?n=Library.LYMwhyweleft
+
+This LaRouche Planet page is great !
+</tw-passagedata><tw-passagedata pid="348" name="Kepler v Galileo" tags="Quote" position="2000,1200" size="100,100">You take the case, for example—the key thing is, Galileo: a fraud and a faker. And the influence of Galileo, who was actually a sort of a high priest for Paolo Sarpi, in developing this crazy system of empiricism, uses one method. But Kepler uses another method: Kepler’s thing, especially on the question of his so-called “Third Law,” the harmonics, recognizes that there is a different sense organ than either sight or hearing, expressed in the laws of the universe: something which is neither. And that is what he wrestles with, in dealing with this question of the organization of the Solar System.&quot;
+From http://www.larouchepub.com/eiw/public/2007/eirv34n38-20070928/25-30_738.pdf
+
+Note: Larouche misses the point (and contradicts himself): Galileo shocked the beliefs of his time after he used TECHNOLOGY (a telescope) to see what eyes couldn&#39;t! He is rightly considered as the founding father of modern science and scientific method.
+
+After Galileo published his Starry Messenger, Kepler wrote a glowing open letter of admiration to Galileo, and this helped Galileo obtain a post as court mathematician to Cosimo II Medici, Grand Duke of Tuscany, despite the hostility and skepticism of Italian astronomers about Galileo&#39;s findings.</tw-passagedata><tw-passagedata pid="349" name="Plato v Aristotle " tags="Quote" position="2000,1325" size="100,100">the entirety of the history of European culture from the third century A.D. has centered on an irreconcilable conflict between the republican heritage of Plato and the oligarchical heritage of Aristotle
+
+...
+Through three millennia of recorded history to date, centered around the Mediterranean, the civilized world has been run by two, bitterly opposed elites, the one associated with the faction of Socrates and Plato, the other with the faction of Aristotle. During these thousands of years, until the developments of approximately 1784-1818 in Europe, both factions&#39; inner elites maintained in some fashion an unbroken continuity of organization and knowledge through all of the political catastrophes which afflicted each of them in various times and locales
+...
+
+&quot;Unbroken continuity&quot;? Although LaRouche never explained where this &quot;revelation&quot; came from, consequently his adepts thought this revealed &quot;secret knowledge&quot; was the mark of his &quot;genius&quot;.
+&#39;&#39;In reality, LaRouche picked this from his then-beloved philosopher Immanuel Kant!&#39;&#39;
+
+Kant - History of Pure Reason
+... Aristotle may be regarded as the chief of the empiricists, and Plato as the times followed chief of the noologist. Locke, who in modern Aristotle, and Leibniz, who followed Plato (although in considerable disagreement with his mystical system), have not been able to bring this conflict to any definitive conclusion...
+
+in conclusion and according to the Neo-Platonists themselves, there was NO contradiction or &quot;irreconcilable conflict&quot;, between the &quot;Top-Down&quot; method of Plato and the &quot;Bottom-Up&quot; method of Aristotle!
+This is very far off from LaRouche&#39;s Manichean simplistic view on that question! In fact, it is fair to say that most of the Neo-Platonists considered Plato as the resolution of this quarrel, very similar to a Leibniz&#39;s. Even Leonardo da Vinci was an avid reader of Aristotelian literature.
+</tw-passagedata><tw-passagedata pid="350" name="Forming LYM" tags="Quote" position="2000,1450" size="100,100">&quot;It is relevant to that general picture of the slide into decadence, that there is more than some little evidence, that SATAN fears those who do as I do. He whispers to the person he has selected as his next dupe, pointing the accusing finger against me: &quot;He is trying to change you!&quot;
+To that, the credulous dupe, looking SATAN in the eye, asks, credulously: &quot;Is that what he is doing?&quot;
+SATAN nods a knowing nod.
+The dupe&#39;s eyes widen. Anger seeps into his facial expression. &quot;Then, he is really a very bad guy!&quot; the dupe exclaims.
+&quot;Yes, he is a very bad guy,&quot; SATAN affirms, indulgently, as he touches the dupe&#39;s sleeve lightly with his own little finger; &quot;perhaps somebody should do something about him.&quot; The dupe&#39;s expression darkens. &quot;Really?&quot;
+To do what must be done at the risk of that SATAN&#39;s—and the Venetian financier oligarch&#39;s—displeasure, is to be a true teacher, a true leader. That such leaders might arise from the ranks of today&#39;s young adult youth, is my intention for the impact of the LYM upon our imperiled civilization of today.&quot;
+
+...
+The tactic and method behind the creation of this LYM (not so new, there was his RYM antecedent) were comparable to to Mao Zedong&#39;s  &quot;Cultural Revolution&quot;&#39;s when creating his Red Guards Youth movement (a cult of personality) as a tool to control his rivals (aka &quot;old guard&quot;).
+
+
+===
+Nov 11, 2005
+&#39;BOBOS AS A NO-FUTURE GENERATION&#39;
+The Present Dark Age In Education
+by Lyndon H. LaRouche, Jr.
+
+https://web.archive.org/web/20160813160143/http://www.larouchepub.com/lar/2005/3244darkage_in_educ.html
+</tw-passagedata><tw-passagedata pid="351" name="Untitled Passage 39" tags="" position="1800,1300" size="100,100">December 08, 2006
+LaRouche Youth Movement Campus Tactics Questioned
+LaRouche movement&#39;s comparisons must be ignored
+
+by Nicholas Collard
+
+http://sundial.csun.edu/media/storage/
+paper862/news/2006/12/06/Opinion/Larouche.
+Movements.Comparisons.Must.Be.Ignored-2524287.
+shtml?norewrite200612081512&amp;sourcedomain;=sundial.csun.edu
+
+Issue date: 12/6/06 Section: Opinion
+
+Our campus is a place of political free speech, much like other universities throughout the nation.
+
+We allow the voices of both competing sides of the political spectrum to establish themselves in this place of open thought-provoking debate.
+
+Most of these political organizations are moderate and sound in their claims, while others are provocative and extreme. Nonetheless, they all receive a fairly equal opportunity to present themselves and be judged by the students they try to influence.
+
+There is one activist, arguably the most extreme in his political views, who has no problem dishing out hurtfully slanderous criticism against public officials.
+
+His name is Lyndon LaRouche, and while most students have probably never met the man, we all know what he looks like. Displayed on large print photographs that hang from the tables of his &quot;LaRouche Youth Movement&quot; like the Communist banners that once draped the eastern bloc, his face has become a symbol of an extreme radical and, dare I say it, cultish movement.
+
+A radical politico like LaRouche who resorts to, and endorses, articles that contain such harsh terms as Nazi-Gestapo, fascist, and Children of Satan, would appear on face value to be inviting open criticism of his ideas.
+
+However, any person or group that opposes him is immediately lashed out at with blitzkrieg-style slanders. Typically, these efforts are reserved for hard-line right-wing conservatives, but recently LaRouche turned his attention to a UCLA student publication, attacking it vehemently and ruthlessly in an attempt to discredit Garin Hovannisian, a student who wrote an opinion piece titled &quot;Expose: The Cult of Lyn LaRouche.&quot;
+
+The noticeably hasty response, written by Aaron Yule of the LaRouche Youth Movement and published in LaRouche&#39;s latest pamphlet, &quot;Is Joseph Goebbels on Your Campus,&quot; attacks Hovannisian using the same cookie-cutter tactics they have been using for years: Draw ridiculous parallels between the targeted individual and Nazism in the hopes that readers do not possess enough of a historical background to seriously question the merits of the author&#39;s claims.
+
+In Yule&#39;s article, he writes &quot;another case of this continuing Gestapo onslaught,&quot; claiming a supposed Gestapo-style campus attack against LaRouche &quot;is against their most feared adversary, LaRouche and his youth movement.&quot;
+
+Let&#39;s take a moment for commentary. Nobody fears LaRouche and his youth movement, he is the object of ridicule in most debates and his &quot;movement&quot; is more like a campus street team, it advertises for him, but doesn&#39;t exactly define a generation of students.
+
+Yule goes on to identify the young Gestapo sympathizer and expose his notorious affiliations. &quot;For example, the so-called &#39;independent&#39; campus newspaper at UCLA, the &#39;Bruin Standard&#39; (owned by the Buckleyite Collegiate Network), has run increasingly scurrilous slanders by its chief editor, Garin Hovannisian (the SAF president for UCLA), attacking the LaRouche Youth Movement as a &#39;cult&#39; that wants to &#39;brainwash&#39; students.&quot;
+
+It is sad if people buy into this, but otherwise hysterically ironic tha
+
+https://web.archive.org/web/20080723111531/http://children.safepassagefoundation.org/archives/political/index.html</tw-passagedata><tw-passagedata pid="352" name="A good news article" tags="" position="1700,1500" size="100,100">https://web.archive.org/web/20090405114328/http://www.dailykos.com/story/2006/1/29/194345/019
+
+About confronting a LaROuchie in the street...
+Jan 2006</tw-passagedata><tw-passagedata pid="353" name="&quot;What are your plans for the development of the solar system in the next fifty years?&quot;" tags="Quote" position="1675,1300" size="100,100">&quot;What are your plans for the development of the solar system in the next fifty years?&quot;
+I forgot this was one of the things we called out...
+
+https://web.archive.org/web/20110727064040/http://articles.marco.org/203
+
+Hans wanted to know why I didn&#39;t have plans to develop the solar system.
+
+I tried to explain that with the time and distance involved, it wasn&#39;t practical, and that more importantly, I didn&#39;t particularly care about developing the solar system.
+
+
+Photo by Thomas Hawk.
+Creative Commons license.
+Hans wanted to put 200 billion people on Mars. Then he started talking about how modern science was a conspiracy against human progress. Then he asked why I hadn&#39;t read the complete works of Kepler. Then he talked about Bush and the Right-Wing Conspiracy. I think all my professors were in the conspiracy as well. If I disagreed with anything, Hans would say, &quot;How do you know that?&quot;
+
+&quot;I read a book on it,&quot; I would say.
+
+&quot;A book? What, so just because it&#39;s in a book it&#39;s suddenly true?&quot;
+
+As most conversations with LaRouchies, it went nowhere.
+
+===
+You can&#39;t out-crazy the LaRouche People
+It may be tempting to try — but these guys are wicked jaded to crazies. When I worried that 200 billion people on Mars could lead to interplanetary war because there was no mutually assured destruction, Hans listened with a straight face and explained why that wasn&#39;t very likely. If you want to try to gradually escalate the story into the ridiculous and see how long it takes them to notice, it doesn&#39;t work. You can&#39;t out-crazy the LaRouche People. When they talk about the imminent collapse of civilization unless we build a nuclear-powered desalinization plant in Gaza, they&#39;re completely serious.
+
+===
+They also get some kind of bizarre spin on what each of these people valued. Kepler and Leibniz are good. Newton is bad. Riemann good. Aristotle bad. They will say things like, &quot;In effect, Fermat, and later Leibniz, were defining the completed paths from the standpoint of the &#39;moments of becoming.&#39;&quot; If this doesn&#39;t make sense, it&#39;s not your fault. Fermat and Leibniz didn&#39;t really write those things — at least not in the way the LaRouche people are spinning them. They may also use words or terms you&#39;ve never heard of before, like &quot;physical economy.&quot; Some of these are special LaRouche words that either have no meaning or mean radically different things in the rest of the world.
+</tw-passagedata><tw-passagedata pid="354" name="Were you here to have a dialogue?" tags="" position="300,600" size="100,100">That time Doug and you were organising in Melbourne.
+
+He was being really aggressive with this woman, about her being a problem.
+
+You simply asked her and was polite about the polemic.
+
+She thanked you, then told Doug he was an asshole. 
+
+==
+
+You can think of a lot of times you were offensive - asking people &quot;why did you vote for Howard?&quot; etc. etc. just to agitate them.
+
+But you wanted to work with them,
+you always asked for them to help with ideas.
+
+===
+
+In Seattle, you were told you spent to much time with crazies.
+You didn&#39;t really understand, weren&#39;t you here to talk to people...</tw-passagedata><tw-passagedata pid="355" name="Getting out" tags="" position="1700,1625" size="100,100">https://web.archive.org/web/20160826104348/http://larouchesources.blogspot.com/
+
+SUNDAY, MAY 24, 2009
+USA, 2007: Ex. LYM Akka and jmp87 about LYM.
+Akka: Posted on Thursday, May 24, 2007 - 6:15 am:
+
+Hi everyone, I used to be a member of the LYM but dropped out. I&#39;ve been reading your posts and have recognized a lot of the problems I encountered myself; especially the way the boomers are treated, and off course as, jmp8 points out, the horriffic living conditions. I was only member for about 6 months, but still I&#39;ve used a lot of time afterwards to process all the new impressions and ideas I was exposed to. Like jmp87 I&#39;m still inspired by some of the core ideas, and also the vigor and virtue og some of the youth members. On the other hand I totally recognize the cultish feats that seem to permeate the org. Contrastng the passionated intellectuals, wanting to make a difference, I saw deeply emotionally disturbed kids´who were more or less clinging on to LHL&#39;s fatherly figure, and would cite him all the time without actually thinking critically on their own; &#39;Lyn says this, Lyn says that&#39; therefore its right. The reason I left was that I, first of all, was unsure of the truthfulness of the theories I was presented to - here especially how history was presented, which I found contained a lot of contradictions.
+
+Secondly I kept asking myself: what are the long term effects of this movement on its members? And when I saw these phone teams, composed of middleaged people, calling all day, 6 days a week, I could vividly imagine how these people once were young and full of good pretensions, like the youths, but now were stuck in this obvious miserable condition - a lot of them just looked like they were worn out. This was not the principle of &#39;the general welfare&#39;, promoted in the campaigners.
+
+Although I&#39;ve left, I still have some contact with the movement, mainly because im trying to figure it out. How it works - and if I should support it or not. You&#39;ve all been through it, and it obviously has left som deep scars in your souls. I myself am very affected by the experience and I think about it daily; It really was a turning point in my life, and In many ways I felt very connected to what it means being a human being - as opposed to the extremely superficial reality of popular youth culture today, of which I was a part. This sense og humanity is something I still cherish and is grateful for. The most fundamental discovery I made, was that life is not some relativistic soup, were one opinion was as good as any other - there is such a thing as quality, were one way of thinking supersedes another because it&#39;s based on truer axioms than the other; implicitly - that truth exists and is attainable by humans; if they seek it rigoriously and open-minded. For me, this was a wonderful idea that actually gave my existentialistic life, some sort of direction and ground for optimism. This is a grand paradox for me: how can something that brought me insights and true joy, also seem like a freakish cult that is destroying lives? XLC4life mentioned an ex-member, Zubrin I believe, who apparently has specialized in Mars or something. Didn&#39;t he get something good out of the org? I mean, is the organisation really bad in all respects, and doesn&#39;t it also depend on the individual that joins?
+
+Excuse my english - or at least the grammar - its not my main language!
+
+-----------------
+
+borisbad: Posted on Thursday, May 24, 2007 - 9:41 am:
+
+Akka, I can see from your post that you went through quite a transformation and fortunately you managed to retain your sanity being in for less than a year. Clearly, people join an organization like the LYM because they are dissatisfied with what they see around them and would like to see changes. And there is certainly much to be said about the banality of much of popular culture both today and in our day (the boomer generation). But then again popular culture was never equated with higher culture even Lyn likes to pretend that in the old days everybody studied Shakespeare, Goethe, Schiller, etc.
+
+The thing about Lyn is how he cloaks himself in the authority of others who actually have made great contributions whether in arts, politics, math, etc. Then he construes vast machinations to show how the bad guys (whether called Aristotelians, Synarchists, Babylonian whore supporters, dionysians or what ever) are trying to stop whatever machination Lyn is perpetuating at the moment. The key thing is that you retained a sense of independent thought that made you look a little bit behind the shadows in the cave. When people give into anything uncritically, then they get trapped into cult thought. For example, Lyn likes to praise Plato, but ask if he really wants anyone in the organization examining the apriori assumptions behind his axioms and negate them which is the method behind Plato&#39;s dialogues.
+
+I would agree that getting out of the organization doesn&#39;t mean you have to just become apolitical or uninvolved in seeking change. I think there are many activities and groups that may espouse ideals at least partially in line of what you are looking for that don&#39;t demand the total sacrifice of your identity.</tw-passagedata><tw-passagedata pid="356" name="report on LA meeting" tags="" position="1550,1500" size="100,100">LYM’s Southern California headquarters is a decrepit two-story structure in Eagle Rock, a short hop from downtown Los Angeles. C.J., who is waiting for me at the back door, escorts me inside. LaRouche propaganda is everywhere, even in the kitchen and bathroom. The largest area is set aside for volunteers who work the phone lines, talking it up with potential recruits.
+
+In the library I find texts by Plato, Kepler, Gauss, Leibniz and Schiller, but Aristotle is banned. Sir Isaac Newton? According to LYM leaders, he’s a fraud and plagiarist. Only “pro-mankind” intellectuals are permitted. Charter member Cody Jones explains to me that science, economics, politics, culture and music are all measurable by a “mankind yardstick.” Pro-mankind: LaRouche, Plato and Bach. Anti-mankind: Aristotle and Rachmaninoff.
+
+Later, everyone is summoned to the conference room, where an ensemble performs Bach chorales. Phil Rubenstein—a balding, spectacled fellow in his 50s—takes the stage for “the weekly update.” Rubenstein, who claims to be a minister, fires off a homily on the “major political force in the U.S.—the LaRouche Youth Movement!” This becomes a routine reassurance, I soon learn.
+
+There are conspiracy theories (“The economist George Schultz is behind it all!”) and hush-hush secrets (“Tuesday, Lyn [LaRouche] had a private, off-the-record meeting with 12 development sector embassies”). Rubenstein’s camaraderie with the younger members gives him easy access to their malleable minds.
+
+Once the official program concludes at 8 p.m., I stick around to mingle, hoping for casual conversation. My efforts prove futile. LYM followers never watch movies, don’t listen to music (other than the prescribed dose of classical), don’t tell jokes and don’t have hobbies.
+
+Individual egos have been replaced by a collective identity. Every pursuit, aspiration, passion, emotion and thought revolves around “Lyn,” as members reverently call LaRouche—“the founder…the genius among geniuses…the leading prophetic figure of modern history.”
+
+Dreadfully tired, I cannot survive any more of this. I say goodbye to C.J., gather my bags and leave LYM’s little empire.
+</tw-passagedata><tw-passagedata pid="357" name="Untitled Passage 40" tags="" position="1850,1625" size="100,100">I&#39;ve mentioned in the past that I had some involvement with Lyndon LaRouche and his international political organization. That&#39;s really a polite way to refer to a man who leads a powerful and destructive cult which operates internationally and has a strong presence here in the United States, particularly on college campuses. From 2000 to 2001, I worked for him on the streets, on college campuses, at post offices and county buildings, in airports, in front of libraries and supermarkets, at busy intersections and on freeway off-ramps, raising money and spreading the word: &quot;The world was headed for certain doom and LaRouche is the only force in the universe who can stop it. Now buy a subscription to our newspaper.&quot; I worked 16-hour days and lived on about $30-$40 a week. Sometimes $50 if I was lucky. If this sounds bad, know that I got off easy. I recruited people into this group myself, and many of these folks are still in lockstep behind LaRouche. They were young people just like me: disillusioned, intelligent and creative, just looking for answers and an alternative to the mainstream path which seemed empty and unfulfilling. Worse off than these people, however, are the ones who have spent most of their lives there, people who joined when they were younger than I am now, and are older than my parents are today. I won&#39;t name any names. I am not looking to make enemies, or cause any strife.
+
+I am not writing this so that I can talk about LaRouche. There have been plenty of people available to do that over the years, and there will continue to be. The person I really want to speak up about is John Morris, who was one of LaRouche&#39;s faithful organizers. LaRouche is alive and well, still preaching his twisted gospel and abusing his membership more than enough to keep them in line and maintain a healthy flow of cash. But John Morris is dead. This is the news I received the other day that has left me so upset on many levels. He died one a night last June at about 10:30pm, along with Gary Genazzio, an organizer I did not know. They were on a highway between Chicago and Detroit. Their car had run out of gas, and they pulled over to the side of the road, apparently to try to refill the tank. A passing dump truck hit them and killed them both.
+
+Maintaining friendships was not easy. The work was often too all-consuming to make room for strong personal friendships. In fact, allegiances to anything other than LaRouche and the rest of the group were strongly discouraged. I remember a couple of months after I joined full-time, I had a conversation about my best friend with one of the local leaders of the organization.
+
+&quot;What do you call him a &#39;best friend?&#39;&quot; he asked. &quot;What does that even mean?&quot;
+
+&quot;Well, we go back. We&#39;ve known each other a long time. He understands me probably better than anyone&quot;
+
+&quot;Does he understand what you are doing here? Does he understand LaRouche?&quot;
+
+&quot;A bit,&quot; I said. &quot;I&#39;m still working on him.&quot; (Indeed, at that time, I was &#39;working&#39; on all of my friends, many of whom had long stopped speaking to me by the time I finally left LaRouche behind.)
+
+&quot;Well. You do that. But if you can&#39;t get anywhere, you have to remember that there are more important things. You can&#39;t let him hold you back. You&#39;re going to have to leave him behind.&quot;
+
+You can&#39;t take them with you. That was the message that I got from all sides. My friends. My family. I remember one night I invited my father to an evening briefing, hoping he would see something good in it that I hadn&#39;t been able to explain to him in private. Instead, my father was full of objections to the rhetoric, and left that night feeling angry and uncomfortable. A leader (or National Coordinator, as they are called) pulled me aside and asked that I never have him come by again.
+
+The work was difficult. Raising money is exhausting work, but doing it for the long hours that I did is grueling. I rarely got more than 5 or 6 hours of sleep a night. Even more exhausting than this is living with the memory of some of the things I did: Manipulating people into giving up money they clearly wanted to hold on to, &quot;educating&quot; others that anyone who supports Israel is a &quot;Nazi,&quot; that jazz music is pure evil, and the entire environmental movement is a fraud were, in retrospect, some of the less humiliating aspects of the work. The most upsetting would probably be the giving up of the self. I willfully and gleefully gave myself up to be scrubbed of personality, taste and ambition, instead seeing myself as a conduit to funnel followers and money towards a man that I&#39;d been convinced was something of a savior. Indeed, the most devoted followers of LaRouche place him on a pedestal somewhere close to God himself. And that fact that LaRouche frequently stated in no uncertain terms that human society (and, indeed, the known universe) could not exist without him indicated that he felt the same way himself.
+
+John Morris wasn&#39;t the only LaRouche member to die recently. Jeremiah Duggan is the most well-known example. The story of his death, which has still never been fully understood or explained, was carried on all the major news outlets when it happened. He was a young Jewish man from London, a little bit older than I was when I was in the organization. He had gone to Wiesbaden, Germany to attend a LaRouche conference in March, 2003, much as I had done less than two years earlier. He then attended a &quot;cadre school&quot; at a youth hostel there in town. It may very well have been the same hostel I stayed at when I&#39;d been there. Then he died. He had been alarmed by the things being taught by LaRouche followers at the conference and the cadre school and had become afraid. No one knows for sure what happened, but he had been running along the side of a highway. There&#39;s debate over how he died, but the official ruling from German police was that he&#39;d been hit by traffic. They ruled it a suicide, but there are many lingering questions.
+
+Ken Kronberg died in 2007. He had been a tireless worker for LaRouche for 35 years, and ran the publishing outfit responsible for printing many of LaRouche&#39;s publications. The company was experiencing incredible financial shortfalls, and it looked like Kronberg was going to end up bearing much of the burden. On a day when LaRouche suggested that the baby boomers in the organization &quot;commit suicide,&quot; Ken Kronberg quietly threw himself off of a highway overpass.
+
+I never got a chance to meet Jeremiah, and I knew of Kronberg only by name, but I did know John Morris.
+
+I don&#39;t know what he and Gary were driving such a long distance at that hour for. I don&#39;t know whether they were coming from a long deployment (standing at a small table selling subscriptions and literature, collecting names and phone numbers to call later), or driving back from an event. But I do know why they ran out of gas. They ran out because there wasn&#39;t enough in the tank, and there wasn&#39;t enough in the tank because there was never much gas in the tanks of LaRouche cars when I was in the group, when the stuff was well under $2 a gallon. I can only imagine that the problem was only more pronounced last summer when gas was $4 a gallon in many parts of the country. Gas tanks were never filled because cash from deployments was a precious commodity. It was always better to bring cash back to the office than spend it all to fill up a tank. Usually, there was only enough gas in our cars to last a day. At the end of a long day of selling literature on the streets, we&#39;d put a few gallons in, at most. Enough for tomorrow.
+
+The cars were never in very good condition. Though these cars were used every day for driving over long distances (sometimes for 50 miles or more each way) they were rarely maintained. I remember a car or two in Los Angeles that didn&#39;t even have a working gas gauge. We always had a can of gas in the trunk of the car. If the driver of the car ran out of gas, he&#39;d have to pull over and re-fill out of the can. I&#39;ve heard that it was a common problem elsewhere in the country as well. Given that John and Gary were trying to refill their tank on the side of a highway, I think there&#39;s they may have had a car in this condition.
+
+The LaRouche organization makes millions of dollars every year.
+
+John had been moved to the mid-west a few years ago, but he was in Los Angeles before that. That was where I met him. Once I joined the group full time, I moved into an apartment with another organizer, paid for by the organization. John shared a place with another organizer only a few blocks away from mine. Working the kind of hours we did (16 hours a day, five or six days a week) made it hard to forge friendships. What interactions I did have with my colleagues were generally centered around the activities of the group. Indeed, focusing on anything other than LaRouche was discouraged and avoided. When I spent time with John, it was often easy to forget that I had changed my entire lifestyle, altered my entire way of being (at the expense of friends, family and personal tastes) for a cause dominated by one single personality.
+
+It&#39;s not an easy schedule to adjust to. The atmosphere in a high-pressure, money-driven cult is one of constant demand. If you aren&#39;t focused on raising money, or otherwise furthering the cause, then you are being reprimanded for not doing so more effectively. (These reprimands continue even when you are working hard and doing the very best you can). I remember one night in particular not long after I had joined the group full-time. I went over to John&#39;s house for dinner on a Sunday night, our one day off. Upon arrival, I suspected that like everyone else in the group, John would want to spend our free time talking about LaRouche, or Friedrich Schiller, or &quot;psycho-sexual impotence&quot; (a blanket term for whatever was keeping us from raising more money), or how we could work towards meeting our quotas every day. Instead, John wanted to talk about beer. He took me upstairs and into his bedroom where, in his closet, he had jugs of beer fermenting. He then explained the practice of home-brewing. I was just 18 years old, and had never considered that a man could make his own beer. That night, over a simple dinner of salad and pasta dish with chicken and pesto, we enjoyed the finest beer I had ever had up to that point. A few years later, it was John I was thinking of when I decided to start brewing my own beer at my house in Humboldt County.
+
+John expanded my ideas about food as well as drink. We both shared a love of Mexican food, and a particular appreciation for the La Estrella taco stands in the Los Angeles area. One evening, I was on my way out to grab a couple of tacos (a huge luxury) before spending the night fund-raising. &quot;Get me a tongue taco, will you?&quot; he said. I laughed, thinking he was joking. I&#39;d been eating taco truck fare for years, but had never considered sampling the less common meats: cabeza, lengua and tripas. &quot;Oh, I&#39;m serious,&quot; he said. &quot;You&#39;ve never had tongue? You call yourself a taco fan and you&#39;ve never had tongue?! There is nothing--Nothing--that beats some nice lengua sliced really lean.&quot; Well, that was enough for me to try it, and a mere half an hour later I had become a fan of the tongue taco. Even today, I rarely pass up a chance to have an authentic lengua taco (though such opportunities seem to be rather rare here in Manhattan), and I&#39;ve no one other than John to thank for this.
+
+John also had a strong sense of humor, and no matter the circumstances, he always managed to make me laugh. Even after being yelled at for not meeting quota, being reminded of our general lack of worth, or bring subjected to a conference call in which specifically-named people were held up as examples of how not to be, John was always ready to put on a smile and share his good humor. He made the work easy, lightening not simply his own burden but also those of others.
+
+(You can&#39;t take them with you.)
+
+As I said before, having &quot;friends&quot; in the organization wasn&#39;t practical. I say that, most of all, because once you leave the group you are cut off from it. No one speaks to you. A friend one day, and then next day you are nobody to them. There were people I knew who were my age and shared my interests. We were all swimming in the same shit: the same abusive hours, the manipulation, the near-desperate poverty. We banded together. It was unusual to spend time alone even in the rare hours away from the office. I met good people while I was in there. Now, more than 7 years later, I look back on the experience and think more of the good people I lived and worked with than I do of the leaders of the group, and LaRouche himself, those who wielded power over us. There&#39;s a small core of people who made such an impression on me that I&#39;ve thought of them every day. Funny, intelligent, bright people. Folks I would be friends with right now if they weren&#39;t in the cult, if their impressions of the outside world weren&#39;t being manipulated, if they weren&#39;t expected to NOT SPEAK to anyone who has left the group. I&#39;ve always considered John Morris to be part of that group.
+
+I&#39;ve always said to myself that if one of those people who was close to me were to call me out of the blue and ask for help to get out, I&#39;d do everything in my power to make it happen. And I admit that there&#39;s a fantasy I indulge in from time to time, one in which my old friends are free of the cult, have reclaimed their lives and are living happily. We are all in touch and helping each other through the recovery which never really ends. We enjoy one-another&#39;s company, and share humor and insight without the profound pressure and guilt.
+
+But now, John Morris is dead. He can&#39;t be a part of that mental picture anymore. Learning of his death reminded me that this isn&#39;t a fantasy. There are some things that will never be fixed. It reminded me that I was one of the lucky ones. I could have easily stayed. I could have run out of gas between Detroit and Chicago instead of John and Gary. I could have been Jeremiah Duggan and, disoriented and afraid, run into traffic and gotten killed. Had I stayed longer, I could have even been Ken Kronberg, and thrown myself off of an overpass because I lacked the will and the strength to break free. Someone else could just as easily be writing these things about me right now. In essence, I survived that car wreck, that highway, that overpass, even though I wasn&#39;t even there.
+
+I survived
+
+You can&#39;t take them with you. This is true of your family and friends when you go into a cult, and just as true of your colleagues when you leave.
+
+Even though I will never see John Morris again, I will still continue to think of him, and mourn the loss. He was more than a quota, more than a list of contacts, more than a LaRouche organizer. He was a human being with taste, humor and dignity. And, most of all, for a year between 2000 and 2001, John Morris was my friend.
+
+https://web.archive.org/web/20231124084755/https://larouchesources.blogspot.com/search?updated-max=2009-05-04T23:19:00-07:00&amp;max-results=7</tw-passagedata><tw-passagedata pid="358" name="Untitled Passage 41" tags="" position="1850,1750" size="100,100">I was being &quot;organized&quot; by them from 2002-2003. I was very close to dropping out of college and joining them full time. I met John Morris at the LACC campus and a group of us, including him, had dinner together at Ruby Tuesday&#39;s when we went to the conference in Reston. Very charming guy and very friendly, he easily laughed at any silly joke. He wasn&#39;t like the others. I am so glad I finally opened my eyes to the sick bastards they were. Nick Walsh once told me that if I didn&#39;t drop out of school and join them full time I would be personally responsible for the deaths of thousands African and Palestinian children. What a sick fuck that guy and his horse faced then-girlfriend Anna Shavin, wow, that chick was and probably still is one of the biggest cunts I&#39;ve ever had the displeasure of meeting. I met some awesome people too, though. People I&#39;ll never forget and I&#39;m sure that if I mentioned them, you&#39;d know them also. It&#39;s so sad and tragic about John, though. Cool guy.
+
+
+https://web.archive.org/web/20231123162312/https://anotherflop.blogspot.com/2009/04/in-spite-of-larouche-and-because-of-him.html</tw-passagedata><tw-passagedata pid="359" name="Untitled Passage 42" tags="" position="1550,1650" size="100,100">https://web.archive.org/web/20130311013746/http://rickross.com/reference/larouche/larouche10.html
+
+AAP/June 19, 2001
+By Adam Cooper
+The parents of a candidate in next month&#39;s Aston by-election today said their son had been brainwashed by a right-wing racist cult that believes the Queen heads an international drug cartel.
+
+John and Bronwyn Mitchell said they feared for their son&#39;s mental well-being because he had been brainwashed by the Citizens Electoral Council (CEC), an offshoot of the political group formed by US extremist Lyndon LaRouche.
+
+But their 21-year-old son, Doug, today remained defiant, saying he would stay with the group, which he said had given him a &quot;classical education&quot; and taught him &quot;real history.&quot;
+
+&quot;I&#39;m going to stick with CEC until we win the fight and get our ideas across to the people,&quot; Doug Mitchell said.
+
+CEC has offices in Coburg in Melbourne&#39;s inner north and bases its beliefs upon those of 78-year-old LaRouche, a convicted fraudster and failed presidential candidate.
+
+Among the group&#39;s beliefs are that the Queen of England oversees the international drug trade, her husband Prince Philip heads a worldwide conspiracy to introduce population control and that the 1996 Tasmanian Port Arthur mass shooting and Scotland&#39;s Dunblane school massacre were conspiracies.
+
+The group has directed much of its hatred towards Aborigines, environmentalists and Jews; it&#39;s alleged one prominent Australian Jewish family gave the go ahead for the Waco siege in Texas in 1993.
+
+Mr. Mitchell&#39;s parents said Doug had been persuaded to live with party members and run as a candidate for Aston, in Melbourne&#39;s east, since he met a party member and former school friend last October.
+
+John Mitchell said Doug had changed from a typical university student to an outspoken campaigner in months, but said his son was too naive to cope with his new ideas.
+
+&quot;He was always a quiet person but he seems to be on a high all the time,&quot; he said.
+
+&quot;He&#39;s not on drugs...but they&#39;ve got his mind full of what he has to be focused on.
+
+&quot;We are mainly concerned for his mental safety, I don&#39;t think he can handle it.
+
+&quot;He&#39;s totally under their influences.&quot;
+
+Doug Mitchell said he was hopeful of winning between five and ten per cent of Aston&#39;s vote and said the CEC was not a cult.
+
+Claims the party was racist were &quot;total lies&quot; and &quot;pathetic, low, dirty sick tactics&quot;, he said.
+
+&quot;I wanted to be independent and grow up a bit, instead of living a dull and bland life and have an impact on what is going on,&quot; he said.
+
+The Aston by-election was called following the sudden death last April of Liberal sitting MP Peter Nugent.</tw-passagedata><tw-passagedata pid="360" name="Plea..." tags="" position="725,1000" size="100,100">This is an Australian family’s plea to open the eyes of the people in Europe, so that they will take action against this cult...we have a family member in the group.
+Australia has a branch of the Lyndon LaRouche cult and young people are sent around the world, including Germany, to carry out the group wishes.
+This group cons young people into devoting their lives to a worthless cause
+They prevent family contact - A normal political party does not prevent families from interacting with their members.
+These are the things that have happened to our family member.
+Working for the LaRouche means you have to recruit other people into the group. Rewards are given if you do manage to recruit a new member.
+Work for LaRouche youth involves long hours per day. Reading and studying LaRouche publications, webcasts and LaRouche approved history books are a compulsory activity. Daytime hours are spent setting up tables in the streets, malls, colleges and universities selling their publications and recruiting people. Travel to country areas and interstate is also involved. Other activities we know of include disrupting university events, attending demonstrations, deliberately creating confrontations at political events and organising cadre schools.
+Similar work is done in Germany when recruits travel there. Our family member was in Berlin for 5 months.
+After an evening meal, the recruits are back in the office pointlessly working the phones trying to get subscriptions out of people until late at night. Work goes on during the weekend. Saturday is spent in the office again, fundraising being the priority. Indeed the Australian arm of the LaRouche group boasts about how much money they raise in relation to other parties in the Australian Federal political system.
+Great importance is placed on cultural activities such as music, singing, poetry and play readings. These are approved by the leaders and keep the recruits busy with no time for family or outside activities. These cultural activities hide the mind control techniques used by the group.
+Since we have been in contact with other families in Australia and around the world, who are in a similar position to us, we know that other young people and older ones in the LaRouche cult are being subjected to similar techniques of mind control at what is termed “ego stripping” sessions, to the detriment of their health in body and mind.
+The LaRouche movement uses well-known names from the history of philosophy such as Plato, Socrates and Schiller to give themselves a perceived respectability in the eyes of the world.
+https://web.archive.org/web/20090526224709/http://lyndonlarouche.org/larouche-families.htm#six
+</tw-passagedata><tw-passagedata pid="361" name="Cult of Lyn LaRouche: Confessions of a Failed Genius" tags="Quote" position="1800,1025" size="100,100">Cult of Lyn LaRouche: Confessions of a Failed Genius
+By Garin Hovannisian | October 1, 2006 |
+
+http://thebruinstandard.com/?p=25
+
+C.J. was a changed man. His curly, blonde hair snaked into an anarchic afro. His face was unshaven. His shirt, faded and bleached, was half-tucked into oversized jeans. I hadn’t seen C.J. in two years. Back in high school, he was a real character-a no-nonsense, call-it-like-it-is skeptic, cynic, libertine, jokester, joke, poet, soccer star, recluse, opinion-maker-an alpha to the alphas, yet entirely content in his own thoughts, a bully to (and of) no one. His dream, he used to say, was to live in isolation on a twenty-acre plot of Midwestern forestry-just him and his gun, untouched by man or government. I expected never to see him again. But in April 2005, on the student thoroughfare of the University of California, Los Angeles (UCLA)-a menagerie of hyperactive campus propagandists-the familiar creature was hard to miss
+
+A few months before at his city college, C.J. had been approached by a few young activists who pressed him to attend one of their weekend retreats-a “cadre school,” they called it. Grudgingly, C.J. decided to go. When he returned, he abandoned his school, his home, his friends, his personality, his humor, and every vestige of his past. He moved into a veritable commune as a convert to the mission, army, and cult of Lyndon LaRouche. Defender. Janitor. Distributor. Point-man. Middleman. Yes man. C.J. was doing it all.
+
+On Bruin Walk, looking into my eyes for the first time since high school, he was already recruiting. He handed me a pamphlet. “You know about LaRouche?” he asked, soaring through the awkwardness without the slightest hesitation or embarrassment. I nodded, but I could not pay attention to his words. My mind was fumbling with questions. What had turned the old recluse into a pamphleteer and peddler? Was it a spiritual enlightenment that he was eager to find? Was C.J. playing a sinister practical joke that he, if anyone, could pull off? Or was he…brainwashed? In search of answers, I enlisted in the LaRouche Youth Movement (LYM).
+
+On Wednesday, April 27, I attended my first meeting. The Los Angeles headquarters of LYM are contained in a small, decrepit two-story house in Eagle Rock, California. Its rooms are packed with LaRouche literature, videos, posters, campaign material, and junk food. The largest is the telephone room, where volunteers work the lines with potential recruits. It comes eerily close to a telemarketing station, a boiler room filled with sleazy hacks selling faux-politique-a pseudo-intellectualized statism-with the requisite inflection and lure. Except it’s not old people being gypped (though LaRouche sat in jail for five years for fraud and extortion). It’s meaning-thirsty college kids.
+
+I maneuvered into the library and examined the collection, in my habit of judging a man by his books. Plato. Kepler. Gauss. Leibniz. Bach. Anderson. Poe. Schiller. And of course, LaRouche. A few Germans I hadn’t heard of, sure, but this was basically it. Excepting LaRouche webcasts, lectures from his representatives, and LaRouche’s own books and articles, this is LYM’s intellectual kingdom. Aristotle is banned. The Western Canon has vanished, without fingerprints. And don’t bother with Sir Isaac Newton, a fraud, plagiarist, and conniver. Only “pro-mankind” intellectuals make it into the library. LaRouche soberly asserts in an article, “Galileo, Thomas Hobbes, John Locke, the notorious Adam Smith, and the famous Rene Descartes, were, like Bertrand Russell and his devotees, systematically insane, in the strictest formal use of the term insane.” Evil. Insane. Anti-mankind.
+
+I did not get this “mankind” thing. One of the original LYM members named Bo explained that science, economics, politics, culture, and music are all measurable by a “mankind” yardstick. Pro-mankind: Plato, LaRouche, and Bach. Anti-mankind: Aristotle, Cheney, and Rachmaninoff. “But how can I listen to a piece of music and be able to tell if it’s pro-mankind or not?” I asked naively. Bo, who is more comfortable in belief than in argument, slowly replied: “It just comes with the knowledge. Once you understand the politics and the economics and stuff, it’ll all fall into place.”
+
+Sensing my curiosity, Bo invited me to a LYM cadre school the following weekend. That’s where C.J. had been converted. That’s where I would learn why.
+
+If I return a robot, I told a close friend, you have the right to have me committed. With that, I set off with my SUV to the outskirts of mountainous Santa Barbara, California. Off the central roadway, one mile past Paradise Road, and another mile off-road forging rivers and zigzagging through the woods-the Oregon Trail experience-I realized that there might not be a chance to turn back.
+
+My grisly imagination having refined horrific anecdotes of brainwashing and murder into half-expectations, I pulled into the campground and moved my bags to the guys’ cabin. C.J. showed me to the main cabin, where nearly fifty young recruiters (like C.J.) and new recruits (ostensibly like me) had already assembled.
+
+Already in the opening address, the world conspiracy blueprints of Lyndon LaRouche were unveiled. “The Family, or The Foundation, is an organization of politicos that pick world statesmen,” said a pretty woman in her early 20s. “It is a real organization that is really involved in US policy-making.” This is pure LaRouche-talk. The urgency of LYM’s mission is justified by these underground, hereditary, secret-hand-shake societies that debase what LaRouche terms very loosely “the American System.” It’s a web of evil people, most prominently George Schultz, who “single-handedly chose Bush as president, Arnold as governor, and Condi Rice as protégé.” A later speaker would declare that the Tavistock Institute, a British psychotherapy clinic, “controls and manipulates major media through brainwashing. This isn’t even debatable. It’s been proven.” These are the puppeteers of the modern world.
+
+But forget the world for now, because the establishments have schemed for decades to destroy LaRouche himself, having found their one-and-only formidable opponent. In the eyes of his followers, Lyn is an international superstar-the orthodoxy’s most vivid nightmare and the truth’s final promise of fruition. Indeed, the LaRouche history, as any of his followers will proudly tell you, is replete with CIA-brainwashed assassins, KGB snipers, and world bank hit squads all targeting their leader.
+
+At night, I jumped among the “social groups,” hunting desperately for (I frustrate my ego in saying) a casual conversation. But among the several dozen followers, none exists. They never see movies. Beyond a narrow slice of classical music, they don’t listen. They don’t tell jokes and they are irritated when they hear one. They don’t have hobbies. C.J. told me not to bother scavenging for sex. Every pursuit, aspiration, passion, emotion, thought, longing, and joy revolves necessarily around the central personality, “the founder,” “the genius among geniuses,” the “leading prophetic figure of modern history”-Lyn. This is not some sort of poetic exaggeration. It’s their way of life. You eavesdrop on a conversation between any of these people at any time of day, and it’s always about the same stuff: constructive geometry, socialistic economic policy, inherently good classical music, Plato, Kepler, Gauss, LaRouche, LaRouche, LaRouche!
+
+They seem to be normal teenagers and they span the racial, sexual, socioeconomic spectra. But they connect in a common anticipation of historic catastrophe and they survive on the lone faith of the corrective and redemptive genius of their movement. And that’s the cult, if you’ve been searching for it and if you want to call it that. There’s no Kool-Aid, no weird alphabet, no cryptic Bible Code. It’s a cult, literally, of personality: the intellectual, world-changing genius.
+
+Yet despite suspicions to the contrary, no believer is as confident in his own genius (which is, at best, a potentiality) as he is in the collective genius of his movement. Behind C.J.’s rugged certainties rests a spirit that is crippled and an ego that requires constant attention-not because it feels it deserves it, but because it cannot survive without it. Indeed, C.J.’s family background, which is stained by psychological and ultimately physical abandonment, not only discourages self-esteem, but really forbids it. It is peculiar, then, that it was precisely at the pinnacle of C.J.’s family crisis and disillusionment-in the dark age of his self-esteem-that he joined a movement that called him a genius.
+
+To modern researchers of self-esteem and mass movements, however, the fact is not peculiar at all. Eric Hoffer has written, “The less justified a man is in claiming excellence for his own self, the more ready he is to claim all excellence for his nation, his religion, his race or his holy cause.” In the holiness of his cause, C.J. is more sure-and this, again, I write with no poetics-than he is in his own goodness. His confidence in his own genius (and, hence, the desertion of the fear that he is not) depends, first and only, on the acceptance of the movement.
+
+Hence, no movies, jokes, creative talent, personality-the true believers have no character whatsoever. It is impossible, save upon their mastery of the clichés of the cause, to differentiate them. There is no identity or knowledge, in any real sense, detached from the group. The concepts of “knowaspheres” and “musical dissonance” that supposedly divide good music from bad are totally lost on C.J.. But not for a moment does he doubt their reality. He will blame his own intellectual immaturity every time, even if it conflicts with the reality he sees.
+
+One is all. And, of course, all is one in Lyndon LaRouche, polymath extraordinaire.
+
+LaRouche, who calls himself “the leading economist of [the 20th] century,” proposes an accentuated statism, and it’s accepted as high novelty. The prophet in the wilderness yells apocalypse, and his followers panic. The detective in Lyn finds networks of secrecy, and C.J. is on a personal mission to sabotage them. The genius mathematician rejects Newton’s calculus and his students immediately discard modern math. The music theorist writes, “The Beatles had no genuine musical talent, but were a product shaped according to British Psychological Warfare Division (Tavistock) specifications, and promoted in Britain by agencies which are controlled by British intelligence,” and the movement learns to recite it.
+
+By the cadre school’s second day, nauseous from the adoration (which at least matches the average church-goer’s piety), drained of will power, and dreadfully tired, I stood on the brink of insanity. Echoes of the same themes and people bounced in my brain. Knowasphere. Leibniz. Plato. Beethoven. Constructive geometry. Schumann. Gauss. Lyn. LaRouche. Lyn. I guess this was that moment in which so many had beheld their epiphany. This was when, tired but finally enlightened, I was supposed to fall on my knees and dedicate my life to the whims and wishes of a man. But for me, it was more torture than epiphany. I simply could not survive through the weekend. I said goodbye to C.J., gathered my bags, and got into the car. A mile through thick forests, several miles past Paradise Road, and now far, far away from this fantastic place of ideas and heroes and dreams, brewing in a cabin by a stream. It was as if it was all fiction. I was absolutely in a daze. And not for a couple of weeks did I actually escape the awful aftershocks, the lingering hangover of the LaRouche Youth Movement.
+
+I experienced its heart totality in the last LYM meeting I ever attended, a few months after the cadre school. I sneaked into the conference room in Eagle Rock, and LaRouche was on the projection screen. The background was black. The voice was monotone. And for more than an hour, LaRouche was talking about hedge funds and mergers-and the really boring, economic lessons we might squeeze from the “General Motors debacle.” And here were twenty young people sitting in a small room listening with special attention, scribbling in their notepads, and nodding their heads again and again at the every thought, the every word, the every counterfeit insight of their leader-Lyndon LaRouche.
+
+Since then, a mutual friend of C.J. and mine has asked C.J. if he would ever consider leaving the group for a few hours to have lunch with us. He has never been able to say yes. He’s too deep in his new reality. He is there with Lincoln, Plato, Jean d’Arc, LaRouche-the handful of genius individuals who have changed the world. He is there with three hundred young intellectuals who, if we are to believe them, will stage the decisive revolution of our millennium.
+
+The movement is easy to satirize, discredit, and render insane. But the quiet existentialist in all of us finds herself faintly envious. For in all their delusions, LaRouche’s followers have on earth a cosmic certainty and security that we might only wish to achieve in paradise. It is a paradise, alas, that almost inevitably crashes. When it does for C.J., one psychological breakdown after another, he might be a free man again-but never, I fear, the endearing oddball of our youths.
+
+
+</tw-passagedata><tw-passagedata pid="362" name="1996 - article about CEC cult" tags="" position="200,1100" size="100,100">The Age/January 30, 1996 
+By Martin Daly
+Defectors tell of &quot;psycho sessions&quot; and relentless demand for cash inside the Citizens Electoral Council. A political group accused of dirty tricks and the brainwashing of recruits faces increasing hostility. Martin Daly reports.
+
+A Melbourne woman has appealed to the American consulate to prevent her 16-year-old son from being taken to the United States for training with an extremist right-wing political cult, run by a convicted criminal, Lyndon LaRouche.
+
+Ms. Narelle Stratford, of Rosanna, contacted the consulate after Mr. LaRouche&#39;s Australian branch, the Coburg-based Citizens Electoral Council, refused her plea not to take her son overseas.
+
+Critics have accused the LaRouche movement of brainwashing followers in Australia, persuading donors to contribute money on the basis that the financial world is about to end, and running &quot;dirty tricks&quot; campaigns against its enemies, notably leading Australian Jews.
+
+The CEC was formed in 1988 in Kingaroy, Queensland, in response to the rural crisis when many farmers were in danger of losing their farms. It became a successful grass-roots political organization with about 100 branches around the country, mostly in rural areas, but within a few years it was taken over by American LaRouchians and their Australian followers.
+
+Since then, the CEC has been criticized for allegedly abusing its position as a political party and for discarding members and donors once they have contributed funds to the organization.
+
+The CEC denies the allegations and blames former members for spreading &quot;lies&quot; in an attempt to destroy the CEC and Lyndon LaRouche in Australia.
+
+But Ms. Stratford, one of a number of Australians to split from the CEC, said she was alarmed by the allegations. She also feared her son would be put through a LaRouchian &quot;Cadre School&quot; in the US, which she described as a brainwashing session to bind followers to the organization.
+
+Ms. Stratford said the US consulate in Melbourne told her it could not stop her son, who has a visa, from going to the US. The CEC said Ms Stratford&#39;s son, a CEC employee, was capable of making the decision for himself and that he wanted to go to the US.
+
+&quot;I know of no other employer that would pull this sort of stunt without asking the parent first,&quot; Ms Stratford said.
+
+&quot;And if the parents said they did not want that to happen, it would not happen.&quot;
+
+Former CEC members said the organization, often under the direction of a LaRouchian, Mr. Allen Douglas, from Leesburg, Virginia, held frequent cult-like &quot;psycho sessions,&quot; during which members were abused and told they must accept their crimes - including masturbation, sodomy and homosexuality - if they were to be cured.
+
+Motherhood and the influence of women over offspring was often derided. Women were frequently referred to as &quot;witches.&quot;
+
+One founding CEC member, Mr. John Koheler, of Kingaroy - who resigned after the LaRouchians &quot;hijacked&quot; the organization - said the CEC responded to his opposition to the Americans by telling him he was &quot;blocked&quot; and &quot;paranoid.&quot;
+
+&quot;I told Al Douglas that he was a fascist bastard and then they said I was doubly paranoid,&quot; Mr. Koheler said.
+
+Mrs. Rhonda Rotaru, of Colac, wife of Mr. Alex Rotaru, who said he was an &quot;intelligence&quot; officer for the CEC, also went through a &quot;psycho session&quot; because she refused to move to Melbourne with her husband. Mrs. Rotaru said she was criticized for breastfeeding her son at two years of age. &quot;I always thought breastfeeding was just a natural part of womanhood,&quot; she said. &quot;They said it was bad for a young child to be so dependent on its mother and that I would ruin his life. They made me feel as if I was the worst person in the world.&quot;
+
+Mrs. Rotaru said the CEC tried to break her marriage. Her husband said he was called an &quot;animal&quot; during a &quot;psycho session&quot; and was asked if would leave his wife and children to live nearer the CEC in Melbourne.
+
+&quot;They inquired into my relationship with my mother,&quot; he said. &quot;That was pretty much standard procedure. It was an interrogation. The whole aim was to create a new person, making your past totally irrelevant and giving you a new personality. &quot;No matter what you said, it was your mother&#39;s fault. It was pretty hideous stuff. Many people broke down and cried.&quot;
+
+Mr. Rotaru said the CEC gave him the cold shoulder because he refused to give them part of his $100,000 superannuation payout from Telstra. Then, he said, they asked him to mortgage his Melbourne house to finance a trip to Australia by a senior LaRouchian, Mr. James Bevel, a former confidant of the late Martin Luther King. His wife refused to allow it.
+
+A former Queensland sheep farmer, Ms. Julie Warner, accused the CEC of contributing to the breakup of her marriage, which led to the loss of her three sons in a separation case. She said she was virtually forced to remain in the US, fund-raising on the telephone for the organization, while the LaRouchians worked on her to wipe out her &quot;mother complex&quot; mindset.
+
+&quot;They would tell you there was something wrong with your mind, if you are not pulling huge dollars in,&quot; said Ms. Warner, who blamed CEC &quot;brainwashing&quot; for bringing her close to suicide.
+
+Ms. Warner said she worked in the ``boiler room&quot; - a fund- raising room with a bank of telephones - in Melbourne where she persuaded donors she knew to give the CEC about $60,000.
+
+&quot;I believed that we were out there to help people who had got into trouble in primary industry and here they were taking all their money and leaving them,&quot; Ms. Warner said.
+
+She said the CEC encouraged her to leave her family: &quot;They wanted to know how much money I would be getting from the property if the marriage broke up.&quot;
+
+A farmer, Mr. Joe Vella, of Kingaroy, Queensland, said he sold almost $1 million in assets to clear debts and give his wife, a CEC member, her share of the family farm. He feared she may have given a lot of the money to the CEC.
+
+Mr. Vella came into contact with the CEC after attending a meeting in Kingaroy. &quot;We are in financial trouble. They made us think they were going to save us and get the interest rates dropped...,&quot; he said.
+
+He said the CEC&#39;s Mr. Michael Sharp, alias Michael Stark, stayed at the Vella home for seven nights. &quot;All we ever did was give him money. It was about three years ago. He used to say, &#39;We can&#39;t pay this bill.&#39; We probably gave him $2,000 in cash. Never got a receipt.&quot; He recalled the CEC instructing people not to watch television &quot;because the cartels would get us.&quot;
+
+&quot;They are a horrible bunch of people,&quot; added Mr. Vella, who flew to Melbourne three times to try and persuade his wife to return. &quot;When I first flew to Melbourne, I could only talk to her sitting on the fence outside (the CEC office).
+
+&quot;Later she agreed to talk to him in a bar, but only in the company of another CEC member. &quot;What really hurt me was that (the CEC member) said &#39;you and your children have a sickness of the mind which you have inherited from your father.&#39; I got up and punched a brick wall and then went outside and sat in the gutter for a while.&quot;
+
+Mr. Victor Barwick, one of three sons of Queensland farming couple Doreen and Billy Barwick to join the CEC, said he went through &quot;psycho-sessions&quot; in Melbourne and in the US. He said Al Douglas told him he was having a &quot;psycho-sexual relationship with my mother. I was only 17 at the time&quot;, Mr. Barwick said.
+
+Mr. Barwick said that on a trip to the US, Mr. LaRouche told him there &quot;was a dark age coming, that learning would be done away with and that most people would be slaves.&quot; Mr. Barwick was paid $200 a week by the CEC for fundraising up to 12 hours a day, six days a week.
+
+One of the primary aims of the CEC is to raise money. It has raised $900,000 for each of the past two years and is one of the largest political fundraisers in the country, although the CEC has been deregistered as a political party.
+
+The relentless demand for cash from donors comes from &quot;Upgrade Teams&quot; that travel Australia to persuade donors to increase contributions. Fundraisers are often trained by American LaRouchians who travel here on tourist or business visas.
+
+Mr. Victor Barwick said teams in the &quot;boiler room&quot; sell subscriptions to La Rouche and CEC publications for up to $600 a year.
+
+&quot;I think they rip people off,&quot; Mr. Koehler said. &quot;It (the CEC) is immoral and corrupt...they frequently do not use the funds for the purpose they are raised for. It should not go into some kind of a slush fund. Obviously it does...a considerable amount does. The public needs to know that this operation is not in the interests of this country and they should not support it.&quot;
+
+Donors have told The Age they were encouraged to go into debt without telling their spouses so they could give money to the CEC. One woman said her husband had given the CEC about $80,000. &quot;They (the CEC) do use members like puppets. I am trying to get my husband out of it,&quot; she said.
+
+Ms. Kerrie Watterson, from Cranbrook, north of Albany, Western Australia, said she was persuaded by a CEC member to get a Bankcard so she could quickly donate money to the CEC if they needed it for an emergency.
+
+&quot;Against my better judgment, I got a Bankcard,&quot; said Mrs. Watterson, who was then persuaded to use her maximum credit line to donate to the CEC. &quot;Overall, they did me for about $1,600.&quot;</tw-passagedata><tw-passagedata pid="363" name="Fact-net 2005" tags="" position="200,1250" size="100,100">FactNet postings by &quot;Maia,&quot; an ex-member of the LaRouche Youth Movement, March 2005
+&quot;Maia,&quot; Thurs., March 10, 2005, 02:18 AM
+
+As far as why I got out, first off I was really lucky, my significant other who wasn&#39;t in the org managed to pull me out and helped start putting some sense back into me even while I was still involved, getting me to the point where I could start looking around and seeing the horror spectacle that I was involved [in], getting control of my faculties again.
+
+One of the things was that It gets a little tiring making a fool out of yourself every day standing on [a] street corner asking for money like a homeless person spanging (spare changing). Another thing was, watching Lyn on video, listening to him talk...everyone kept saying he was intelligent but he just kept repeating the same things over and over again. When someone would ask him a question he would break into a 20, 30, sometimes 40 minute explanation that not only made little sense, but always fit neatly into this &quot;these guys are evil and want to destroy humanity&quot; routine. A basic student of sociology and/or human studies can tell you, human beings, the majority, and yes there are evil psychopaths in the world, but the majority are not out to destroy the world, they are simply doing what they think is best and, well, human nature is really freaking complex--it can&#39;t be nicely packaged into good and evil slots. All he kept saying was, Dude X is evil, Dudette Y is a spawn of Satan, meh....
+
+While I was in, I saw two things happening almost two different orgs, for one The top down structure of the organization coming from Lyn, I assume, as I had no way of knowing much of what went on in the chain of command, but nevertheless was textbook cult, even though at the time I was only realizing it subconsciously. From the ground up though, and I almost think of it as a force, particulary the new members you could say were pushing the org towards reality, towards real ideas and real productivity. Needless to say, that doesn&#39;t last long, the new recruits get swallowed up and merge with the homogenized groupthink--that or they are kicked out or pushed aside.
+
+The lack of identity among the boomers in particular was scary. Someone like Ted who would literally stalk me to make sure I wasn&#39;t doing anything non-LaRouchie, oh and yes, Liz, big Mexican girl, really really big, if anyone here has been in or was in the L.A office. Fucking psycho. If anyone was having a normal conversation (even about LaRouchie stuff) she would come in and scream at them to get on the phones. It was her and a number of people like her that made [me] do a double take on the whole thing.
+
+You can&#39;t say that you&#39;re against government austerity measures and bitch about Argentina raping their people when you make your own people live on the exact same bread products day in and day out. Work them to the bone, then when you get sick, they tell you that you are blocked, when you complain you haven&#39;t got your 20 dollars stipend in over a month and they make you feel awful for even thinking about it.
+
+It&#39;s really hard to pin down one thing, it just came down to, I guess...the complete lack of concern for the mental and physical health of the youth. As I think about it, it makes me cry for the people I met that are still in it. People that I felt really kindred with, some I never got to know, but wanted to....the ones I met that were still holding on to their own identities and weren&#39;t quite being swallowed up so quickly....
+
+So anyway, that&#39;s my rant for tonight.
+
+Peace and butterflies.
+
+&quot;maia,&quot; Fri., March 18, 2005, 04:26 AM
+
+So I&#39;ve been at a training all this week (a real conference) and before that the last function I had attended was an ICLC conference. I can say there is a dramatic difference between a cult conference and a real conference. It was the first thing that occurred to me, so many things It would be hard to put into words.... it&#39;s rather scary though how the organization is able to convince you otherwise of things you knew before you joined.
+
+They actually had me believing, or starting to, that the LYM was the only org in the world that was actually DOING anything and all the other non-profits were a bunch of impotent Satan worshipers with an Oedipus complex....
+
+I would really like to get some sort of livejournal community going. Maybe I&#39;ll just go ahead and create one and post an invite on here. I find there isn&#39;t much out there, even as far as forums. I&#39;m not much with what they did in the 70&#39;s [and] 80&#39;s, but I would like to find out the truth to some things. Being in the LYM raised a helluva lot of questions, about self, about the world, about the organization.
+
+First off, how the hell can an orginization built on such a premise as it is, reach a point where the youth are recruited, burned up and used as fundraisers in an obvious freak show, that doesn&#39;t do anything to accomplish the goals it&#39;s supposed to? Was the org ever serious about it&#39;s goals? Was LaRouche ever sane? Why the hell does Robert Beltran [the film actor (&quot;Star Trek Voyager,&quot; &quot;Eating Raoul,&quot; etc.), now an ardent LaRouche supporter--DK] work with the org????? I personally got acting lessons from him, talk about having a hard time believing you&#39;re in a cult when a Hollywood actor gives you lessons every week. I feel so sad for the kids in the org, some of them are fucking geniuses, not very many, but some really got brains behind them and my God to throw it away on some madman&#39;s fundraising scheme, to talk of the dignity and honour and beauty of the human being, and then stand out on the street corner like a freak eight hours a day getting laughed at, accomplishing nothing but pissing a few people off.
+
+Some of the things I learned in the midst of the tragedy that is the LYM will stay with me for life. I would like to continue some of the passionate study of Shakespeare, of all the great poets... It&#39;s hard saying what exactly made me leave, there were so many factors, but I would have to say it had to do a lot with the very thing they would have me study about: the dignity of a human being, the power of the heart to open the mind....there were so many contradictions in it all. Even reading back through this [message thread], Tom (I knew him personally too which even makes it more depressing) mentioned Schiller talking about the mind being opened through the heart, yet practically in the next sentence ranted on about how the emotions needed to be eradicated. [&quot;Tom&quot; is a person who was defending LaRouche on FactNet.--DK} It&#39;s so weird, Schiller talks about how reason is no good without compassion and love, yet supressing the feeling state, as they call it, is [the] number one priority. Oh, and don&#39;t even get me started how the org can say that and then praise Shelley to no end, when he contradicts everything the org stands for....He would rolling over in his grave.....grrrr. Okay, that was my rant....signing off. 
+
+
+
+As quuoted at: http://lyndonlarouche.org/maia.htm</tw-passagedata><tw-passagedata pid="364" name="Not my friend" tags="" position="200,1400" size="100,100">ERIN_B
+Posted on Friday, June 30, 2006 - 4:36 pm:   	
+okiemute, 
+
+When, for how long, and where were you in the cult? I was in from May or June to October 2003. I have bipolar disorder, and I was kicked out because I didn&#39;t agree with them about, among other things, how I should manage my own health (they didn&#39;t think I needed to manage it at all). 
+I&#39;m trying not to think about it too much lately, and I only check this board once in a while, and I try not to post too much, but I think this is an important issue. They actually believed that my illness didn&#39;t exist, that they could cure it by insisting that it didn&#39;t exist. The LYM believes it can just remove a person from their environment, make up whatever story they want about them, and the real person ceases to exist. Why not? They can make the real person seem to stop existing when they get them to stay a lot of the time. 
+But, hey. I&#39;m lucky. At least I&#39;m alive. 
+
+http://www.justiceforjeremiah.com 
+
+Really lucky. 
+
+There was also a 19-year old guy whose parents were posting here a while ago because they were really concerned because he was involved with the org and they thought he may have asperger syndrome. 
+
+The nature of the organization is manic-depressive and schizophrenic and alcoholic. The most offensive thing in the world to them is someone with a pre-existing mental condition who is in treatment. Anyone who has ever been in any kind of counseling is more threatening than any of the groups they&#39;re always vilifying in print and in their class meetings. The cult would not function without denial. Anyone who strives to be happy and healthy is truly its worst enemy.
+
+===
+
+You think about your old school friend who joined...
+
+===
+
+I was in a transitional time in my life and didn&#39;t know a lot of people. I was opposed to the war in Iraq and was eager to hang out with this political campaign that professed to feel the same way I did about the war. 
+They were nice for about a day, then they started making more and more demands. 
+With my personality, I guess there was a little bit of an adrenaline rush when I found out they might be dangerous. I liked arguing with them. I didn&#39;t know how to leave when I found out I was trapped. 
+I never really knew what kind of trouble I was in until I was out of the cult for a while and got some distance from it. 
+They told me not to read anything about LaRouche that wasn&#39;t published by the org. They told me not to read anything that wasn&#39;t put out by the org, as it was &quot;bullsh-t&quot;. I tried to ignore this. It seemed so simplistic and I always hated people telling me what to do like I couldn&#39;t make these decisions for myself. Logic was outnumbered. I didn&#39;t know that many people locally. The closest people to me were long distance. 
+I visited my family that year, a little earlier than the usual holiday season. I talked to some of my family members about it. One of them, I told about LaRouche&#39;s book, &quot;Money is an Idiot&quot;, and how he and the senior members are always telling the youth that money can&#39;t talk to you. They said they thought it was interesting that he felt the need to tell people that money couldn&#39;t talk to you. It was funny, all the stupid things I&#39;d noticed that it didn&#39;t occur to me that that was odd. It was such a wild, wierd world, that something like that could easily be insignificant. 
+This was around the time I was kicked out. I really had to talk about it. I don&#39;t think my family fully understood how confused I was. I said. &quot;People say he&#39;s anti-Semitic.&quot; We looked it up on google. A whole bunch of quotes came up by LaRouche that were clearly Anti-Semetic. I&#39;d done it before by myself, but the cult says that&#39;s no good because everyone is lying. It still took me a while after that to realize that everyone else isn&#39;t lying; the cult is.
+
+
+SANCHO
+Posted on Saturday, February 11, 2006 - 11:22 am:   	
+This cult traps well-meaning (usually young) people who already believe (usually) in the value of the life of the mind and who have a strong sense of justice coupled with a desire to right wrongs. The cult of LaRouche is one-stop shopping for such people: it supplies definitive answers to all life&#39;s questions (appealing to the young and/or naive who mistakenly think such a thing possible) and supplies a means at the same time of improving the world. Of course no one group let alone an individual human being has many - let alone all - answers to the big questions. But as you, I was in a transitional period and did not know what my next step was to be when these people entered the picture. I then found it much more convenient to &quot;change the world&quot; rather than to engage in the far more challenging task of changing myself.
+
+
+XLCR4LIFE
+Posted on Sunday, February 12, 2006 - 11:43 am:   	
+For Erin and others who read this. 
+
+You are absolutely correct in describing the initial experience as an adrenaline rush. When you are in your late teens, there are many paths to take. People who have open hearts and wish to solve some of the more pressing problems can be easily attracted to a group like Larouche&#39;s. At the time I started to read their publications, I skimmed the crazy stuff and concentrated on what I believed in. It was refreshing to see an org which wanted scientific progress as the basis to solve mankind&#39;s problems. It was great to see an emphasis on classical arts, literature and history. The counterpoint to the other extremes of society were welcomed by me. 
+
+When the problems of the world are reduced to simplicity and the solutions are reduced to simplicity, it does intoxicate you with the idea that you are part of a solution. 
+
+The lunacy will usually be noticed by people who are skeptical, or cynical or just plain experienced with life. Those of us who are not so jaded will somehow look the other way when the evidence starts rolling in about Lyn&#39;s lunacy, the anti semitism, the crazy life and how every criteria for a cult is being met. 
+
+If you examine the history of the cult by reading this forum you will see how history has been repeated by Lyn over and over for another wave of recruits. 
+
+
+XYLM
+Posted on Friday, February 17, 2006 - 5:38 pm:   	
+Ever since ive been acquainted with the LYM (handful of years), they have been fiercely proclaiming a housing market collapse. In contrast, the housing market fiercely ascended during the interim. 
+
+I remember, month by month, the predicted collapses which had never occurred. Today, at the housing market’s maturity and amidst all the positive speculators, there are some economists predicting a dip, and rightfully so, but none are leaping into full scale economic shutdown predictions as Larouche did! –and today’s streak of housing growth is probably the reason their proclamations have faded away. 
+
+And as much as we can argue the aforementioned, the end result will always remain: there was no collapse. 
+
+But something detrimental did occur, the minds of the new recruits stayed around from month to month on predictions that have only led them into a brainwashed state of mind; thrown vulnerably into a surrounding of the most refined cult indoctrinating techniques. 
+
+Whether Enron, Housing Market, or the Iraq War; the Larouche campaign is only riding the waves of media hysteria. With their picks, they throw the most extreme, fear inducing twists and correlate them to past writings to fit Larouche history and “prophecy”. 
+
+And with all this said, they have transcended their focus from the housing collapse to Alito’s Schmitterian policies.
+
+XYLM
+Posted on Friday, May 05, 2006 - 3:45 pm:   	
+In a nutshell, Larouche consistently takes credit for battling, shaking up, and even causing significant blows to the financial oligarchs who have “taken over this world through wars and oppression.” It’s hard for me to believe that these extremely powerful oligarchs who “have directed the deaths and mental depletions of millions”, have not taken one action to place threats or cause any serious fear among the Larouchies. Not 1 Larouchie has died as a result of being “the biggest challenge” against the most powerful and vicious people in the world, the oligarchs. And mind you, these Larouchies are based in broken down buildings and drive broken down cars with bald tires, which means that they have a better chance finding death from the consequences of their own surroundings and poverty –and if you read up, that’s indeed how all of their deaths have occurred!
+</tw-passagedata><tw-passagedata pid="365" name="I am getting better story" tags="" position="2200,1300" size="100,100">I am going back to school full-time now; I also worked various minimum wage jobs after leaving. Working with real people, some of whom are living paycheck-to-paycheck, helped bring me back to reality. It brought me into direct contact with the realm of phenomena that we more appropriately discuss when talking about economic problems in human terms, i.e., in individual terms.
+
+It was no longer some world-soul or nebulous noosphere who is suffering, but your co-worker and neighbor, someone you can&#39;t avoid getting personal with at the lunch-break. Not that LaRouchies don&#39;t live outright miserably. All the [LYM] apartments I saw/slept in looked like tenements, packed like slave ships by youths from various corners of the U.S. and world.
+
+At any rate, starting from that sort of feeling about the average folks I got to know, now I at least have SOME sensual connection to people&#39;s actual experiences which is my own and has not been tampered with. I oppose this feeling to the feeling of looking at the pawns which are to be organized on the board, or the utter loneliness of being the ghost who has been forced to walk the earth for eternity, because of his knowledge of the secrets known to the inner elites. So, I&#39;m making progress.
+
+It&#39;s somewhat impossible to feel anything about a completely abstract entity. As a LaRouchie, I had more feeling, on average, about the letter L than the people I was supposedly saving, especially when they weren&#39;t &quot;engaging in the dialogue.&quot;
+
+The sh-t you have to witness in the name of Beethoven and Gauss and lately even God on those &quot;conference&quot; buses is appalling. People get wolf-packed and yelled at and shunned and all that just for not being willing to drop their views about the state of the economy.
+
+When humanity gets this abstract, some third state of matter above the biotic, which escapes all sort of understanding due to the fact that it&#39;s &quot;currently insane,&quot; the results are drastic. I always consoled myself with the fact that there was a metric (PRPD) which we could measure and craft economic policy. But this sort of consolation is somewhat like a man saying that he knows that distance can be measured on a map, but can&#39;t for the life of him measure distance on a map.
+
+To be honest this is not even a good analogy since there [in the LaRouche movement] the map was never properly formed to begin with, so any &quot;measurement&quot; on it would be worse than useless. An excerpt (below) from the resignation letters by Alice Roth, provides the opportunity for the observation that even at the top circles of the movement back in the days when people could actually talk about mathematical modeling, epistemology, ontology, etc. on a principled level, people never got to the point of actually using the magical PRPD &quot;yardstick&quot; as a measure of the tendencies in negative entropy or whatever PRPD was actually supposed to measure.
+
+Because our so-called Riemannian model ignored the credit system, it was utterly useless for any kind of work involving short-run developments--i.e., the &quot;quarterly&quot; forecast. Yet it was demanded that we constantly produce such projections at a moment&#39;s notice for EIR. The best the staff could do would be to first figure out what seemed to be going on politically in the business community and among policy circles and then attempt to generate computer graphs that matched our already-arrived-at assessment. I found this degrading and intellectually dishonest. We were representing ourselves as one more &quot;delphic oracle&quot; among other competing &quot;delphic oracles.&quot; But the tools we were using were even less sophisticated than the Keynesian-Friedmanite rubbish we claimed to be replacing. The only thing that saved the project was that our political intuition occasionally was more on target than that of the competition.
+
+And OUR political intuition generally WASN&#39;T, but I figured that maybe in the LONG run the predictions would be correct...
+
+Comparing the boomer intellectuals with the LYM ones I guess entails at least a mention of Sky Shields. As far as I know he&#39;s still in and is as avid as ever. He was trying to organize some sort of LYM modeling crew last year to start producing those famed &quot;animations&quot; according to &quot;Riemannian principles&quot; at the locals, probably starting first in LA, the idea being that some people who knew some math and could program would, provided the data, be able to actually study something like the 1940&#39;s economic recovery premised on the science of Lyn. He saw it as a &quot;science driver program&quot; which would basically get the movement&#39;s sh-t together and fight its own ignorance. Sky was a pretty bright guy. I think he was studying physics and left somewhere around his third undergraduate year or something, but don&#39;t quote me on this. Either way, this as most things eventually was scrapped because the youth didn&#39;t understand Kepler, which is an obvious prerequisite for the active practice of modern science. Nothing against Kepler, but why not enter a monastery and study Cusa in detail? That wouldn&#39;t be a bad idea for a lot of the youth.
+
+As far as the quality of scientific thinking, it&#39;s something like Stalinist dialectical materialism. Any decent argument by someone relatively competent can be squashed by someone with well-memorized Lynquotes.
+
+I remember members discussing the movement of people towards and away from the [literature-sales] table and talking about it in terms of dynamically triggering a critical increase in the power of dialogue on the noosphere through singing, when people were just reacting to the outrageous signs and lyrics. Since there could be no science there, people end up discussing things impressionistically. In our sleep-deprived minds, the movements of crowds on the street started to look amazingly like some surreal version of Leonardo&#39;s sketches of water. People were creatures out of Goya&#39;s drawings, or Bosch&#39;s schizophrenic mind.
+
+Really I think the most salient variable in any encounter between organizers and the public was how much the individual approached knew about the Great Patriot. I almost always started out the conversation with &quot;Do you know who LHL is?&quot; So much for now.</tw-passagedata><tw-passagedata pid="366" name="Bruce Bash" tags="" position="2500,1400" size="100,100"> wouldn&#39;t be surprised if Bruce Director is a certified hypnotist, because people literally lose conciousness all around the room during his visits. &quot;Riemann: for Anti-dummies&quot; makes very little sense. I took it upon myself to read all of them a while back and I can remember very little of them.
+
+Junior and senior members would try to immulate him in their briefings and classes on Wednsdays and Saturdays. They would go on for 3-4 hours, sometimes more. You would be sitting there (until you learned better) and the room would be almost empty and people were struggling to keep attention to the irrelevant material. In Los Angeles there would be more people outside smoking than inside getting brainwashed.
+
+After a while in Los Angeles their was a huge issue over many memebers not attending meetings they had spent all week to bring people to. I&#39;m certain these long painful presentations were part of the reason.
+
+Be careful earnest_one. Seeking out a a confrontation with LaRouchies on some of their faulty research can be appealing at times, but remember it will never get anywhere. As long as they are part of the organization they cannot do anything but constantly reaffirm all of LHL&#39;s postitions. 
+
+They are encouraged to educate themselves as long as their conclusions reconfirms LHL&#39;s. 
+
+His work is considered to be at the very the forefront of the &#39;organization&#39;. Every time he writes a new addititon to &quot;Riemann: To Confuse the **** Out of You&quot;, all the locals print out as many copies as they need to know it all by the next morning, then they have a class or 2, maybe several meetings to read it all together. All the locals write in the briefings what they have been doing with it. Then Director tours all the locals. 
+
+Bruce Director&#39;s job is to keep the LYM mystified. The more they are confused, the more they are baited by some vast knowledge they can attain through the &#39;organization&#39;. </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
