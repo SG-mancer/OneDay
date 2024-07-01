@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play TokyoDay.</tw-noscript></noscript></tw-story>
-<tw-storydata name="TokyoDay" startnode="377" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name=":Yamanote" color="green"></tw-tag><tw-tag name=":Quote" color="purple"></tw-tag><tw-tag name=":Montreal" color="blue"></tw-tag><tw-tag name=":Escape" color="yellow"></tw-tag><tw-tag name=":Phone" color="orange"></tw-tag><tw-tag name=":Google-Notes" color="blue"></tw-tag><tw-tag name="::NOTES:" color="yellow"></tw-tag><tw-tag name=":travel" color="yellow"></tw-tag><tw-passagedata pid="1" name=":Haneda Airport" tags="" position="19050,8275" size="100,100">It is raining.
+<tw-storydata name="TokyoDay" startnode="377" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="5060DF36-6B7E-40F1-BA9E-B497E0435B78" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name=":Yamanote" color="green"></tw-tag><tw-tag name=":Quote" color="purple"></tw-tag><tw-tag name=":Montreal" color="blue"></tw-tag><tw-tag name=":Escape" color="yellow"></tw-tag><tw-tag name=":Phone" color="orange"></tw-tag><tw-tag name=":Google-Notes" color="blue"></tw-tag><tw-tag name="::NOTES:" color="yellow"></tw-tag><tw-tag name=":travel" color="yellow"></tw-tag><tw-tag name="Flights" color="red"></tw-tag><tw-passagedata pid="1" name=":Haneda Airport" tags="" position="19050,8275" size="100,100">It is raining.
 
 Raleigh says she is going straight to Narita, where maybe she can find a lounge or one of those capsules to sleep the day in before tonights flight to Hawaii.
 [[Keikyu airport Line]]
@@ -1644,7 +1644,7 @@ September 2005
 		
 		It makes the past two days feel like a fever dream.
 		
-		You get to review the things that happened... and try to understand what you want to do next...</tw-passagedata><tw-passagedata pid="129" name=":Bus stop" tags="travel" position="15400,7500" size="100,100">//This whole North American trip has been (cycling-link: bind $though1, &quot;a mess&quot;,&quot;too stressful&quot;,&quot;eye opening&quot;).//
+		You get to review the things that happened... and try to understand what you want to do next...</tw-passagedata><tw-passagedata pid="129" name=":Bus stop" tags="Flights" position="15400,7500" size="100,100">//This whole North American trip has been (cycling-link: bind $though1, &quot;a mess&quot;,&quot;too stressful&quot;,&quot;eye opening&quot;).//
 		
 		{(if: visits is 1)[
 		You drop your duffle bag at the bus stop. Then slide your hand into your pocket to double check you haven&#39;t dropped your passport or printed itinerary.
@@ -5080,7 +5080,140 @@ Brian E. McAndrews Obituary - Burlington County Times
 
 Brian McAndrews death, Creative Arts High School teacher has died – InsideEko.com (archive.org)
 Brian McAndrews Memorial Exhibition Now Open – Faculty of Arts and Sciences (rutgers.edu)
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="392" name="Pushback" tags="Flights" position="600,1000" size="100,100">
+The aircraft doors closed, and it felt like there was a finality to it. Like shutting and arming that door was cutting all your ties, burning the bridges and severing communication lines to that organisation that consumed almost three years of your life. You had no money, no friends, no hobbies, no job, no home, no love life, no...
+
+You stop your swirling thoughts and focus on the solo cabin crew member standing two rows infront of you, she smiles back. The safety demonstration begins, and you consider how these flights were the (cycling-link: bind $ticket, &quot;cheapest&quot;, &quot;most difficult to organise&quot;, &quot;earliest&quot;) tickets back home to Australia.
+
+You glance around the small cabin of the tiny jet, most are in business casual, the inflight entertainment system consists of seat back screens and 
+
+[[Check your itinerary]]
+</tw-passagedata><tw-passagedata pid="393" name="Check your itinerary" tags="" position="600,1125" size="100,100">(if: $ticekt is &quot;cheapest&quot;)[
+Montreal - Toronto
+Toronto - Vancouver 
+Vancouver - Sydney (16hr)
+Sydney - Melbourne (1.5hr)
+](else-if: $ticekt is &quot;earliest&quot;)[
+Montreal - New York (2hr)
+New York - LA (
+LA - Melbourne (
+](else:)[
+Montreal - New York (2hr)
+overnight
+New York -  Frankfurt (8hr)
+Frankfurt - Hong Kong (12hr)
+Hong Kong - Melbourne (9hr)
+]
+[
+Montreal - Toronto (1.5hr)
+Toronto - Hong Kong (15.5 hr)
+overnight
+Hong Kong - Melbourne (9hr)
+]
+
+[
+Montreal - Edmonton (4.5hrs) 7pm, 9:30pm
+(15.5 hrs)
+Edmonton - Vancouver (1.8hrs) 1:20pm - 2pm
+Vancouver - Tokyo (10.2hrs) 5pm - 7pm
+(13.5 hrs)
+Tokyo - Sydney (10hrs) 8:30am-7:30pm
+]
+[
+Montreal - Heathrow (7hrs)
+Heathrow - Singapore (13.5hrs)
+Singapore - Sydney (8hrs)
+]
+[
+Montreal - Toronto (1.5hrs)
+Toronto - LA (5.4 hrs)
+LA - Honolulu (5.8hrs)
+Honolulu - Sydney (11hrs)
+]
+[
+Montreal - Paris (7hrs) 7pm-8am
+Paris - Hongkong (12hrs) 11pm-5pm
+Hong kong - Melbourne (9hr)
+]</tw-passagedata><tw-passagedata pid="394" name="No food" tags="" position="1000,1000" size="100,100">
+The food money situation got so bad, that Sandy purchased multi-vitimins she shared with you.
+For a week, you guys woke up to a coffee, had a multi-vitimin and then worked through to the dinner meal.
+
+Sandy joked she was loosing 2kg a week, though maybe it wasn&#39;t a joke.
+One day you got a $5 donation, and went to McDonalds to buy two sundays, that you shared with Sandy and Stuart.
+
+At least in Montreal the office didn&#39;t go dumpster diving. Though if you had known of a good place that threw out bread and pasteries you probably would had.
+
+When Arron returned from Vancouver the pay was increased up to $50 a week, and again you had money for breakfast and lunch.
+
+But you still took the multi-vitimin each day, just incase.</tw-passagedata><tw-passagedata pid="395" name="Learning to fly" tags="" position="500,1700" size="100,100">You learn to fly after getting out...
+
+Focusing on actual learning things, it causes some cognitive disornance as you fight to actually deal with ideas.</tw-passagedata><tw-passagedata pid="396" name="Help from little sister" tags="" position="2200,800" size="100,100">
+Sandy&#39;s little sister is willing to help.
+She also wants to get Sandy out, but</tw-passagedata><tw-passagedata pid="397" name="Packing" tags="" position="700,700" size="100,100">
+Do you take everything?
+
+Do you just pack an onboard bag, with two changes of clothes?
+Should you hold onto the LaRouche books?
+Will you haul winter gear? Ditch the sleeping bag? Leave your duffle bag on the street?
+
+</tw-passagedata><tw-passagedata pid="398" name="Untitled Passage" tags="" position="2200,100" size="100,100">Tell the story, with a reminiscing scene or two.
+
+Leaving?
+Joining?
+Hard days?
+
+Maybe stick just to North America?
+Maybe just discussions, and the cult like actions...
+
+</tw-passagedata><tw-passagedata pid="399" name="Your mind is a fractured maze" tags="" position="900,800" size="100,100">
+spirit frayed by relentless stress and sleep deprivation
+
+drowning in the convoluted teaching, 
+
+Thoughts were a chaotic storm, the remnants of his time, memories clinging in his mind like stubborn shadows.
+
+he worried that one wrong word would shatter his fragile hope
+
+</tw-passagedata><tw-passagedata pid="400" name="Be serious" tags="" position="2500,875" size="100,100">
+You remember back near the start of 2004 when the American visited, and she was flirting with the younger guys hanging around.
+She then told you to be more serious, when you tried to make light of a few of the ideas.
+</tw-passagedata><tw-passagedata pid="401" name="A date" tags="" position="1400,1300" size="100,100">
+You go on your first date.
+
+It feels strange, you are trying to hide that you are 23 and this is your first date from the lovely woman.
+
+You have been dreamin</tw-passagedata><tw-passagedata pid="402" name="Rumination" tags="" position="1400,1100" size="100,100">
+Constantly thinking about things
+sitting around talking and thinking about your problems
+
+Break the bad pattern, so you don&#39;t get depressed</tw-passagedata><tw-passagedata pid="403" name="Untitled Passage 1" tags="" position="675,1300" size="100,100">Good Evening ladies and gentleman. Tonight we are flying through to Melbourne on this flight.
+As you may see, this is a full flight with no empty seats, so we ask everyone to be respectful and </tw-passagedata><tw-passagedata pid="404" name="School Skirt" tags="" position="1700,800" size="200,100">
+Trying and failing to attest to what this show has meant to me. The ways it has shaped me and howmy relationship to it has changed over time.
+
+Start to see more than is really there...
+
+Like senior high school when things are really changing fast.
+Everyone outside of your friendgroup is growing up at the speed of sound, whilst you feel like everything is slipping past you faster than you can maintain lift...
+
+===
+
+You are a NEET - No employment education or training
+Back in the real world, you feel you have nothing - you actually have nothing.
+
+Compared to your old school friend, who lives in the attic of his parent&#39;s place, like the Fonz, with so many games, DVDs, books and stuff his room feels like a compactus.</tw-passagedata><tw-passagedata pid="405" name="Untitled Passage 2" tags="" position="1700,925" size="100,100">Hard landing
+
+Back alone in the city
+A small bedsit, only $70 a week.
+
+You are worried about last time, when you moved away with only $300 and purchased textbooks etc.
+
+This time, you aren&#39;t dropped off, you arrive on a plane.
+You have $1,000 credit card incase, and unemployment benefit of a few hundred a week.
+
+But you are suffereing feeling broke,
+all alone
+
+wondering if you will ever get back on your feet.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
